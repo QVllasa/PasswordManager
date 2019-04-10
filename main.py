@@ -15,9 +15,14 @@ class MainWindow(QtWidgets.QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
 
+        self.currentBrowser = ''
+        self.currentPassword = ''
+        self.newPassword = ''
+        self.accounts = ''
+
         self.finish_dialog = QtWidgets.QMessageBox()
         self.error_dialog = QtWidgets.QMessageBox()
-        self.obj = Worker(self.accounts, self.currentBrowser, self.currentPassword, self.newPassword)
+
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
@@ -26,11 +31,10 @@ class MainWindow(QtWidgets.QMainWindow):
 
         browsers = ['Chrome', 'Firefox']
         self.ui.comboBox_2.addItems(browsers)
+        self.ui.label_5.hide()
+        self.ui.label_4.hide()
 
-        self.currentBrowser = ''
-        self.currentPassword = ''
-        self.newPassword = ''
-        self.accounts = ''
+
 
         self.ui.pushButton.clicked.connect(self.changePW)
 
@@ -39,6 +43,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.currentPassword = self.ui.inputCurrent.text()
         self.newPassword = self.ui.inputNew.text()
         self.accounts = self.ui.comboBox.currentText()
+        self.obj = Worker(self.accounts, self.currentBrowser, self.currentPassword, self.newPassword)
         self.obj.message.connect(self.errorDialog)
         self.obj.finished.connect(self.done)
         self.obj.progress.connect(self.loadingBar)
@@ -50,7 +55,6 @@ class MainWindow(QtWidgets.QMainWindow):
         print(errorText)
         self.error_dialog.setIcon(QtWidgets.QMessageBox.Critical)
         self.error_dialog.setText('Wrong Password in Account:' + errorText)
-
         self.error_dialog.show()
 
     def done(self, str):
@@ -63,9 +67,11 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def okay4(self):
         self.ui.label_4.setText('OK')
+        self.ui.label_4.show()
 
     def okay5(self):
         self.ui.label_5.setText('OK')
+        self.ui.label_5.show()
 
 
 class Worker(QThread):
