@@ -15,6 +15,9 @@ class MainWindow(QtWidgets.QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
 
+        self.finish_dialog = QtWidgets.QMessageBox()
+        self.error_dialog = QtWidgets.QMessageBox()
+        self.obj = Worker(self.accounts, self.currentBrowser, self.currentPassword, self.newPassword)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
@@ -36,7 +39,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self.currentPassword = self.ui.inputCurrent.text()
         self.newPassword = self.ui.inputNew.text()
         self.accounts = self.ui.comboBox.currentText()
-        self.obj = Worker(self.accounts, self.currentBrowser, self.currentPassword, self.newPassword)
         self.obj.message.connect(self.errorDialog)
         self.obj.finished.connect(self.done)
         self.obj.progress.connect(self.loadingBar)
@@ -46,14 +48,12 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def errorDialog(self, errorText):
         print(errorText)
-        self.error_dialog = QtWidgets.QMessageBox()
         self.error_dialog.setIcon(QtWidgets.QMessageBox.Critical)
         self.error_dialog.setText('Wrong Password in Account:' + errorText)
 
         self.error_dialog.show()
 
     def done(self, str):
-        self.finish_dialog = QtWidgets.QMessageBox()
         self.finish_dialog.setIcon(QtWidgets.QMessageBox.Information)
         self.finish_dialog.setText('Passwords changed to:' + str)
 
@@ -66,7 +66,6 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def okay5(self):
         self.ui.label_5.setText('OK')
-
 
 
 class Worker(QThread):
