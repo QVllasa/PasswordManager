@@ -8,6 +8,7 @@ import time
 from selenium.webdriver.common.by import By
 from accountLists import accounts, testAccounts
 
+
 app = QtWidgets.QApplication(sys.argv)
 
 
@@ -100,7 +101,7 @@ class Worker(QThread):
                         if self.currentBrowser == 'Firefox':
                             count += 100 / b
                             page = "https://de.tradingview.com"
-                            driver = webdriver.Firefox(executable_path="/Applications/PasswordManager/webdriver/geckodriver")
+                            driver = webdriver.Firefox(executable_path="webdriver/geckodriver")
                             driver.implicitly_wait(30)
                             driver.minimize_window()
                             driver.get(page)
@@ -110,7 +111,7 @@ class Worker(QThread):
                             driver.find_element(By.XPATH,
                                                 "//form[@id='signin-form']/div[3]/div[2]/button/span[2]").click()
                             try:
-                                time.sleep(3)
+                                time.sleep(5)
                                 driver.find_element(By.XPATH, "//div[4]/span/span").click()
                             except ElementNotInteractableException:
                                 self.message.emit(user)
