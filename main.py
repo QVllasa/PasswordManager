@@ -34,8 +34,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self.ui.label_5.hide()
         self.ui.label_4.hide()
 
-
-
         self.ui.pushButton.clicked.connect(self.changePW)
 
     def changePW(self):
