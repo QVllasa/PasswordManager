@@ -1,16 +1,16 @@
 from pathlib import Path
 import shutil
 
-firefox_webdriver = Path('webdriver/geckodriver')
+firefox_webdriver = Path('webdriver/geckodriver.exe')
 
-chrome_webdriver = Path('webdriver/chromedriver')
+chrome_webdriver = Path('webdriver/chromedriver.exe')
 
 #testing
 #destinationF = Path('/Users/qendrimvllasa/Desktop/geckodriver')
 #destinationC = Path('/Users/qendrimvllasa/Desktop/chromedriver')
 
-destinationF = Path('/usr/local/bin/geckodriver')
-destinationC = Path('/usr/local/bin/chromedriver')
+destinationF = Path('C:/Windows/System32/geckodriver.exe')
+#destinationC = Path('C:/Windows/System32/chromedriver')
 
 
 def copyWebDriver():
@@ -19,10 +19,10 @@ def copyWebDriver():
     else:
         print('ff in desktop')
 
-    if not destinationC.exists():
-        shutil.copy(chrome_webdriver, destinationC)
-    else:
-        print('cc in desktop')
+    #if not destinationC.exists():
+     #   shutil.copy(chrome_webdriver, destinationC)
+    #else:
+     #   print('cc in desktop')
 
 
-copyWebDriver()
+#copyWebDriver()
