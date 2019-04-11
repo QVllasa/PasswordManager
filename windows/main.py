@@ -1,13 +1,14 @@
 import sys
 from qtpy import QtWidgets
 from PyQt5.QtCore import *
-from macOS.ui.mainwindow import Ui_MainWindow
+from ui.mainwindow import Ui_MainWindow
 from selenium import webdriver
 from selenium.common.exceptions import ElementNotInteractableException
 import time
 from selenium.webdriver.common.by import By
-from macOS.accountLists import testAccounts
-from macOS.moveMacOS import copyWebDriver
+from accountLists import testAccounts
+
+#from macOS.moveMacOS import copyWebDriver
 
 
 app = QtWidgets.QApplication(sys.argv)
@@ -105,7 +106,9 @@ class Worker(QThread):
                         if self.currentBrowser == 'Firefox':
                             count += 100 / b
                             page = "https://de.tradingview.com"
-                            driver = webdriver.Firefox(executable_path="webdriver/geckodriver")
+                            options = webdriver.FirefoxOptions()
+                            options.add_argument('-headless')
+                            driver = webdriver.Firefox(executable_path="webdriver/geckodriver", options=options)
                             driver.implicitly_wait(30)
                             driver.minimize_window()
                             driver.get(page)

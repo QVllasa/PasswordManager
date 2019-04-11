@@ -105,7 +105,9 @@ class Worker(QThread):
                         if self.currentBrowser == 'Firefox':
                             count += 100 / b
                             page = "https://de.tradingview.com"
-                            driver = webdriver.Firefox()#executable_path="/usr/local/bin/geckodriver")
+                            options = webdriver.FirefoxOptions()
+                            options.add_argument('-headless')
+                            driver = webdriver.Firefox(options=options)#executable_path="/usr/local/bin/geckodriver")
                             driver.implicitly_wait(30)
                             driver.minimize_window()
                             driver.get(page)
