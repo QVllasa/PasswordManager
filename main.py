@@ -7,9 +7,13 @@ from selenium.common.exceptions import ElementNotInteractableException
 import time
 from selenium.webdriver.common.by import By
 from accountLists import accounts, testAccounts
+from moveMacOS import copyWebDriver
 
 
 app = QtWidgets.QApplication(sys.argv)
+
+copyWebDriver()
+
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -101,7 +105,7 @@ class Worker(QThread):
                         if self.currentBrowser == 'Firefox':
                             count += 100 / b
                             page = "https://de.tradingview.com"
-                            driver = webdriver.Firefox(executable_path="webdriver/geckodriver")
+                            driver = webdriver.Firefox()#executable_path="/usr/local/bin/geckodriver")
                             driver.implicitly_wait(30)
                             driver.minimize_window()
                             driver.get(page)
