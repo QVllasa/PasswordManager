@@ -1,18 +1,19 @@
 import sys
 from qtpy import QtWidgets
 from PyQt5.QtCore import *
-from macOS.ui.mainwindow import Ui_MainWindow
+from ui.mainwindow import Ui_MainWindow
 from selenium import webdriver
 from selenium.common.exceptions import ElementNotInteractableException
 import time
 from selenium.webdriver.common.by import By
-from macOS.accountLists import testAccounts
+from accountLists import testAccounts
+from docx import Document
 from macOS.moveMacOS import copyWebDriver
 
 
 app = QtWidgets.QApplication(sys.argv)
 
-#copyWebDriver()
+copyWebDriver()
 
 
 
@@ -27,6 +28,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
         self.finish_dialog = QtWidgets.QMessageBox()
         self.error_dialog = QtWidgets.QMessageBox()
+        self.docx_dialog = QtWidgets.QMessageBox()
 
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
@@ -36,8 +38,8 @@ class MainWindow(QtWidgets.QMainWindow):
 
         browsers = ['Chrome', 'Firefox']
         self.ui.comboBox_2.addItems(browsers)
-        self.ui.label_5.hide()
-        self.ui.label_4.hide()
+
+
 
         self.ui.pushButton.clicked.connect(self.changePW)
 
@@ -63,17 +65,22 @@ class MainWindow(QtWidgets.QMainWindow):
     def done(self, str):
         self.finish_dialog.setIcon(QtWidgets.QMessageBox.Information)
         self.finish_dialog.setText('Passwords changed to:' + str)
+        self.finish_dialog.show()
 
     def loadingBar(self, percentage):
         print(percentage)
         self.ui.progressBar.setValue(percentage)
 
-    def okay4(self):
-        self.ui.label_4.setText('OK')
+    def docxDialog(self):
+        self.docx_dialog.setText('Word file with all changed accounts created and saved in application folder! :)')
+
+
+    def okay4(self, okay):
+        self.ui.label_4.setText(okay)
         self.ui.label_4.show()
 
-    def okay5(self):
-        self.ui.label_5.setText('OK')
+    def okay5(self, okay):
+        self.ui.label_5.setText(okay)
         self.ui.label_5.show()
 
 
@@ -81,8 +88,8 @@ class Worker(QThread):
     message = pyqtSignal(str)
     finished = pyqtSignal(str)
     progress = pyqtSignal(float)
-    label4 = pyqtSignal()
-    label5 = pyqtSignal()
+    label4 = pyqtSignal(str)
+    label5 = pyqtSignal(str)
 
     def __init__(self, accounts, brwser, curPass, newPass):
         QThread.__init__(self)
@@ -93,6 +100,12 @@ class Worker(QThread):
         self.accounts = accounts
 
     def run(self):
+        document = Document()
+        table = document.add_table(rows=1, cols=2)
+        hdr_cells = table.rows[0].cells
+        hdr_cells[0].text = 'User Account'
+        hdr_cells[1].text = 'Password'
+
         count = float(0)
         while count < 100:
             for acc, address in testAccounts.items():
@@ -107,7 +120,7 @@ class Worker(QThread):
                             page = "https://de.tradingview.com"
                             options = webdriver.FirefoxOptions()
                             options.add_argument('-headless')
-                            driver = webdriver.Firefox(options=options)#executable_path="/usr/local/bin/geckodriver")
+                            driver = webdriver.Firefox(options=options)
                             driver.implicitly_wait(30)
                             driver.minimize_window()
                             driver.get(page)
@@ -122,9 +135,13 @@ class Worker(QThread):
                             except ElementNotInteractableException:
                                 self.message.emit(user)
                                 self.progress.emit(count)
+                                row_cells = table.add_row().cells
+                                row_cells[0].text = user
+                                row_cells[1].text = 'Wrong Password entered!'
+
                                 driver.quit()
                                 continue
-                            self.label4 = pyqtSignal()
+                            self.label4 = pyqtSignal('OK')
                             driver.find_element(By.XPATH,
                                                 "//a[contains(@href, '/u/indaqub/#settings-profile')]").click()
                             driver.find_element(By.XPATH, "//fieldset[2]/span/span/span/span").click()
@@ -138,12 +155,19 @@ class Worker(QThread):
                             time.sleep(5)
                             driver.find_element(By.XPATH, "//div[4]/span/span").click()
                             driver.find_element(By.XPATH, "//a[contains(@href, '#signout')]").click()
-                            self.label5 = pyqtSignal()
+                            self.label5 = pyqtSignal('OK')
                             driver.quit()
+
+                            row_cells = table.add_row().cells
+                            row_cells[0].text = user
+                            row_cells[1].text = self.newPassword
 
                         self.progress.emit(count)
                         print(str(count) + '%')
         self.finished.emit(self.newPassword)
+        for acc in testAccounts:
+            if acc == self.accounts: document.save(acc + '.docx')
+
 
 
 window = MainWindow()

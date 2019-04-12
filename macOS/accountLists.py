@@ -153,3 +153,5 @@ accounts = {'connectivityAccounts01_10': connectivityAccounts01_10,
 myAccounts = ['qendrimvllasa@hotmail.de', 'qendrimvllasa@hotmail.de', 'qendrimvllasa@hotmail.de']
 
 testAccounts = {'tradingview': myAccounts}
+
+

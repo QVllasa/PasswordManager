@@ -100,7 +100,7 @@ class Ui_MainWindow(object):
         self.label_6.setText(_translate("MainWindow", "Select Browser"))
         self.label_2.setText(_translate("MainWindow", "Current Password"))
         self.label_3.setText(_translate("MainWindow", "New Password"))
-        self.label_5.setText(_translate("MainWindow", "OK"))
-        self.label_4.setText(_translate("MainWindow", "OK"))
+        self.label_5.setText(_translate("MainWindow", ""))
+        self.label_4.setText(_translate("MainWindow", ""))
 
 
