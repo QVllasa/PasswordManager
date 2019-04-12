@@ -9,6 +9,7 @@ from selenium.webdriver.common.by import By
 from accountLists import testAccounts
 from docx import Document
 from macOS.moveMacOS import copyWebDriver
+import datetime
 
 
 app = QtWidgets.QApplication(sys.argv)
@@ -52,6 +53,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.obj.message.connect(self.errorDialog)
         self.obj.finished.connect(self.done)
         self.obj.progress.connect(self.loadingBar)
+        self.obj.docFinish.connect(self.docxDialog)
         self.obj.label4.connect(self.okay4)
         self.obj.label5.connect(self.okay5)
         self.obj.start()
@@ -64,23 +66,27 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def done(self, str):
         self.finish_dialog.setIcon(QtWidgets.QMessageBox.Information)
-        self.finish_dialog.setText('Passwords changed to:' + str)
+        self.finish_dialog.setText('Passwords changed to:   ' + str)
         self.finish_dialog.show()
 
     def loadingBar(self, percentage):
         print(percentage)
         self.ui.progressBar.setValue(percentage)
 
-    def docxDialog(self):
-        self.docx_dialog.setText('Word file with all changed accounts created and saved in application folder! :)')
+    def docxDialog(self, str):
+        self.docx_dialog.setIcon(QtWidgets.QMessageBox.Information)
+        self.docx_dialog.setText(str)
+        self.docx_dialog.show()
 
 
-    def okay4(self, okay):
-        self.ui.label_4.setText(okay)
+
+    #dont' work properly
+    def okay4(self, okay1):
+        self.ui.label_4.setText(okay1)
         self.ui.label_4.show()
 
-    def okay5(self, okay):
-        self.ui.label_5.setText(okay)
+    def okay5(self, okay2):
+        self.ui.label_5.setText(okay2)
         self.ui.label_5.show()
 
 
@@ -90,6 +96,7 @@ class Worker(QThread):
     progress = pyqtSignal(float)
     label4 = pyqtSignal(str)
     label5 = pyqtSignal(str)
+    docFinish = pyqtSignal(str)
 
     def __init__(self, accounts, brwser, curPass, newPass):
         QThread.__init__(self)
@@ -101,7 +108,9 @@ class Worker(QThread):
 
     def run(self):
         document = Document()
+
         table = document.add_table(rows=1, cols=2)
+        document.add_paragraph(str(datetime.datetime.now()))
         hdr_cells = table.rows[0].cells
         hdr_cells[0].text = 'User Account'
         hdr_cells[1].text = 'Password'
@@ -138,10 +147,12 @@ class Worker(QThread):
                                 row_cells = table.add_row().cells
                                 row_cells[0].text = user
                                 row_cells[1].text = 'Wrong Password entered!'
-
+                                empty_cells = table.add_row().cells
+                                empty_cells[0].text = ''
+                                empty_cells[1].text = ''
                                 driver.quit()
                                 continue
-                            self.label4 = pyqtSignal('OK')
+                            self.label4.emit('OK')
                             driver.find_element(By.XPATH,
                                                 "//a[contains(@href, '/u/indaqub/#settings-profile')]").click()
                             driver.find_element(By.XPATH, "//fieldset[2]/span/span/span/span").click()
@@ -155,18 +166,23 @@ class Worker(QThread):
                             time.sleep(5)
                             driver.find_element(By.XPATH, "//div[4]/span/span").click()
                             driver.find_element(By.XPATH, "//a[contains(@href, '#signout')]").click()
-                            self.label5 = pyqtSignal('OK')
+                            self.label5.emit('OK')
                             driver.quit()
 
                             row_cells = table.add_row().cells
                             row_cells[0].text = user
                             row_cells[1].text = self.newPassword
+                            empty_cells = table.add_row().cells
+                            empty_cells[0].text = ''
+                            empty_cells[1].text = ''
 
                         self.progress.emit(count)
                         print(str(count) + '%')
         self.finished.emit(self.newPassword)
         for acc in testAccounts:
-            if acc == self.accounts: document.save(acc + '.docx')
+            if acc == self.accounts:
+                document.save(acc + '.docx')
+        self.docFinish.emit('Word file with all changed accounts created and saved in application folder! :)')
 
 
 
