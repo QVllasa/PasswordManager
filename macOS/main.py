@@ -12,7 +12,7 @@ from macOS.moveMacOS import copyWebDriver
 
 app = QtWidgets.QApplication(sys.argv)
 
-copyWebDriver()
+#copyWebDriver()
 
 
 
