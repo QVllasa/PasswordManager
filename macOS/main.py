@@ -8,12 +8,11 @@ import time
 from selenium.webdriver.common.by import By
 from macOS.accountLists import testAccounts
 from docx import Document
-from macOS.moveMacOS import copyWebDriver
 import datetime
 
 app = QtWidgets.QApplication(sys.argv)
 
-#copyWebDriver()
+
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -123,7 +122,7 @@ class Worker(QThread):
                             page = "https://de.tradingview.com"
                             options = webdriver.FirefoxOptions()
                             options.add_argument('-headless')
-                            driver = webdriver.Firefox(options=options)
+                            driver = webdriver.Firefox(executable_path='../windows/webdriver/geckodriver', options=options)
                             driver.implicitly_wait(30)
                             driver.minimize_window()
                             driver.get(page)
