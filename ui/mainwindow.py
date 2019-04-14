@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ui/mainwindow.ui'
+# Form implementation generated from reading ui file 'ui\mainwindow.ui'
 #
 # Created by: PyQt5 UI code generator 5.12.1
 #
@@ -16,16 +16,6 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle("MDSP Account Password Manager")
         self.centralWidget = QtWidgets.QWidget(MainWindow)
         self.centralWidget.setObjectName("centralWidget")
-        self.pushButton = QtWidgets.QPushButton(self.centralWidget)
-        self.pushButton.setGeometry(QtCore.QRect(130, 200, 171, 32))
-        self.pushButton.setObjectName("pushButton")
-        self.progressBar = QtWidgets.QProgressBar(self.centralWidget)
-        self.progressBar.setGeometry(QtCore.QRect(60, 260, 311, 31))
-        self.progressBar.setAutoFillBackground(True)
-        self.progressBar.setProperty("value", 0)
-        self.progressBar.setTextVisible(True)
-        self.progressBar.setInvertedAppearance(False)
-        self.progressBar.setObjectName("progressBar")
         self.gridLayoutWidget = QtWidgets.QWidget(self.centralWidget)
         self.gridLayoutWidget.setGeometry(QtCore.QRect(20, 10, 401, 81))
         self.gridLayoutWidget.setObjectName("gridLayoutWidget")
@@ -77,9 +67,35 @@ class Ui_MainWindow(object):
         self.label_4.setFont(font)
         self.label_4.setObjectName("label_4")
         self.gridLayout_2.addWidget(self.label_4, 0, 2, 1, 1)
+        self.gridLayoutWidget_3 = QtWidgets.QWidget(self.centralWidget)
+        self.gridLayoutWidget_3.setGeometry(QtCore.QRect(20, 192, 401, 121))
+        self.gridLayoutWidget_3.setObjectName("gridLayoutWidget_3")
+        self.gridLayout_3 = QtWidgets.QGridLayout(self.gridLayoutWidget_3)
+        self.gridLayout_3.setContentsMargins(11, 11, 11, 11)
+        self.gridLayout_3.setSpacing(6)
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_3.addItem(spacerItem, 0, 2, 1, 1)
+        self.add = QtWidgets.QPushButton(self.gridLayoutWidget_3)
+        self.add.setObjectName("add")
+        self.gridLayout_3.addWidget(self.add, 4, 1, 1, 1)
+        self.progressBar = QtWidgets.QProgressBar(self.gridLayoutWidget_3)
+        self.progressBar.setAutoFillBackground(True)
+        self.progressBar.setProperty("value", 0)
+        self.progressBar.setTextVisible(True)
+        self.progressBar.setInvertedAppearance(False)
+        self.progressBar.setObjectName("progressBar")
+        self.gridLayout_3.addWidget(self.progressBar, 2, 0, 1, 3)
+        self.pushButton = QtWidgets.QPushButton(self.gridLayoutWidget_3)
+        self.pushButton.setObjectName("pushButton")
+        self.gridLayout_3.addWidget(self.pushButton, 0, 1, 1, 1)
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_3.addItem(spacerItem1, 3, 0, 1, 3)
+        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_3.addItem(spacerItem2, 1, 1, 1, 1)
         MainWindow.setCentralWidget(self.centralWidget)
         self.menuBar = QtWidgets.QMenuBar(MainWindow)
-        self.menuBar.setGeometry(QtCore.QRect(0, 0, 441, 22))
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 441, 21))
         self.menuBar.setObjectName("menuBar")
         MainWindow.setMenuBar(self.menuBar)
         self.mainToolBar = QtWidgets.QToolBar(MainWindow)
@@ -94,13 +110,14 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        self.pushButton.setText(_translate("MainWindow", "Change Passwords"))
-        self.progressBar.setFormat(_translate("MainWindow", "%p%"))
         self.label.setText(_translate("MainWindow", "Select Accounts"))
         self.label_6.setText(_translate("MainWindow", "Select Browser"))
         self.label_2.setText(_translate("MainWindow", "Current Password"))
         self.label_3.setText(_translate("MainWindow", "New Password"))
-        self.label_5.setText(_translate("MainWindow", ""))
-        self.label_4.setText(_translate("MainWindow", ""))
+        self.label_5.setText(_translate("MainWindow", "OK"))
+        self.label_4.setText(_translate("MainWindow", "OK"))
+        self.add.setText(_translate("MainWindow", "Add"))
+        self.progressBar.setFormat(_translate("MainWindow", "%p%"))
+        self.pushButton.setText(_translate("MainWindow", "Change Passwords"))
 
 

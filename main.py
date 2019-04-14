@@ -1,7 +1,8 @@
 import sys
-from qtpy import QtWidgets
+from qtpy.QtWidgets import *
 from PyQt5.QtCore import *
 from ui.mainwindow import Ui_MainWindow
+from ui.addDialog.adddialog import Ui_addDialog
 from selenium import webdriver
 from selenium.common.exceptions import ElementNotInteractableException
 import time
@@ -10,12 +11,10 @@ from accountLists import testAccounts
 from docx import Document
 import datetime
 
-app = QtWidgets.QApplication(sys.argv)
+app = QApplication(sys.argv)
 
 
-
-
-class MainWindow(QtWidgets.QMainWindow):
+class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
 
@@ -24,9 +23,9 @@ class MainWindow(QtWidgets.QMainWindow):
         self.newPassword = ''
         self.accounts = ''
 
-        self.finish_dialog = QtWidgets.QMessageBox()
-        self.error_dialog = QtWidgets.QMessageBox()
-        self.docx_dialog = QtWidgets.QMessageBox()
+        self.finish_dialog = QMessageBox()
+        self.error_dialog = QMessageBox()
+        self.docx_dialog = QMessageBox()
 
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
@@ -38,6 +37,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.ui.comboBox_2.addItems(browsers)
 
         self.ui.pushButton.clicked.connect(self.changePW)
+
+        self.ui.add.clicked.connect(self.addList)
 
     def changePW(self):
         self.currentBrowser = self.ui.comboBox_2.currentText()
@@ -53,14 +54,24 @@ class MainWindow(QtWidgets.QMainWindow):
         self.obj.label5.connect(self.okay5)
         self.obj.start()
 
+    def addList(self):
+        dialog = InputDialog(self)
+        dialog.exec_()
+
+
+
+
+         #   values = dialog.getValues()
+          #  print(values)
+
     def errorDialog(self, errorText):
         print(errorText)
-        self.error_dialog.setIcon(QtWidgets.QMessageBox.Critical)
+        self.error_dialog.setIcon(QMessageBox.Critical)
         self.error_dialog.setText('Wrong Password in Account:' + errorText)
         self.error_dialog.show()
 
     def done(self, str):
-        self.finish_dialog.setIcon(QtWidgets.QMessageBox.Information)
+        self.finish_dialog.setIcon(QMessageBox.Information)
         self.finish_dialog.setText('Passwords changed to:   ' + str)
         self.finish_dialog.show()
 
@@ -69,11 +80,10 @@ class MainWindow(QtWidgets.QMainWindow):
         self.ui.progressBar.setValue(percentage)
 
     def docxDialog(self, str):
-        self.docx_dialog.setIcon(QtWidgets.QMessageBox.Information)
+        self.docx_dialog.setIcon(QMessageBox.Information)
         self.docx_dialog.setText(str)
         self.docx_dialog.show()
 
-    # dont' work properly
     def okay4(self, okay1):
         self.ui.label_4.setText(okay1)
         self.ui.label_4.show()
@@ -81,6 +91,19 @@ class MainWindow(QtWidgets.QMainWindow):
     def okay5(self, okay2):
         self.ui.label_5.setText(okay2)
         self.ui.label_5.show()
+
+
+class InputDialog(QDialog, Ui_addDialog):
+    def __init__(self, parent=None):
+        QDialog.__init__(self, parent)
+        self.setupUi(self)
+        self.uiAdd = Ui_addDialog()
+
+        self.uiAdd.okButton.clicked.connect(self.getValues)
+
+    def getValues(self):
+        self.blabla = self.accountList.text()
+        print('asdasdasdasdasd')
 
 
 class Worker(QThread):
