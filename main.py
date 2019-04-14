@@ -1,12 +1,12 @@
 import sys
 from qtpy import QtWidgets
 from PyQt5.QtCore import *
-from macOS.ui.mainwindow import Ui_MainWindow
+from ui.mainwindow import Ui_MainWindow
 from selenium import webdriver
 from selenium.common.exceptions import ElementNotInteractableException
 import time
 from selenium.webdriver.common.by import By
-from macOS.accountLists import testAccounts
+from accountLists import testAccounts
 from docx import Document
 import datetime
 
@@ -122,7 +122,7 @@ class Worker(QThread):
                             page = "https://de.tradingview.com"
                             options = webdriver.FirefoxOptions()
                             options.add_argument('-headless')
-                            driver = webdriver.Firefox(executable_path='../windows/webdriver/geckodriver', options=options)
+                            driver = webdriver.Firefox(executable_path='webdriver/windows/geckodriver', options=options)
                             driver.implicitly_wait(30)
                             driver.minimize_window()
                             driver.get(page)
