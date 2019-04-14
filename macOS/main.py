@@ -11,11 +11,9 @@ from docx import Document
 from macOS.moveMacOS import copyWebDriver
 import datetime
 
-
 app = QtWidgets.QApplication(sys.argv)
 
-copyWebDriver()
-
+#copyWebDriver()
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -39,8 +37,6 @@ class MainWindow(QtWidgets.QMainWindow):
 
         browsers = ['Chrome', 'Firefox']
         self.ui.comboBox_2.addItems(browsers)
-
-
 
         self.ui.pushButton.clicked.connect(self.changePW)
 
@@ -78,9 +74,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.docx_dialog.setText(str)
         self.docx_dialog.show()
 
-
-
-    #dont' work properly
+    # dont' work properly
     def okay4(self, okay1):
         self.ui.label_4.setText(okay1)
         self.ui.label_4.show()
@@ -183,7 +177,6 @@ class Worker(QThread):
             if acc == self.accounts:
                 document.save(acc + '.docx')
         self.docFinish.emit('Word file with all changed accounts created and saved in application folder! :)')
-
 
 
 window = MainWindow()

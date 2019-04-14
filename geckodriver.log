@@ -1,0 +1,483 @@
+1555082272939	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.9m2lV055x3IN"
+*** You are running in headless mode.
+1555082273872	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555082273872	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555082273872	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555082274794	Marionette	INFO	Listening on port 50307
+1555082274894	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555082279923	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555082289486	Marionette	INFO	Stopped listening on port 50307
+1555082290762	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.XXkwoRWtG64Q"
+*** You are running in headless mode.
+1555082291023	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555082291023	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555082291023	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555082291833	Marionette	INFO	Listening on port 50377
+1555082291881	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555082296910	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555082310313	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.h5cNS1xTH6T1"
+*** You are running in headless mode.
+1555082310568	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555082310568	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555082310568	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555082311377	Marionette	INFO	Listening on port 50418
+1555082311431	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555082316460	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555082334569	Marionette	INFO	Stopped listening on port 50418
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1555082335852	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.e6PKjULVOKFs"
+*** You are running in headless mode.
+1555082336107	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555082336107	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555082336107	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555082336915	Marionette	INFO	Listening on port 50517
+1555082336986	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555082342020	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555082351760	Marionette	INFO	Stopped listening on port 50517
+1555082353133	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.pYcOKDJwNmF7"
+*** You are running in headless mode.
+1555082353394	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555082353394	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555082353394	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555082354191	Marionette	INFO	Listening on port 50586
+1555082354262	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555082359293	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555082368863	Marionette	INFO	Stopped listening on port 50586
+1555082486781	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.Nb66MAhazHgY"
+*** You are running in headless mode.
+1555082487040	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555082487040	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555082487040	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555082487855	Marionette	INFO	Listening on port 50669
+1555082487900	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555082492932	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555082511995	Marionette	INFO	Stopped listening on port 50669
+1555082513272	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.OAIFQbfyTkeg"
+*** You are running in headless mode.
+1555082513530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555082513530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555082513530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555082514325	Marionette	INFO	Listening on port 50768
+1555082514399	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555082519429	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555082528045	Marionette	INFO	Stopped listening on port 50768
+1555082529321	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.pFqdsQ8tF6rA"
+*** You are running in headless mode.
+1555082529600	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555082529600	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555082529600	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555082530418	Marionette	INFO	Listening on port 50834
+1555082530441	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555082535477	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555082545929	Marionette	INFO	Stopped listening on port 50834
+1555083168574	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.u0250MumYaKh"
+*** You are running in headless mode.
+1555083168833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083168833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083168833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083169633	Marionette	INFO	Listening on port 51027
+1555083169695	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083174728	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555083183517	Marionette	INFO	Stopped listening on port 51027
+1555083184792	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.oMyYsAywTyKM"
+*** You are running in headless mode.
+1555083185049	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083185049	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083185049	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083185851	Marionette	INFO	Listening on port 51104
+1555083185920	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083190950	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555083204410	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.XU2KZegRIndV"
+*** You are running in headless mode.
+1555083204666	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083204667	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083204667	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083205539	Marionette	INFO	Listening on port 51170
+1555083205543	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083210576	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1555083228092	Marionette	INFO	Stopped listening on port 51170
+1555083229366	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.PZqiCYL67V33"
+*** You are running in headless mode.
+1555083229623	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083229623	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083229623	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083230442	Marionette	INFO	Listening on port 51275
+1555083230495	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083235531	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555083243598	Marionette	INFO	Stopped listening on port 51275
+1555083244874	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.k9kgvIVdCWRK"
+*** You are running in headless mode.
+1555083245131	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083245131	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083245131	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083245945	Marionette	INFO	Listening on port 51337
+1555083246006	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083251039	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555083437437	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.EK1aI5URkeGN"
+*** You are running in headless mode.
+1555083437697	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083437698	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083437698	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083438524	Marionette	INFO	Listening on port 51437
+1555083438566	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083443599	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555083452501	Marionette	INFO	Stopped listening on port 51437
+1555083453810	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.D5u2fbXyOdDt"
+*** You are running in headless mode.
+1555083454069	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083454069	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083454069	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083454866	Marionette	INFO	Listening on port 51498
+1555083454931	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083459961	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555083468614	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.dGcqXW5B8hQv"
+*** You are running in headless mode.
+1555083468881	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083468882	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083468882	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083469723	Marionette	INFO	Listening on port 51535
+1555083469741	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083474778	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555083480534	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.axn3y7JRo8zg"
+*** You are running in headless mode.
+1555083480793	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083480793	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083480793	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083481589	Marionette	INFO	Listening on port 51569
+1555083481658	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083486690	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555083495414	Marionette	INFO	Stopped listening on port 51569
+1555083496688	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.DzbGmkao2HHN"
+*** You are running in headless mode.
+1555083496946	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083496946	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083496946	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083497771	Marionette	INFO	Listening on port 51629
+1555083497815	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083502849	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555083751386	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.w4cJakZgg9Rn"
+*** You are running in headless mode.
+1555083751697	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083751697	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083751697	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083752536	Marionette	INFO	Listening on port 51782
+1555083752613	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083757655	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555083768769	Marionette	INFO	Stopped listening on port 51782
+1555083770042	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.NRNcPv79E0ka"
+*** You are running in headless mode.
+1555083770302	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083770302	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083770302	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083771136	Marionette	INFO	Listening on port 51847
+1555083771164	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083776200	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+console.error: BroadcastService: 
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1555083818395	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.L1CLE8eg9N6i"
+*** You are running in headless mode.
+1555083818656	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083818656	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083818656	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083819463	Marionette	INFO	Listening on port 51963
+1555083819526	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083824560	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555083832931	Marionette	INFO	Stopped listening on port 51963
+1555083834205	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.Bi5R7WjJhWKH"
+*** You are running in headless mode.
+1555083834518	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083834546	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083834547	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083835395	Marionette	INFO	Listening on port 52028
+1555083835442	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083840477	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555083848220	Marionette	INFO	Stopped listening on port 52028
+1555083849497	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.PRQEdWd5X8ot"
+*** You are running in headless mode.
+1555083849772	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555083849772	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555083849772	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555083850643	Marionette	INFO	Listening on port 52121
+1555083850731	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555083855765	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555083863465	Marionette	INFO	Stopped listening on port 52121
+1555084120704	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.x7i9HgaXy457"
+*** You are running in headless mode.
+1555084120967	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555084120968	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555084120968	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555084121772	Marionette	INFO	Listening on port 52519
+1555084121826	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555084126860	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555084135783	Marionette	INFO	Stopped listening on port 52519
+1555084137058	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.8fQ5dXOjVNGI"
+*** You are running in headless mode.
+1555084137322	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555084137322	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555084137322	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555084138150	Marionette	INFO	Listening on port 52608
+1555084138193	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555084143226	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555084151611	Marionette	INFO	Stopped listening on port 52608
+1555084152886	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.TlQGlwKsiw6V"
+*** You are running in headless mode.
+1555084153146	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555084153146	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555084153146	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555084153997	Marionette	INFO	Listening on port 52675
+1555084154015	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555084159055	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555084167055	Marionette	INFO	Stopped listening on port 52675
+1555084639398	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.b2oPWiTBac7N"
+*** You are running in headless mode.
+1555084639661	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555084639662	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555084639662	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555084640499	Marionette	INFO	Listening on port 53057
+1555084640514	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555084645552	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555084659888	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.ktWZEOq01GIa"
+*** You are running in headless mode.
+1555084660147	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555084660147	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555084660147	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555084660980	Marionette	INFO	Listening on port 53097
+1555084661022	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555084666054	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555084684303	Marionette	INFO	Stopped listening on port 53097
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1555084685592	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.IbOn4hmpWv4d"
+*** You are running in headless mode.
+1555084685850	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555084685850	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555084685851	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555084686660	Marionette	INFO	Listening on port 53202
+1555084686718	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555084691752	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555084700197	Marionette	INFO	Stopped listening on port 53202
+1555084701470	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.QuOKuJWKvlkb"
+*** You are running in headless mode.
+1555084701733	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555084701733	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555084701733	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555084702565	Marionette	INFO	Listening on port 53272
+1555084702603	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555084707636	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555084716861	Marionette	INFO	Stopped listening on port 53272
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1555084968568	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.r57qxHMVciH9"
+*** You are running in headless mode.
+1555084968827	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555084968828	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555084968828	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555084969624	Marionette	INFO	Listening on port 53504
+1555084969694	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555084974730	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555084989571	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.GaaoTqd31H5z"
+*** You are running in headless mode.
+1555084989835	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555084989835	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555084989835	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555084990751	Marionette	INFO	Listening on port 53583
+1555084990810	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555084995853	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555085012823	Marionette	INFO	Stopped listening on port 53583
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1555085014113	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.fTeR7TVOVoXJ"
+*** You are running in headless mode.
+1555085014384	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555085014384	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555085014384	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555085015232	Marionette	INFO	Listening on port 53741
+1555085015250	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555085020287	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555085028520	Marionette	INFO	Stopped listening on port 53741
+1555085029795	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.gXsOAeqPVnrZ"
+*** You are running in headless mode.
+1555085030065	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555085030066	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555085030066	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555085030976	Marionette	INFO	Listening on port 53806
+1555085031034	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555085036068	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+1555085044913	Marionette	INFO	Stopped listening on port 53806
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
