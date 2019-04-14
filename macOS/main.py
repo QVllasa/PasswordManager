@@ -1,12 +1,12 @@
 import sys
 from qtpy import QtWidgets
 from PyQt5.QtCore import *
-from ui.mainwindow import Ui_MainWindow
+from macOS.ui.mainwindow import Ui_MainWindow
 from selenium import webdriver
 from selenium.common.exceptions import ElementNotInteractableException
 import time
 from selenium.webdriver.common.by import By
-from accountLists import testAccounts
+from macOS.accountLists import testAccounts
 from docx import Document
 from macOS.moveMacOS import copyWebDriver
 import datetime
