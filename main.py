@@ -2,7 +2,7 @@ import sys
 from qtpy.QtWidgets import *
 from PyQt5.QtCore import *
 from ui.mainwindow import Ui_MainWindow
-from ui.addDialog.adddialog import Ui_addDialog
+from ui.Dialog import Ui_Dialog
 from selenium import webdriver
 from selenium.common.exceptions import ElementNotInteractableException
 import time
@@ -17,6 +17,8 @@ app = QApplication(sys.argv)
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
+
+        self.testing = ''
 
         self.currentBrowser = ''
         self.currentPassword = ''
@@ -55,13 +57,16 @@ class MainWindow(QMainWindow):
         self.obj.start()
 
     def addList(self):
-        dialog = InputDialog(self)
-        dialog.okButton.clicked.connect(dialog.getValues)
-        print(dialog.text)
-        dialog.exec_()
+        Dialog = QDialog()
+        ui = Ui_Dialog()
+        ui.setupUi(Dialog)
+        Dialog.show()
+        rsp = Dialog.exec_()
 
-
-
+        if rsp == QDialog.Accepted:
+            print('OK')
+        else:
+            print('Cancel')
 
     def errorDialog(self, errorText):
         print(errorText)
@@ -90,21 +95,6 @@ class MainWindow(QMainWindow):
     def okay5(self, okay2):
         self.ui.label_5.setText(okay2)
         self.ui.label_5.show()
-
-
-class InputDialog(QDialog, Ui_addDialog):
-    def __init__(self, parent=None):
-        QDialog.__init__(self, parent)
-        self.setupUi(self)
-
-        self.text = ''
-
-        self.okButton.clicked.connect(self.getValues)
-
-
-    def getValues(self):
-        self.text = self.accountList.toPlainText()
-        return self.text
 
 
 class Worker(QThread):
