@@ -65,14 +65,15 @@ class MainWindow(QMainWindow):
         ui.setupUi(dialog)
         dialog.show()
         rsp = dialog.exec_()
-
         if rsp == QDialog.Accepted:
+            if ui.listName.text():
+                print(ui.listName.text())
+
             for i in range(0, ui.accTable.rowCount()):
-                if ui.accTable.item(i,0):
-                    print(ui.accTable.item(i,0).text())
+                if ui.accTable.item(i, 0):
+                    print(ui.accTable.item(i, 0).text())
         else:
             print('Cancel')
-        print(self.testing)
 
     def showAcc(self):
         dialog = QDialog()
