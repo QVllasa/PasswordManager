@@ -3,6 +3,7 @@ from qtpy.QtWidgets import *
 from PyQt5.QtCore import *
 from ui.mainwindow import Ui_MainWindow
 from ui.Dialog import Ui_Dialog
+from ui.AccDialog import Ui_AccDialog
 from selenium import webdriver
 from selenium.common.exceptions import ElementNotInteractableException
 import time
@@ -42,6 +43,8 @@ class MainWindow(QMainWindow):
 
         self.ui.add.clicked.connect(self.addList)
 
+        self.ui.showAccBtn.clicked.connect(self.showAcc)
+
     def changePW(self):
         self.currentBrowser = self.ui.comboBox_2.currentText()
         self.currentPassword = self.ui.inputCurrent.text()
@@ -57,17 +60,31 @@ class MainWindow(QMainWindow):
         self.obj.start()
 
     def addList(self):
-        Dialog = QDialog()
+        dialog = QDialog()
         ui = Ui_Dialog()
-        ui.setupUi(Dialog)
-        Dialog.show()
-        rsp = Dialog.exec_()
+        ui.setupUi(dialog)
+        dialog.show()
+        rsp = dialog.exec_()
 
         if rsp == QDialog.Accepted:
-            self.testing = ui.plainTextEdit.toPlainText()
+            for i in range(0, ui.accTable.rowCount()):
+                if ui.accTable.item(i,0):
+                    print(ui.accTable.item(i,0).text())
         else:
             print('Cancel')
         print(self.testing)
+
+    def showAcc(self):
+        dialog = QDialog()
+        ui = Ui_AccDialog()
+        ui.setupUi(dialog)
+        for key in testAccounts:
+            ui.comboBox.addItem(key)
+            for value in testAccounts[key]:
+                ui.listWidget.addItem(value)
+
+        dialog.show()
+        dialog.exec_()
 
     def errorDialog(self, errorText):
         print(errorText)

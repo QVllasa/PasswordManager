@@ -93,9 +93,12 @@ class Ui_MainWindow(object):
         self.gridLayout_3.addItem(spacerItem1, 3, 0, 1, 3)
         spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout_3.addItem(spacerItem2, 1, 1, 1, 1)
+        self.showAccBtn = QtWidgets.QPushButton(self.gridLayoutWidget_3)
+        self.showAccBtn.setObjectName("showAccBtn")
+        self.gridLayout_3.addWidget(self.showAccBtn, 4, 2, 1, 1)
         MainWindow.setCentralWidget(self.centralWidget)
         self.menuBar = QtWidgets.QMenuBar(MainWindow)
-        self.menuBar.setGeometry(QtCore.QRect(0, 0, 441, 21))
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 441, 22))
         self.menuBar.setObjectName("menuBar")
         MainWindow.setMenuBar(self.menuBar)
         self.mainToolBar = QtWidgets.QToolBar(MainWindow)
@@ -119,5 +122,6 @@ class Ui_MainWindow(object):
         self.add.setText(_translate("MainWindow", "Add"))
         self.progressBar.setFormat(_translate("MainWindow", "%p%"))
         self.pushButton.setText(_translate("MainWindow", "Change Passwords"))
+        self.showAccBtn.setText(_translate("MainWindow", "Show Accounts"))
 
 

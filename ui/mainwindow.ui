@@ -188,6 +188,13 @@
        </property>
       </spacer>
      </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="showAccBtn">
+       <property name="text">
+        <string>Show Accounts</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
   </widget>
@@ -197,7 +204,7 @@
      <x>0</x>
      <y>0</y>
      <width>441</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
