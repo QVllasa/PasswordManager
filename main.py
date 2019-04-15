@@ -59,6 +59,9 @@ class MainWindow(QMainWindow):
         self.obj.label5.connect(self.okay5)
         self.obj.start()
 
+
+
+    #TODO
     def addList(self):
         dialog = QDialog()
         ui = Ui_Dialog()
@@ -75,6 +78,8 @@ class MainWindow(QMainWindow):
         else:
             print('Cancel')
 
+
+    #TODO
     def showAcc(self):
         dialog = QDialog()
         ui = Ui_AccDialog()
@@ -86,6 +91,9 @@ class MainWindow(QMainWindow):
 
         dialog.show()
         dialog.exec_()
+
+
+
 
     def errorDialog(self, errorText):
         print(errorText)
