@@ -64,9 +64,10 @@ class MainWindow(QMainWindow):
         rsp = Dialog.exec_()
 
         if rsp == QDialog.Accepted:
-            print('OK')
+            self.testing = ui.plainTextEdit.toPlainText()
         else:
             print('Cancel')
+        print(self.testing)
 
     def errorDialog(self, errorText):
         print(errorText)
