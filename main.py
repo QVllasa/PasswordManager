@@ -56,13 +56,12 @@ class MainWindow(QMainWindow):
 
     def addList(self):
         dialog = InputDialog(self)
+        dialog.okButton.clicked.connect(dialog.getValues)
+        print(dialog.text)
         dialog.exec_()
 
 
 
-
-         #   values = dialog.getValues()
-          #  print(values)
 
     def errorDialog(self, errorText):
         print(errorText)
@@ -97,13 +96,15 @@ class InputDialog(QDialog, Ui_addDialog):
     def __init__(self, parent=None):
         QDialog.__init__(self, parent)
         self.setupUi(self)
-        self.uiAdd = Ui_addDialog()
 
-        self.uiAdd.okButton.clicked.connect(self.getValues)
+        self.text = ''
+
+        self.okButton.clicked.connect(self.getValues)
+
 
     def getValues(self):
-        self.blabla = self.accountList.text()
-        print('asdasdasdasdasd')
+        self.text = self.accountList.toPlainText()
+        return self.text
 
 
 class Worker(QThread):

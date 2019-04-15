@@ -39,7 +39,7 @@
     <string>Quit</string>
    </property>
   </widget>
-  <widget class="QPlainTextEdit" name="plainTextEdit">
+  <widget class="QPlainTextEdit" name="accountList">
    <property name="geometry">
     <rect>
      <x>20</x>

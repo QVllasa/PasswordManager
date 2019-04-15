@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ui/addDialog\adddialog.ui'
+# Form implementation generated from reading ui file 'ui/addDialog/adddialog.ui'
 #
 # Created by: PyQt5 UI code generator 5.12.1
 #
@@ -19,9 +19,9 @@ class Ui_addDialog(object):
         self.quitButton = QtWidgets.QPushButton(addDialog)
         self.quitButton.setGeometry(QtCore.QRect(180, 310, 75, 23))
         self.quitButton.setObjectName("quitButton")
-        self.plainTextEdit = QtWidgets.QPlainTextEdit(addDialog)
-        self.plainTextEdit.setGeometry(QtCore.QRect(20, 80, 231, 221))
-        self.plainTextEdit.setObjectName("plainTextEdit")
+        self.accountList = QtWidgets.QPlainTextEdit(addDialog)
+        self.accountList.setGeometry(QtCore.QRect(20, 80, 231, 221))
+        self.accountList.setObjectName("accountList")
         self.listName = QtWidgets.QLineEdit(addDialog)
         self.listName.setGeometry(QtCore.QRect(20, 30, 231, 20))
         self.listName.setObjectName("listName")
