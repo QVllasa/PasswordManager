@@ -39,6 +39,9 @@ class MainWindow(QMainWindow):
         browsers = ['Chrome', 'Firefox']
         self.ui.comboBox_2.addItems(browsers)
 
+        self.ui.label_5.hide()
+        self.ui.label_4.hide()
+
         self.ui.pushButton.clicked.connect(self.changePW)
 
         self.ui.add.clicked.connect(self.addList)
