@@ -8,7 +8,7 @@ from selenium import webdriver
 from selenium.common.exceptions import ElementNotInteractableException
 import time
 from selenium.webdriver.common.by import By
-from accountLists import testAccounts
+from accountLists import accounts
 from docx import Document
 import datetime
 
@@ -33,7 +33,7 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        for key, value in testAccounts.items():
+        for key, value in accounts.items():
             self.ui.comboBox.addItem(key)
 
         browsers = ['Chrome', 'Firefox']
@@ -44,7 +44,7 @@ class MainWindow(QMainWindow):
 
         self.ui.pushButton.clicked.connect(self.changePW)
 
-        self.ui.add.clicked.connect(self.addList)
+        #self.ui.add.clicked.connect(self.addList)
 
         self.ui.showAccBtn.clicked.connect(self.showAcc)
 
@@ -65,21 +65,21 @@ class MainWindow(QMainWindow):
 
 
     #TODO
-    def addList(self):
-        dialog = QDialog()
-        ui = Ui_Dialog()
-        ui.setupUi(dialog)
-        dialog.show()
-        rsp = dialog.exec_()
-        if rsp == QDialog.Accepted:
-            if ui.listName.text():
-                print(ui.listName.text())
-
-            for i in range(0, ui.accTable.rowCount()):
-                if ui.accTable.item(i, 0):
-                    print(ui.accTable.item(i, 0).text())
-        else:
-            print('Cancel')
+    # def addList(self):
+    #     dialog = QDialog()
+    #     ui = Ui_Dialog()
+    #     ui.setupUi(dialog)
+    #     dialog.show()
+    #     rsp = dialog.exec_()
+    #     if rsp == QDialog.Accepted:
+    #         if ui.listName.text():
+    #             print(ui.listName.text())
+    #
+    #         for i in range(0, ui.accTable.rowCount()):
+    #             if ui.accTable.item(i, 0):
+    #                 print(ui.accTable.item(i, 0).text())
+    #     else:
+    #         print('Cancel')
 
 
     #TODO
@@ -87,9 +87,9 @@ class MainWindow(QMainWindow):
         dialog = QDialog()
         ui = Ui_AccDialog()
         ui.setupUi(dialog)
-        for key in testAccounts:
+        for key in accounts:
             ui.comboBox.addItem(key)
-            for value in testAccounts[key]:
+            for value in accounts[key]:
                 ui.listWidget.addItem(value)
 
         dialog.show()
@@ -154,55 +154,47 @@ class Worker(QThread):
 
         count = float(0)
         while count < 100:
-            for acc, address in testAccounts.items():
+            for acc, address in accounts.items():
                 if self.accounts == acc:
                     print(acc)
-                    for user in testAccounts[acc]:
+                    for user in accounts[acc]:
                         print(acc)
-                        b = len(testAccounts[acc])
+                        b = len(accounts[acc])
                         print(b)
                         if self.currentBrowser == 'Firefox':
                             count += 100 / b
-                            page = "https://de.tradingview.com"
+                            page = "https://www2.industrysoftware.automation.siemens.com/webkey/"
                             options = webdriver.FirefoxOptions()
                             options.add_argument('-headless')
-                            driver = webdriver.Firefox(executable_path='webdriver/windows/geckodriver', options=options)
+                            driver = webdriver.Firefox(executable_path='../webdriver/macOS/geckodriver', options=options)
                             driver.implicitly_wait(30)
                             driver.minimize_window()
                             driver.get(page)
-                            driver.find_element(By.XPATH, "(//a[contains(@href, '#signin')])[2]").click()
-                            driver.find_element(By.NAME, "username").send_keys(user)
-                            driver.find_element(By.NAME, "password").send_keys(self.currentPassword)
-                            driver.find_element(By.XPATH,
-                                                "//form[@id='signin-form']/div[3]/div[2]/button/span[2]").click()
-                            try:
-                                time.sleep(5)
-                                driver.find_element(By.XPATH, "//div[4]/span/span").click()
-                            except ElementNotInteractableException:
-                                self.message.emit(user)
-                                self.progress.emit(count)
-                                row_cells = table.add_row().cells
-                                row_cells[0].text = user
-                                row_cells[1].text = 'Wrong Password entered!'
-                                empty_cells = table.add_row().cells
-                                empty_cells[0].text = ''
-                                empty_cells[1].text = ''
-                                driver.quit()
-                                continue
+
+                            driver.find_element(By.XPATH, "//tr[5]/td[2]/ul/font/li/a/font").click()
+                            driver.find_element(By.XPATH, "//td[2]/input").click()
+                            driver.find_element(By.NAME, "WebKey_Username").send_keys(user)
+                            driver.find_element(By.NAME, "Existing_WebKey_Password").send_keys(self.currentPassword)
+                            driver.find_element(By.NAME, "pass").click()
+                            driver.find_element(By.NAME, "pass").send_keys(self.newPassword)
+                            driver.find_element(By.NAME, "repass").click()
+                            driver.find_element(By.NAME, "repass").send_keys(self.newPassword)
+
+                            #try:
+                            driver.find_element(By.XPATH, "//div[3]/div[2]/div/form/fieldset/input").click()
+                            # except ElementNotInteractableException:
+                            #     self.message.emit(user)
+                            #     self.progress.emit(count)
+                            #     row_cells = table.add_row().cells
+                            #     row_cells[0].text = user
+                            #     row_cells[1].text = 'Wrong Password entered!'
+                            #     empty_cells = table.add_row().cells
+                            #     empty_cells[0].text = ''
+                            #     empty_cells[1].text = ''
+                            #     driver.quit()
+                            #     continue
+
                             self.label4.emit('OK')
-                            driver.find_element(By.XPATH,
-                                                "//a[contains(@href, '/u/indaqub/#settings-profile')]").click()
-                            driver.find_element(By.XPATH, "//fieldset[2]/span/span/span/span").click()
-                            driver.find_element(By.XPATH,
-                                                "//form[@id='change-password-form']/fieldset/span/span/div/input").click()
-                            driver.find_element(By.NAME, "current_password").send_keys(self.currentPassword)
-                            driver.find_element(By.ID, "id_password1").send_keys(self.newPassword)
-                            driver.find_element(By.ID, "id_password2").send_keys(self.newPassword)
-                            driver.find_element(By.XPATH,
-                                                "//form[@id='change-password-form']/div/div/button/span[2]").click()
-                            time.sleep(5)
-                            driver.find_element(By.XPATH, "//div[4]/span/span").click()
-                            driver.find_element(By.XPATH, "//a[contains(@href, '#signout')]").click()
                             self.label5.emit('OK')
                             driver.quit()
 
@@ -216,7 +208,7 @@ class Worker(QThread):
                         self.progress.emit(count)
                         print(str(count) + '%')
         self.finished.emit(self.newPassword)
-        for acc in testAccounts:
+        for acc in accounts:
             if acc == self.accounts:
                 document.save(acc + '.docx')
         self.docFinish.emit('Word file with all changed accounts created and saved in application folder! :)')

@@ -21,7 +21,7 @@ intrductionAccounts = []
 
 
 # Navigate to the application home page
-driver.get("https://www2.industrysoftware.automation.siemens.com/webkey/")
+
 
 # #change password
 driver.find_element(By.XPATH, "(//a[contains(@href, '#signin')])[2]").click()
