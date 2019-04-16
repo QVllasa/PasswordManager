@@ -12,7 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(441, 371)
+        MainWindow.resize(441, 404)
         MainWindow.setWindowTitle("MDSP Account Password Manager")
         self.centralWidget = QtWidgets.QWidget(MainWindow)
         self.centralWidget.setObjectName("centralWidget")
@@ -68,7 +68,7 @@ class Ui_MainWindow(object):
         self.label_4.setObjectName("label_4")
         self.gridLayout_2.addWidget(self.label_4, 0, 2, 1, 1)
         self.gridLayoutWidget_3 = QtWidgets.QWidget(self.centralWidget)
-        self.gridLayoutWidget_3.setGeometry(QtCore.QRect(20, 192, 401, 121))
+        self.gridLayoutWidget_3.setGeometry(QtCore.QRect(20, 192, 401, 136))
         self.gridLayoutWidget_3.setObjectName("gridLayoutWidget_3")
         self.gridLayout_3 = QtWidgets.QGridLayout(self.gridLayoutWidget_3)
         self.gridLayout_3.setContentsMargins(11, 11, 11, 11)
@@ -93,9 +93,6 @@ class Ui_MainWindow(object):
         self.gridLayout_3.addItem(spacerItem1, 3, 0, 1, 3)
         spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout_3.addItem(spacerItem2, 1, 1, 1, 1)
-        self.showAccBtn = QtWidgets.QPushButton(self.gridLayoutWidget_3)
-        self.showAccBtn.setObjectName("showAccBtn")
-        self.gridLayout_3.addWidget(self.showAccBtn, 4, 2, 1, 1)
         MainWindow.setCentralWidget(self.centralWidget)
         self.menuBar = QtWidgets.QMenuBar(MainWindow)
         self.menuBar.setGeometry(QtCore.QRect(0, 0, 441, 22))
@@ -122,6 +119,5 @@ class Ui_MainWindow(object):
         self.add.setText(_translate("MainWindow", "Add"))
         self.progressBar.setFormat(_translate("MainWindow", "%p%"))
         self.pushButton.setText(_translate("MainWindow", "Change Passwords"))
-        self.showAccBtn.setText(_translate("MainWindow", "Show Accounts"))
 
 

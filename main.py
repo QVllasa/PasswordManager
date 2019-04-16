@@ -3,9 +3,8 @@ from qtpy.QtWidgets import *
 from PyQt5.QtCore import *
 from ui.mainwindow import Ui_MainWindow
 from ui.Dialog import Ui_Dialog
-from ui.AccDialog import Ui_AccDialog
+#from ui.AccDialog import Ui_AccDialog
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
 import time
 from selenium.webdriver.common.by import By
 from accountLists import accounts
@@ -15,11 +14,18 @@ import datetime
 app = QApplication(sys.argv)
 
 
+
+
+
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
 
-        self.testing = ''
+
+
+
+
+
 
         self.currentBrowser = ''
         self.currentPassword = ''
@@ -44,9 +50,9 @@ class MainWindow(QMainWindow):
 
         self.ui.pushButton.clicked.connect(self.changePW)
 
-        # self.ui.add.clicked.connect(self.addList)
+        self.ui.add.clicked.connect(self.addList)
 
-        self.ui.showAccBtn.clicked.connect(self.showAcc)
+        #self.ui.showAccBtn.clicked.connect(self.showAcc)
 
     def changePW(self):
         self.currentBrowser = self.ui.comboBox_2.currentText()
@@ -63,34 +69,43 @@ class MainWindow(QMainWindow):
         self.obj.start()
 
     # TODO
-    # def addList(self):
-    #     dialog = QDialog()
-    #     ui = Ui_Dialog()
-    #     ui.setupUi(dialog)
-    #     dialog.show()
-    #     rsp = dialog.exec_()
-    #     if rsp == QDialog.Accepted:
-    #         if ui.listName.text():
-    #             print(ui.listName.text())
-    #
-    #         for i in range(0, ui.accTable.rowCount()):
-    #             if ui.accTable.item(i, 0):
-    #                 print(ui.accTable.item(i, 0).text())
-    #     else:
-    #         print('Cancel')
+    def addList(self):
+        dialog = QDialog()
+        ui = Ui_Dialog()
+        ui.setupUi(dialog)
+        dialog.show()
+        rsp = dialog.exec_()
+        if rsp == QDialog.Accepted:
+            if ui.listName.text():
+
+
+            for i in range(0, ui.accTable.rowCount()):
+                if ui.accTable.item(i, 0):
+                    print(ui.accTable.item(i, 0).text())
+        else:
+            print('Cancel')
 
     # TODO
-    def showAcc(self):
-        dialog = QDialog()
-        ui = Ui_AccDialog()
-        ui.setupUi(dialog)
-        for key in accounts:
-            ui.comboBox.addItem(key)
-            for value in accounts[key]:
-                ui.listWidget.addItem(value)
+    # def showAcc(self):
+    #     self.dialog = QDialog()
+    #     self.uiDialog = Ui_AccDialog()
+    #     self.uiDialog.setupUi(self.dialog)
+    #     for key, value in accounts.items():
+    #         self.uiDialog.comboBox.addItem(key)
+    #         self.uiDialog.comboBox.currentTextChanged.connect(self.on_comboBox_changed)
+    #         #if self.uiDialog.comboBox.currentText() == key:
+    #          #   for acc in value:
+    #           #      print(acc)
+    #             #
+    #
+    #     self.dialog.show()
+    #     self.dialog.exec_()
+    #
+    # def on_comboBox_changed(self, key):
+    #     self.uiDialog.listWidget.setCurrentItem()
 
-        dialog.show()
-        dialog.exec_()
+
+
 
     def errorDialog(self, errorText):
         print(errorText)
@@ -165,11 +180,7 @@ class Worker(QThread):
                             driver.implicitly_wait(30)
                             # driver.minimize_window()
                             driver.get(page)
-
-                            # time.sleep(4)
                             driver.find_element(By.XPATH, "//tr[5]/td[2]/ul/font/li/a/font").click()
-
-                            # time.sleep(4)
                             driver.find_element(By.XPATH, "//td[2]/input").click()
                             driver.find_element(By.NAME, "WebKey_Username").send_keys(user)
                             driver.find_element(By.NAME, "Existing_WebKey_Password").send_keys(self.currentPassword)
@@ -177,7 +188,6 @@ class Worker(QThread):
                             driver.find_element(By.NAME, "pass").send_keys(self.newPassword)
                             driver.find_element(By.NAME, "repass").click()
                             driver.find_element(By.NAME, "repass").send_keys(self.newPassword)
-
                             driver.find_element(By.XPATH, "//div[3]/div[2]/div/form/fieldset/input").click()
                             time.sleep(3)
 
@@ -198,17 +208,7 @@ class Worker(QThread):
                             #if driver.find_element(By.XPATH, ):
 
 
-                            # except NoSuchElementException:
-                            #     self.message.emit(user)
-                            #     self.progress.emit(count)
-                            #     row_cells = table.add_row().cells
-                            #     row_cells[0].text = user
-                            #     row_cells[1].text = 'Wrong Password entered!'
-                            #     empty_cells = table.add_row().cells
-                            #     empty_cells[0].text = ''
-                            #     empty_cells[1].text = ''
-                            #     driver.quit()
-                            #     continue
+
 
                             self.label4.emit('OK')
                             self.label5.emit('OK')

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>441</width>
-    <height>371</height>
+    <height>404</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -112,7 +112,7 @@
       <x>20</x>
       <y>192</y>
       <width>401</width>
-      <height>121</height>
+      <height>136</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_3">
@@ -187,13 +187,6 @@
         </size>
        </property>
       </spacer>
-     </item>
-     <item row="4" column="2">
-      <widget class="QPushButton" name="showAccBtn">
-       <property name="text">
-        <string>Show Accounts</string>
-       </property>
-      </widget>
      </item>
     </layout>
    </widget>
