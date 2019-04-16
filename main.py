@@ -5,7 +5,7 @@ from ui.mainwindow import Ui_MainWindow
 from ui.Dialog import Ui_Dialog
 from ui.AccDialog import Ui_AccDialog
 from selenium import webdriver
-from selenium.common.exceptions import ElementNotInteractableException
+from selenium.common.exceptions import NoSuchElementException
 import time
 from selenium.webdriver.common.by import By
 from accountLists import accounts
@@ -44,7 +44,7 @@ class MainWindow(QMainWindow):
 
         self.ui.pushButton.clicked.connect(self.changePW)
 
-        #self.ui.add.clicked.connect(self.addList)
+        # self.ui.add.clicked.connect(self.addList)
 
         self.ui.showAccBtn.clicked.connect(self.showAcc)
 
@@ -62,9 +62,7 @@ class MainWindow(QMainWindow):
         self.obj.label5.connect(self.okay5)
         self.obj.start()
 
-
-
-    #TODO
+    # TODO
     # def addList(self):
     #     dialog = QDialog()
     #     ui = Ui_Dialog()
@@ -81,8 +79,7 @@ class MainWindow(QMainWindow):
     #     else:
     #         print('Cancel')
 
-
-    #TODO
+    # TODO
     def showAcc(self):
         dialog = QDialog()
         ui = Ui_AccDialog()
@@ -94,9 +91,6 @@ class MainWindow(QMainWindow):
 
         dialog.show()
         dialog.exec_()
-
-
-
 
     def errorDialog(self, errorText):
         print(errorText)
@@ -150,9 +144,10 @@ class Worker(QThread):
         document.add_paragraph(str(datetime.datetime.now()))
         hdr_cells = table.rows[0].cells
         hdr_cells[0].text = 'User Account'
-        hdr_cells[1].text = 'Password'
+        hdr_cells[1].text = 'Password (also for IoT Ext. and Integration)'
 
         count = float(0)
+        self.progress.emit(count)
         while count < 100:
             for acc, address in accounts.items():
                 if self.accounts == acc:
@@ -165,13 +160,16 @@ class Worker(QThread):
                             count += 100 / b
                             page = "https://www2.industrysoftware.automation.siemens.com/webkey/"
                             options = webdriver.FirefoxOptions()
-                            options.add_argument('-headless')
-                            driver = webdriver.Firefox(executable_path='../webdriver/macOS/geckodriver', options=options)
+                            # options.add_argument('-headless')
+                            driver = webdriver.Firefox(executable_path='webdriver/macOS/geckodriver', options=options)
                             driver.implicitly_wait(30)
-                            driver.minimize_window()
+                            # driver.minimize_window()
                             driver.get(page)
 
+                            # time.sleep(4)
                             driver.find_element(By.XPATH, "//tr[5]/td[2]/ul/font/li/a/font").click()
+
+                            # time.sleep(4)
                             driver.find_element(By.XPATH, "//td[2]/input").click()
                             driver.find_element(By.NAME, "WebKey_Username").send_keys(user)
                             driver.find_element(By.NAME, "Existing_WebKey_Password").send_keys(self.currentPassword)
@@ -180,9 +178,27 @@ class Worker(QThread):
                             driver.find_element(By.NAME, "repass").click()
                             driver.find_element(By.NAME, "repass").send_keys(self.newPassword)
 
-                            #try:
                             driver.find_element(By.XPATH, "//div[3]/div[2]/div/form/fieldset/input").click()
-                            # except ElementNotInteractableException:
+                            time.sleep(3)
+
+                            if driver.find_element(By.XPATH, "//h2[contains(.,'WebKey Error')]"):
+                                self.message.emit(user)
+                                self.progress.emit(count)
+                                row_cells = table.add_row().cells
+                                row_cells[0].text = user
+                                row_cells[1].text = 'Wrong Password entered!'
+                                empty_cells = table.add_row().cells
+                                empty_cells[0].text = ''
+                                empty_cells[1].text = ''
+                                driver.quit()
+                                continue
+
+                            #if driver.find_element(By.XPATH, ):
+
+                            #if driver.find_element(By.XPATH, ):
+
+
+                            # except NoSuchElementException:
                             #     self.message.emit(user)
                             #     self.progress.emit(count)
                             #     row_cells = table.add_row().cells

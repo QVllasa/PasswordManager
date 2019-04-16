@@ -57,3 +57,1170 @@ bail@chrome://marionette/content/sync.js:224:64
 [Child 10452, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
 [Child 10452, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
 [Parent 1456, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 166
+1555446041185	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.9Jdy449u1hjK"
+*** You are running in headless mode.
+1555446042267	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446042267	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446042267	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446043190	Marionette	INFO	Listening on port 50568
+1555446043239	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555446048271	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446075733	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.WwdWxPuVhT3p"
+1555446076016	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446076016	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446076016	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446076856	Marionette	INFO	Listening on port 50627
+1555446076867	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446085293	Marionette	INFO	Stopped listening on port 50627
+1555446086574	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.5nLqcAKgmnwd"
+1555446086860	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446086860	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446086860	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446087713	Marionette	INFO	Listening on port 50674
+1555446087815	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446477208	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.spxr56voa88D"
+1555446477493	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446477493	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446477493	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446478325	Marionette	INFO	Listening on port 50781
+1555446478340	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446491699	Marionette	INFO	Stopped listening on port 50781
+[Parent 1591, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1555446492962	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.yQXeQSI2d4Ee"
+1555446493244	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446493244	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446493244	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446494109	Marionette	INFO	Listening on port 50834
+1555446494200	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446506849	Marionette	INFO	Stopped listening on port 50834
+1555446508116	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.q0an03YfQHHP"
+1555446508400	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446508401	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446508401	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446509255	Marionette	INFO	Listening on port 50885
+1555446509347	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446516498	Marionette	INFO	Stopped listening on port 50885
+1555446517761	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.sYixsjtK0eBH"
+1555446518059	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446518059	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446518059	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446518899	Marionette	INFO	Listening on port 50940
+1555446518994	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446525752	Marionette	INFO	Stopped listening on port 50940
+1555446527017	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.fDBHkJ13oFFP"
+1555446527307	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446527307	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446527307	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446528261	Marionette	INFO	Listening on port 50990
+1555446528363	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446540047	Marionette	INFO	Stopped listening on port 50990
+1555446541314	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.GT5QmBZTuLDQ"
+1555446541607	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446541607	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446541607	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446542443	Marionette	INFO	Listening on port 51038
+1555446542447	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555446551076	Marionette	INFO	Stopped listening on port 50674
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446561629	Marionette	INFO	Stopped listening on port 51038
+1555446562896	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.rMVGODZEoi5A"
+1555446563182	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446563182	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446563183	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446564043	Marionette	INFO	Listening on port 51087
+1555446564127	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446580681	Marionette	INFO	Stopped listening on port 51087
+1555446581948	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.C49IukqCR94a"
+1555446582273	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446582273	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446582273	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446583114	Marionette	INFO	Listening on port 51145
+1555446583178	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446591478	Marionette	INFO	Stopped listening on port 51145
+1555446592748	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.4dq5xUAFlqeq"
+1555446593031	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446593031	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446593031	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446593873	Marionette	INFO	Listening on port 51192
+1555446593885	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446600544	Marionette	INFO	Stopped listening on port 51192
+1555446601814	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.pJxuyyK0G2Lz"
+1555446602097	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446602098	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446602098	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446602941	Marionette	INFO	Listening on port 51234
+1555446602946	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446609058	Marionette	INFO	Stopped listening on port 51234
+1555446788800	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.5JI0pGEiwK6H"
+1555446789088	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446789088	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446789088	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446789936	Marionette	INFO	Listening on port 51338
+1555446790032	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446796344	Marionette	INFO	Stopped listening on port 51338
+1555446797615	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.8wNkYPWU7cmN"
+1555446797903	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446797903	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446797903	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446798858	Marionette	INFO	Listening on port 51384
+1555446798944	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446805751	Marionette	INFO	Stopped listening on port 51384
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x520011,name=PHttpChannel::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1555446807017	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.c9282IHErW3N"
+1555446807303	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446807303	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446807303	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446808161	Marionette	INFO	Listening on port 51430
+1555446808257	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446968586	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.TsnVh5WPm2Fg"
+1555446968868	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446968868	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446968868	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446969707	Marionette	INFO	Listening on port 51483
+1555446969716	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555446987853	Marionette	INFO	Stopped listening on port 51483
+1555446989120	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.BIvbdb8yIaNa"
+1555446989410	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555446989410	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555446989410	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555446990275	Marionette	INFO	Listening on port 51525
+1555446990347	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447032540	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.phD7ZPxrgt9H"
+1555447032829	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447032829	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447032829	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447033680	Marionette	INFO	Listening on port 51572
+1555447033771	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447053022	Marionette	INFO	Stopped listening on port 51430
+1555447055196	Marionette	INFO	Stopped listening on port 51525
+1555447057768	Marionette	INFO	Stopped listening on port 51572
+1555447069793	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.7hsRIT0laVZ8"
+1555447070077	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447070077	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447070077	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447070927	Marionette	INFO	Listening on port 51617
+1555447071027	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447092018	Marionette	INFO	Stopped listening on port 51617
+1555447093282	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.ptqlGbGFMTiU"
+1555447093566	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447093566	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447093566	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447094406	Marionette	INFO	Listening on port 51659
+1555447094414	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447113275	Marionette	INFO	Stopped listening on port 51659
+1555447114536	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.qhvgTaoCgexO"
+1555447114821	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447114821	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447114821	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447115661	Marionette	INFO	Listening on port 51706
+1555447115761	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447134094	Marionette	INFO	Stopped listening on port 51706
+1555447135357	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.p4cL0mTUPtxb"
+1555447135638	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447135638	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447135639	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447136487	Marionette	INFO	Listening on port 51749
+1555447136592	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447156135	Marionette	INFO	Stopped listening on port 51749
+1555447157401	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.DrMoHqENKVWI"
+1555447157682	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447157683	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447157683	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447158544	Marionette	INFO	Listening on port 51796
+1555447158641	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447177918	Marionette	INFO	Stopped listening on port 51796
+1555447179189	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.jp7JGHvtH0sZ"
+1555447179470	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447179471	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447179471	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447180322	Marionette	INFO	Listening on port 51839
+1555447180427	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447199464	Marionette	INFO	Stopped listening on port 51839
+1555447200731	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.HPBoVBczmzxC"
+1555447201023	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447201024	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447201024	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447201931	Marionette	INFO	Listening on port 51890
+1555447201975	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447221693	Marionette	INFO	Stopped listening on port 51890
+1555447222956	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.c71ZxdI0Jnfb"
+1555447223241	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447223241	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447223241	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447224094	Marionette	INFO	Listening on port 51936
+1555447224177	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447243138	Marionette	INFO	Stopped listening on port 51936
+1555447244410	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.emXPgP4HorVZ"
+1555447244695	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447244696	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447244696	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447245535	Marionette	INFO	Listening on port 51984
+1555447245548	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447262708	Marionette	INFO	Stopped listening on port 51984
+1555447263975	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.Jyu84PVBZfy3"
+1555447264286	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447264287	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447264287	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447265172	Marionette	INFO	Listening on port 52025
+1555447265197	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447285579	Marionette	INFO	Stopped listening on port 52025
+1555447340043	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.o3GUuFNWQUEv"
+1555447340327	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447340327	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447340327	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447341177	Marionette	INFO	Listening on port 52088
+1555447341279	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447412198	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.EEhSWNXrAakG"
+1555447412478	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447412478	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447412478	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447413327	Marionette	INFO	Listening on port 52139
+1555447413330	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447420045	Marionette	INFO	Stopped listening on port 52139
+1555447421304	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.3ICL0wnkzg99"
+1555447421589	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447421590	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447421590	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447422441	Marionette	INFO	Listening on port 52180
+1555447422532	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+JavaScript error: https://cdn.sstatic.net/clc/clc.min.js?v=04d772c81312, line 1: TypeError: a is null
+1555447748232	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.y6NRURzNM8gx"
+1555447748525	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447748525	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447748525	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447749376	Marionette	INFO	Listening on port 52395
+1555447749475	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447755780	Marionette	INFO	Stopped listening on port 52395
+1555447757043	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.gYDn9E9pDwDb"
+1555447757336	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447757337	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447757337	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447758244	Marionette	INFO	Listening on port 52440
+1555447758267	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447781650	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.RvrwWBC4TAJH"
+1555447781942	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447781942	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447781942	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447782793	Marionette	INFO	Listening on port 52483
+1555447782883	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447788645	Marionette	INFO	Stopped listening on port 52483
+1555447789918	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.E66lWKfwWmG7"
+1555447790205	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447790205	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447790205	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447791060	Marionette	INFO	Listening on port 52535
+1555447791155	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447793300	Marionette	INFO	Stopped listening on port 52440
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+1555447794566	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.mrGy12H0b98P"
+1555447794848	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447794848	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447794848	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447795703	Marionette	INFO	Listening on port 52579
+1555447795808	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript error: chrome://marionette/content/proxy.js, line 275: NS_ERROR_ILLEGAL_VALUE
+JavaScript error: chrome://marionette/content/proxy.js, line 275: NS_ERROR_ILLEGAL_VALUE
+1555447921665	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.8t46ZSSIgVEj"
+1555447921950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447921950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447921950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447922814	Marionette	INFO	Listening on port 52631
+1555447922903	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+1555447934011	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.Dp7CRGbWvwLG"
+1555447934338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447934338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447934338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447935188	Marionette	INFO	Listening on port 52671
+1555447935242	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447956184	Marionette	INFO	Stopped listening on port 52631
+1555447957461	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.Lww2woDJuh7m"
+1555447957745	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447957745	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447957745	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447958575	Marionette	INFO	Listening on port 52711
+1555447958595	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+1555447968998	Marionette	INFO	Stopped listening on port 52671
+1555447970266	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.dvcTQNoNDfGG"
+1555447970552	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447970552	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447970553	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447971401	Marionette	INFO	Listening on port 52753
+1555447971498	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555447992089	Marionette	INFO	Stopped listening on port 52711
+1555447993356	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.hm9YRnbnAJla"
+1555447993654	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555447993654	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555447993654	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555447994526	Marionette	INFO	Listening on port 52796
+1555447994585	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+1555448005567	Marionette	INFO	Stopped listening on port 52753
+1555448006830	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.6YymEatD5iIJ"
+1555448007119	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448007119	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448007120	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448007968	Marionette	INFO	Listening on port 52841
+1555448008050	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448022742	Marionette	INFO	Stopped listening on port 52088
+1555448024699	Marionette	INFO	Stopped listening on port 52180
+1555448026490	Marionette	INFO	Stopped listening on port 52535
+1555448028096	Marionette	INFO	Stopped listening on port 52579
+1555448029738	Marionette	INFO	Stopped listening on port 52796
+1555448031701	Marionette	INFO	Stopped listening on port 52841
+1555448120423	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.ONydyn9kNgIL"
+1555448120706	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448120707	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448120707	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448121555	Marionette	INFO	Listening on port 52892
+1555448121656	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1555448157932	Marionette	INFO	Stopped listening on port 52892
+1555448159201	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.OPcTQ5Pv1h2z"
+1555448159485	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448159485	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448159485	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448160334	Marionette	INFO	Listening on port 52938
+1555448160436	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448213192	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.bHI4qE6aOCHg"
+1555448213471	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448213472	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448213472	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448214312	Marionette	INFO	Listening on port 52982
+1555448214329	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448219048	Marionette	INFO	Stopped listening on port 52982
+1555448220320	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.kZdtYcNWpR09"
+1555448220605	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448220606	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448220606	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448221450	Marionette	INFO	Listening on port 53024
+1555448221552	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448225693	Marionette	INFO	Stopped listening on port 53024
+1555448226963	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.clY50GnYOnSw"
+1555448227279	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448227279	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448227279	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448228090	Marionette	INFO	Listening on port 53065
+1555448228096	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448233070	Marionette	INFO	Stopped listening on port 53065
+1555448234333	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.L8pPzfFmOoki"
+1555448234615	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448234615	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448234615	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448235467	Marionette	INFO	Listening on port 53105
+1555448235560	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448239790	Marionette	INFO	Stopped listening on port 53105
+1555448241056	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.mZTr1APt8vfe"
+1555448241341	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448241341	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448241341	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448242215	Marionette	INFO	Listening on port 53149
+1555448242286	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448246986	Marionette	INFO	Stopped listening on port 53149
+1555448248250	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.aFmwsKXHExkt"
+1555448248535	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448248535	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448248536	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448249371	Marionette	INFO	Listening on port 53189
+1555448249388	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448258335	Marionette	INFO	Stopped listening on port 53189
+1555448259601	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.k8kdubr9zCDl"
+1555448259897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448259897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448259897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448260741	Marionette	INFO	Listening on port 53235
+1555448260834	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448265402	Marionette	INFO	Stopped listening on port 53235
+1555448266665	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.dQmXsUdzbLpA"
+1555448266950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448266950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448266950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448267904	Marionette	INFO	Listening on port 53278
+1555448268001	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448272705	Marionette	INFO	Stopped listening on port 53278
+1555448273978	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.hhvDJI25gxiS"
+1555448274262	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448274263	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448274263	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448275096	Marionette	INFO	Listening on port 53323
+1555448275110	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448279571	Marionette	INFO	Stopped listening on port 53323
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1555448280833	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.JwzvDaJkA896"
+1555448281115	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448281116	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448281116	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448281973	Marionette	INFO	Listening on port 53363
+1555448282066	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448286939	Marionette	INFO	Stopped listening on port 53363
+1555448378022	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.C8V0rKhkTg7h"
+1555448378307	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448378307	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448378308	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448379160	Marionette	INFO	Listening on port 53417
+1555448379252	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448386009	Marionette	INFO	Stopped listening on port 53417
+1555448387274	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.iprMEYy2HJWQ"
+1555448387557	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448387557	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448387557	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448388415	Marionette	INFO	Listening on port 53460
+1555448388501	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448399379	Marionette	INFO	Stopped listening on port 53460
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x520011,name=PHttpChannel::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1555448400645	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.GrRY44tSs3VZ"
+1555448400929	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448400929	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448400929	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448401772	Marionette	INFO	Listening on port 53511
+1555448401783	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448408036	Marionette	INFO	Stopped listening on port 53511
+1555448409304	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.XrZ8LFAnqF54"
+1555448409588	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448409589	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448409589	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448410429	Marionette	INFO	Listening on port 53550
+1555448410437	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448416344	Marionette	INFO	Stopped listening on port 53550
+1555448417613	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.0WArClPTtJEr"
+1555448417897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448417897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448417897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448418748	Marionette	INFO	Listening on port 53591
+1555448418854	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448423599	Marionette	INFO	Stopped listening on port 53591
+1555448424867	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.Lz4LoMIVZ9dt"
+1555448425151	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448425152	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448425152	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448425998	Marionette	INFO	Listening on port 53633
+1555448426013	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448431835	Marionette	INFO	Stopped listening on port 53633
+1555448433107	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.xUWz7GSTIvq9"
+1555448433390	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448433390	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448433390	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448434242	Marionette	INFO	Listening on port 53675
+1555448434345	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448440539	Marionette	INFO	Stopped listening on port 53675
+1555448441809	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.4LgKD4grWkz2"
+1555448442093	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448442093	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448442093	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448442935	Marionette	INFO	Listening on port 53716
+1555448442948	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448449653	Marionette	INFO	Stopped listening on port 53716
+1555448450927	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.AQBRiIhPeaSJ"
+1555448451211	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448451211	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448451211	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448452054	Marionette	INFO	Listening on port 53758
+1555448452067	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448458772	Marionette	INFO	Stopped listening on port 53758
+1555448460035	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.VR7IQRRJPv0H"
+1555448460327	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448460327	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448460327	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448461168	Marionette	INFO	Listening on port 53798
+1555448461265	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448467846	Marionette	INFO	Stopped listening on port 53798
+1555448498545	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.hZ01usJOrdEp"
+1555448498848	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448498848	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448498848	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448499698	Marionette	INFO	Listening on port 53845
+1555448499779	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448510115	Marionette	INFO	Stopped listening on port 53845
+1555448511384	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.UWaNXAy2sHxq"
+1555448511668	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448511668	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448511668	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448512511	Marionette	INFO	Listening on port 53888
+1555448512516	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448525981	Marionette	INFO	Stopped listening on port 53888
+1555448527291	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.nZvFbBMbhmkU"
+1555448527575	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448527575	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448527575	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448528415	Marionette	INFO	Listening on port 53933
+1555448528515	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448538413	Marionette	INFO	Stopped listening on port 53933
+1555448539683	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.ogsq73T5gZ6c"
+1555448539963	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448539964	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448539964	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448540806	Marionette	INFO	Listening on port 53977
+1555448540819	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448550014	Marionette	INFO	Stopped listening on port 53977
+1555448551288	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.rPRTSFrd7zOG"
+1555448551571	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448551571	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448551571	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448552421	Marionette	INFO	Listening on port 54018
+1555448552515	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448562344	Marionette	INFO	Stopped listening on port 54018
+1555448563619	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.JcGQFCbq669C"
+1555448563903	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448563904	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448563904	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448564757	Marionette	INFO	Listening on port 54060
+1555448564851	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448574535	Marionette	INFO	Stopped listening on port 54060
+1555448575807	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.511ZtZu8rT9l"
+1555448576091	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448576092	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448576092	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448576926	Marionette	INFO	Listening on port 54101
+1555448576941	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448586984	Marionette	INFO	Stopped listening on port 54101
+1555448588356	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.W9XjesO5wKm1"
+1555448588639	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448588639	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448588639	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448589481	Marionette	INFO	Listening on port 54141
+1555448589489	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448599873	Marionette	INFO	Stopped listening on port 54141
+1555448601143	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.an6rylLJVvKS"
+1555448601489	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448601489	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448601489	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448602481	Marionette	INFO	Listening on port 54189
+1555448602585	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448611938	Marionette	INFO	Stopped listening on port 54189
+1555448613202	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.OH5r1o5MvmdD"
+1555448613502	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448613502	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448613502	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448614369	Marionette	INFO	Listening on port 54238
+1555448614442	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555448624539	Marionette	INFO	Stopped listening on port 54238
+1555448654600	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.XC79qQEMHxYg"
+1555448654883	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448654883	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448654884	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448655725	Marionette	INFO	Listening on port 54287
+1555448655829	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript error: chrome://marionette/content/proxy.js, line 275: NS_ERROR_ILLEGAL_VALUE
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1555448972800	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.vSjdiJ81FrOt"
+1555448973083	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555448973084	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555448973084	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555448973933	Marionette	INFO	Listening on port 54361
+1555448974026	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1555449009606	Marionette	INFO	Stopped listening on port 52938
+1555449011539	Marionette	INFO	Stopped listening on port 54287
+1555449013278	Marionette	INFO	Stopped listening on port 54361
+1555449014547	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.W0adKSiauYNm"
+1555449014837	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555449014837	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555449014837	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555449015693	Marionette	INFO	Listening on port 54408
+1555449015783	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1555449056822	Marionette	INFO	Stopped listening on port 54408
+1555449058085	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.ohlkVMqsBN24"
+1555449058375	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1555449058376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1555449058376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1555449059243	Marionette	INFO	Listening on port 54463
+1555449059317	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript error: chrome://marionette/content/proxy.js, line 275: NS_ERROR_ILLEGAL_VALUE
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
