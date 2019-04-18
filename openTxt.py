@@ -3,11 +3,14 @@ accounts = {}
 a = 0
 s = []
 with open('accountLists.txt', 'r+') as f:
-    s = []
 
     for i in f:
-        if not i:
-            a += 1
+        for j in f:
+            if i:
+                if '=' in i and '=' in j:
+                    print (i, j)
+                    continue
+
 
 
 

@@ -1224,3 +1224,7 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
 
+1555456567633	Marionette	INFO	Stopped listening on port 54463
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

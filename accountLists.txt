@@ -1,3 +1,4 @@
+connectivity01_10 =
 connectivity-01@mindsphere.io,
 connectivity-02@mindsphere.io,
 connectivity-03@mindsphere.io,
@@ -9,6 +10,7 @@ connectivity-08@mindsphere.io,
 connectivity-09@mindsphere.io,
 connectivity-10@mindsphere.io
 
+connectivity11_20 =
 connectivity-11@mindsphere.io,
 connectivity-12@mindsphere.io,
 connectivity-13@mindsphere.io,
@@ -20,6 +22,7 @@ connectivity-18@mindsphere.io,
 connectivity-19@mindsphere.io,
 connectivity-20@mindsphere.io
 
+connectivity21_30 =
 connectivity-21@mindsphere.io,
 connectivity-22@mindsphere.io,
 connectivity-23@mindsphere.io,
@@ -31,6 +34,7 @@ connectivity-28@mindsphere.io,
 connectivity-29@mindsphere.io,
 connectivity-30@mindsphere.io
 
+connectivity31_40 =
 connectivity-31@mindsphere.io,
 connectivity-32@mindsphere.io,
 connectivity-33@mindsphere.io,
