@@ -54,7 +54,7 @@ class MainWindow(QMainWindow):
 
         self.ui.addButton.clicked.connect(self.addList)
 
-        # self.ui.showAccBtn.clicked.connect(self.showAcc)
+        self.ui.showButton.clicked.connect(self.showAcc)
 
     def changePW(self):
         self.currentBrowser = self.ui.comboBox_2.currentText()
@@ -72,34 +72,46 @@ class MainWindow(QMainWindow):
 
     # TODO
     def addList(self):
-        dialog = QDialog()
-        ui = Ui_Dialog()
-        ui.setupUi(dialog)
-        dialog.show()
-        rsp = dialog.exec_()
+        self.Adddialog = QDialog()
+        self.uiAddDialog = Ui_Dialog()
+        self.uiAddDialog.setupUi(self.Adddialog)
+        self.Adddialog.show()
+        rsp = self.Adddialog.exec_()
         if rsp == QDialog.Accepted:
-            if ui.listName.text():
-                pass
-            # for i in range(0, ui.accTable.rowCount()):
-            #     pass
-            # if ui.accTable.item(i, 0):
-            #     print(ui.accTable.item(i, 0).text())
+            listname = self.uiAddDialog.listName.text()
+            if listname:
+                if not listname in self.accounts:
+                    self.accounts[listname] = []
+                    print(self.accounts)
+            for i in range(0, self.uiAddDialog.accTable.rowCount()):
+                if not i:
+                    print('leer')
+
+
         else:
             print('Cancel')
 
     # TODO
     def showAcc(self):
-        self.dialog = QDialog()
-        self.uiDialog = Ui_AccDialog()
-        self.uiDialog.setupUi(self.dialog)
+        self.Accdialog = QDialog()
+        self.uiAccDialog = Ui_AccDialog()
+        self.uiAccDialog.setupUi(self.Accdialog)
         for key, value in self.accounts.items():
-            self.uiDialog.comboBox.addItem(key)
-            self.uiDialog.comboBox.currentTextChanged.connect(self.on_comboBox_changed)
-        self.dialog.show()
-        self.dialog.exec_()
+            self.uiAccDialog.comboBox.addItem(key)
+        self.uiAccDialog.comboBox.currentTextChanged.connect(self.on_comboBox_changed)
+        self.Accdialog.show()
+        self.Accdialog.exec_()
 
     def on_comboBox_changed(self, key):
-        self.uiDialog.listWidget.setCurrentItem()
+        while self.uiAccDialog.tableWidget.rowCount() > 0:
+            self.uiAccDialog.tableWidget.removeRow(0)
+        if self.uiAccDialog.comboBox.currentText() == key:
+            for i, j in self.accounts.items():
+                if key == i:
+                    for s in j:
+                        row = self.uiAccDialog.tableWidget.rowCount()
+                        self.uiAccDialog.tableWidget.insertRow(row)
+                        self.uiAccDialog.tableWidget.setItem(row, 0, QTableWidgetItem(str(s)))
 
     def errorDialog(self, errorText):
         print(errorText)

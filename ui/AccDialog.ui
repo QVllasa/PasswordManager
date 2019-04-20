@@ -43,7 +43,22 @@
      <widget class="QComboBox" name="comboBox"/>
     </item>
     <item>
-     <widget class="QListWidget" name="listWidget"/>
+     <widget class="QTableWidget" name="tableWidget">
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Neue Spalte</string>
+       </property>
+      </column>
+     </widget>
     </item>
    </layout>
   </widget>

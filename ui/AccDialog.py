@@ -27,9 +27,16 @@ class Ui_AccDialog(object):
         self.comboBox = QtWidgets.QComboBox(self.verticalLayoutWidget)
         self.comboBox.setObjectName("comboBox")
         self.verticalLayout.addWidget(self.comboBox)
-        self.listWidget = QtWidgets.QListWidget(self.verticalLayoutWidget)
-        self.listWidget.setObjectName("listWidget")
-        self.verticalLayout.addWidget(self.listWidget)
+        self.tableWidget = QtWidgets.QTableWidget(self.verticalLayoutWidget)
+        self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.setColumnCount(1)
+        self.tableWidget.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, item)
+        self.tableWidget.horizontalHeader().setVisible(False)
+        self.tableWidget.horizontalHeader().setCascadingSectionResizes(False)
+        self.tableWidget.horizontalHeader().setStretchLastSection(True)
+        self.verticalLayout.addWidget(self.tableWidget)
 
         self.retranslateUi(AccDialog)
         self.buttonBox.accepted.connect(AccDialog.accept)
@@ -39,5 +46,7 @@ class Ui_AccDialog(object):
     def retranslateUi(self, AccDialog):
         _translate = QtCore.QCoreApplication.translate
         AccDialog.setWindowTitle(_translate("AccDialog", "Show Accounts"))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("AccDialog", "Neue Spalte"))
 
 

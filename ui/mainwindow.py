@@ -96,9 +96,6 @@ class Ui_MainWindow(object):
         self.addButton = QtWidgets.QPushButton(self.gridLayoutWidget_3)
         self.addButton.setObjectName("addButton")
         self.gridLayout_3.addWidget(self.addButton, 4, 0, 1, 1)
-        self.remButton = QtWidgets.QPushButton(self.gridLayoutWidget_3)
-        self.remButton.setObjectName("remButton")
-        self.gridLayout_3.addWidget(self.remButton, 4, 1, 1, 1)
         MainWindow.setCentralWidget(self.centralWidget)
         self.menuBar = QtWidgets.QMenuBar(MainWindow)
         self.menuBar.setGeometry(QtCore.QRect(0, 0, 441, 22))
@@ -126,6 +123,5 @@ class Ui_MainWindow(object):
         self.pushButton.setText(_translate("MainWindow", "Change Passwords"))
         self.showButton.setText(_translate("MainWindow", "Show"))
         self.addButton.setText(_translate("MainWindow", "Add"))
-        self.remButton.setText(_translate("MainWindow", "Remove"))
 
 
