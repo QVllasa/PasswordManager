@@ -129,13 +129,6 @@
        </property>
       </spacer>
      </item>
-     <item row="4" column="1">
-      <widget class="QPushButton" name="add">
-       <property name="text">
-        <string>Add</string>
-       </property>
-      </widget>
-     </item>
      <item row="2" column="0" colspan="3">
       <widget class="QProgressBar" name="progressBar">
        <property name="autoFillBackground">
@@ -187,6 +180,27 @@
         </size>
        </property>
       </spacer>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="showButton">
+       <property name="text">
+        <string>Show</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="addButton">
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="remButton">
+       <property name="text">
+        <string>Remove</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>

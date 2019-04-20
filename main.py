@@ -52,7 +52,7 @@ class MainWindow(QMainWindow):
 
         self.ui.pushButton.clicked.connect(self.changePW)
 
-        self.ui.add.clicked.connect(self.addList)
+        self.ui.addButton.clicked.connect(self.addList)
 
         # self.ui.showAccBtn.clicked.connect(self.showAcc)
 
@@ -95,11 +95,6 @@ class MainWindow(QMainWindow):
         for key, value in self.accounts.items():
             self.uiDialog.comboBox.addItem(key)
             self.uiDialog.comboBox.currentTextChanged.connect(self.on_comboBox_changed)
-            #if self.uiDialog.comboBox.currentText() == key:
-             #   for acc in value:
-              #      print(acc)
-                #
-
         self.dialog.show()
         self.dialog.exec_()
 
@@ -163,12 +158,12 @@ class Worker(QThread):
         count = float(0)
         self.progress.emit(count)
         while count < 100:
-            for acc, address in accounts.items():
+            for acc, address in self.accounts.items():
                 if self.accounts == acc:
                     print(acc)
-                    for user in accounts[acc]:
+                    for user in self.accounts[acc]:
                         print(acc)
-                        b = len(accounts[acc])
+                        b = len(self.accounts[acc])
                         print(b)
                         if self.currentBrowser == 'Firefox':
                             count += 100 / b
@@ -220,7 +215,7 @@ class Worker(QThread):
                         self.progress.emit(count)
                         print(str(count) + '%')
         self.finished.emit(self.newPassword)
-        for acc in accounts:
+        for acc in self.accounts:
             if acc == self.accounts:
                 document.save(acc + '.docx')
         self.docFinish.emit('Word file with all changed accounts created and saved in application folder! :)')

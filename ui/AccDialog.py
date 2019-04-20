@@ -38,6 +38,6 @@ class Ui_AccDialog(object):
 
     def retranslateUi(self, AccDialog):
         _translate = QtCore.QCoreApplication.translate
-        AccDialog.setWindowTitle(_translate("AccDialog", "AccDialog"))
+        AccDialog.setWindowTitle(_translate("AccDialog", "Show Accounts"))
 
 

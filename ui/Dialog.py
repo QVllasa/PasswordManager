@@ -92,7 +92,7 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        Dialog.setWindowTitle(_translate("Dialog", "Add Accounts"))
         self.label.setText(_translate("Dialog", "List Name"))
         self.label_2.setText(_translate("Dialog", "Accounts"))
         item = self.accTable.verticalHeaderItem(0)
