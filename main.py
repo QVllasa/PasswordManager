@@ -3,34 +3,36 @@ from qtpy.QtWidgets import *
 from PyQt5.QtCore import *
 from ui.mainwindow import Ui_MainWindow
 from ui.Dialog import Ui_Dialog
-#from ui.AccDialog import Ui_AccDialog
+from ui.AccDialog import Ui_AccDialog
 from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
-from accountLists import accounts
 from docx import Document
 import datetime
 
 app = QApplication(sys.argv)
 
 
-
-
-
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
 
-
-
-
-
-
+        self.accounts = {}
+        with open('accountLists.txt', 'r+') as f:
+            d = []
+            for i in f:
+                if '=' in i:
+                    d = i.strip().split(' ')
+                    self.accounts[d[0]] = []
+                elif '=' not in i and not len(i.strip()) == 0:
+                    i = i.strip()
+                    self.accounts[d[0]].append(i.strip())
+                else:
+                    continue
 
         self.currentBrowser = ''
         self.currentPassword = ''
         self.newPassword = ''
-        self.accounts = ''
 
         self.finish_dialog = QMessageBox()
         self.error_dialog = QMessageBox()
@@ -39,7 +41,7 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        for key, value in accounts.items():
+        for key, value in self.accounts.items():
             self.ui.comboBox.addItem(key)
 
         browsers = ['Chrome', 'Firefox']
@@ -52,7 +54,7 @@ class MainWindow(QMainWindow):
 
         self.ui.add.clicked.connect(self.addList)
 
-        #self.ui.showAccBtn.clicked.connect(self.showAcc)
+        # self.ui.showAccBtn.clicked.connect(self.showAcc)
 
     def changePW(self):
         self.currentBrowser = self.ui.comboBox_2.currentText()
@@ -77,35 +79,32 @@ class MainWindow(QMainWindow):
         rsp = dialog.exec_()
         if rsp == QDialog.Accepted:
             if ui.listName.text():
-
-
-            for i in range(0, ui.accTable.rowCount()):
-                if ui.accTable.item(i, 0):
-                    print(ui.accTable.item(i, 0).text())
+                pass
+            # for i in range(0, ui.accTable.rowCount()):
+            #     pass
+            # if ui.accTable.item(i, 0):
+            #     print(ui.accTable.item(i, 0).text())
         else:
             print('Cancel')
 
     # TODO
-    # def showAcc(self):
-    #     self.dialog = QDialog()
-    #     self.uiDialog = Ui_AccDialog()
-    #     self.uiDialog.setupUi(self.dialog)
-    #     for key, value in accounts.items():
-    #         self.uiDialog.comboBox.addItem(key)
-    #         self.uiDialog.comboBox.currentTextChanged.connect(self.on_comboBox_changed)
-    #         #if self.uiDialog.comboBox.currentText() == key:
-    #          #   for acc in value:
-    #           #      print(acc)
-    #             #
-    #
-    #     self.dialog.show()
-    #     self.dialog.exec_()
-    #
-    # def on_comboBox_changed(self, key):
-    #     self.uiDialog.listWidget.setCurrentItem()
+    def showAcc(self):
+        self.dialog = QDialog()
+        self.uiDialog = Ui_AccDialog()
+        self.uiDialog.setupUi(self.dialog)
+        for key, value in self.accounts.items():
+            self.uiDialog.comboBox.addItem(key)
+            self.uiDialog.comboBox.currentTextChanged.connect(self.on_comboBox_changed)
+            #if self.uiDialog.comboBox.currentText() == key:
+             #   for acc in value:
+              #      print(acc)
+                #
 
+        self.dialog.show()
+        self.dialog.exec_()
 
-
+    def on_comboBox_changed(self, key):
+        self.uiDialog.listWidget.setCurrentItem()
 
     def errorDialog(self, errorText):
         print(errorText)
@@ -203,12 +202,9 @@ class Worker(QThread):
                                 driver.quit()
                                 continue
 
-                            #if driver.find_element(By.XPATH, ):
+                            # if driver.find_element(By.XPATH, ):
 
-                            #if driver.find_element(By.XPATH, ):
-
-
-
+                            # if driver.find_element(By.XPATH, ):
 
                             self.label4.emit('OK')
                             self.label5.emit('OK')
