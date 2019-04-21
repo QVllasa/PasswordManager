@@ -18,7 +18,7 @@ class MainWindow(QMainWindow):
         super().__init__(parent)
 
         self.accounts = {}
-        with open('accountLists.txt', 'r+') as f:
+        with open('accountLists.txt', 'r') as f:
             d = []
             for i in f:
                 if '=' in i:
@@ -56,6 +56,7 @@ class MainWindow(QMainWindow):
 
         self.ui.showButton.clicked.connect(self.showAcc)
 
+
     def changePW(self):
         self.currentBrowser = self.ui.comboBox_2.currentText()
         self.currentPassword = self.ui.inputCurrent.text()
@@ -76,20 +77,33 @@ class MainWindow(QMainWindow):
         self.uiAddDialog = Ui_Dialog()
         self.uiAddDialog.setupUi(self.Adddialog)
         self.Adddialog.show()
+        self.uiAddDialog.addRow.clicked.connect(self.addCell)
         rsp = self.Adddialog.exec_()
         if rsp == QDialog.Accepted:
             listname = self.uiAddDialog.listName.text()
             if listname:
                 if not listname in self.accounts:
                     self.accounts[listname] = []
+                    with open('accountLists.txt', 'a') as f:
+                        f.write(listname + ' ' + '=\n')
                     print(self.accounts)
             for i in range(0, self.uiAddDialog.accTable.rowCount()):
-                if not i:
+                if not self.uiAddDialog.accTable.item(i, 0).text() == None:
+                    s = self.uiAddDialog.accTable.item(i, 0).text()
+                    print(s)
+
+                else:
                     print('leer')
 
 
         else:
             print('Cancel')
+
+    def addCell(self):
+        row = self.uiAddDialog.accTable.rowCount()
+        self.uiAddDialog.accTable.insertRow(row)
+
+
 
     # TODO
     def showAcc(self):
