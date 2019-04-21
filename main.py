@@ -33,29 +33,23 @@ class MainWindow(QMainWindow):
         self.currentBrowser = ''
         self.currentPassword = ''
         self.newPassword = ''
-
         self.finish_dialog = QMessageBox()
         self.error_dialog = QMessageBox()
         self.docx_dialog = QMessageBox()
-
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-
-        for key, value in self.accounts.items():
-            self.ui.comboBox.addItem(key)
-
+        self.addCombo()
         browsers = ['Chrome', 'Firefox']
         self.ui.comboBox_2.addItems(browsers)
-
         self.ui.label_5.hide()
         self.ui.label_4.hide()
-
         self.ui.pushButton.clicked.connect(self.changePW)
-
         self.ui.addButton.clicked.connect(self.addList)
-
         self.ui.showButton.clicked.connect(self.showAcc)
 
+    def addCombo(self):
+        for key, value in self.accounts.items():
+            self.ui.comboBox.addItem(key)
 
     def changePW(self):
         self.currentBrowser = self.ui.comboBox_2.currentText()
@@ -71,7 +65,6 @@ class MainWindow(QMainWindow):
         self.obj.label5.connect(self.okay5)
         self.obj.start()
 
-    # TODO
     def addList(self):
         self.Adddialog = QDialog()
         self.uiAddDialog = Ui_Dialog()
@@ -85,13 +78,13 @@ class MainWindow(QMainWindow):
                 if not listname in self.accounts:
                     self.accounts[listname] = []
                     with open('accountLists.txt', 'a') as f:
-                        f.write(listname + ' ' + '=\n')
+                        f.write('\n' + listname + ' ' + '=\n')
                     print(self.accounts)
             for i in range(0, self.uiAddDialog.accTable.rowCount()):
                 if not self.uiAddDialog.accTable.item(i, 0) == None:
                     s = self.uiAddDialog.accTable.item(i, 0).text()
                     with open('accountLists.txt', 'a') as f:
-                        f.write(s+'\n')
+                        f.write(s + '\n')
 
                 else:
                     print('leer')
@@ -104,15 +97,14 @@ class MainWindow(QMainWindow):
         row = self.uiAddDialog.accTable.rowCount()
         self.uiAddDialog.accTable.insertRow(row)
 
-
-
-    # TODO
     def showAcc(self):
         self.Accdialog = QDialog()
         self.uiAccDialog = Ui_AccDialog()
         self.uiAccDialog.setupUi(self.Accdialog)
         for key, value in self.accounts.items():
             self.uiAccDialog.comboBox.addItem(key)
+        if self.uiAccDialog.comboBox.currentText() in self.accounts:
+            self.on_comboBox_changed(self.uiAccDialog.comboBox.currentText())
         self.uiAccDialog.comboBox.currentTextChanged.connect(self.on_comboBox_changed)
         self.Accdialog.show()
         self.Accdialog.exec_()
@@ -192,53 +184,54 @@ class Worker(QThread):
                         print(acc)
                         b = len(self.accounts[acc])
                         print(b)
+                        count += 100 / b
+                        page = "https://www2.industrysoftware.automation.siemens.com/webkey/"
+                        options = webdriver.ChromeOptions()
+                        driver = webdriver.Chrome(executable_path='webdriver/macOS/geckodriver',
+                                                  options=options)
                         if self.currentBrowser == 'Firefox':
-                            count += 100 / b
-                            page = "https://www2.industrysoftware.automation.siemens.com/webkey/"
                             options = webdriver.FirefoxOptions()
-                            # options.add_argument('-headless')
-                            driver = webdriver.Firefox(executable_path='webdriver/macOS/geckodriver', options=options)
-                            driver.implicitly_wait(30)
-                            # driver.minimize_window()
-                            driver.get(page)
-                            driver.find_element(By.XPATH, "//tr[5]/td[2]/ul/font/li/a/font").click()
-                            driver.find_element(By.XPATH, "//td[2]/input").click()
-                            driver.find_element(By.NAME, "WebKey_Username").send_keys(user)
-                            driver.find_element(By.NAME, "Existing_WebKey_Password").send_keys(self.currentPassword)
-                            driver.find_element(By.NAME, "pass").click()
-                            driver.find_element(By.NAME, "pass").send_keys(self.newPassword)
-                            driver.find_element(By.NAME, "repass").click()
-                            driver.find_element(By.NAME, "repass").send_keys(self.newPassword)
-                            driver.find_element(By.XPATH, "//div[3]/div[2]/div/form/fieldset/input").click()
-                            time.sleep(3)
-
-                            if driver.find_element(By.XPATH, "//h2[contains(.,'WebKey Error')]"):
-                                self.message.emit(user)
-                                self.progress.emit(count)
-                                row_cells = table.add_row().cells
-                                row_cells[0].text = user
-                                row_cells[1].text = 'Wrong Password entered!'
-                                empty_cells = table.add_row().cells
-                                empty_cells[0].text = ''
-                                empty_cells[1].text = ''
-                                driver.quit()
-                                continue
-
-                            # if driver.find_element(By.XPATH, ):
-
-                            # if driver.find_element(By.XPATH, ):
-
-                            self.label4.emit('OK')
-                            self.label5.emit('OK')
-                            driver.quit()
-
+                            driver = webdriver.Firefox(executable_path='webdriver/macOS/geckodriver',
+                                                       options=options)
+                        options.add_argument('-headless')  # run in background
+                        driver.implicitly_wait(30)
+                        # driver.minimize_window()
+                        driver.get(page)
+                        driver.find_element(By.XPATH, "//tr[5]/td[2]/ul/font/li/a/font").click()
+                        driver.find_element(By.XPATH, "//td[2]/input").click()
+                        driver.find_element(By.NAME, "WebKey_Username").send_keys(user)
+                        driver.find_element(By.NAME, "Existing_WebKey_Password").send_keys(self.currentPassword)
+                        driver.find_element(By.NAME, "pass").click()
+                        driver.find_element(By.NAME, "pass").send_keys(self.newPassword)
+                        driver.find_element(By.NAME, "repass").click()
+                        driver.find_element(By.NAME, "repass").send_keys(self.newPassword)
+                        driver.find_element(By.XPATH, "//div[3]/div[2]/div/form/fieldset/input").click()
+                        time.sleep(3)
+                        if driver.find_element(By.XPATH, "//h2[contains(.,'WebKey Error')]"):
+                            self.message.emit(user)
+                            self.progress.emit(count)
                             row_cells = table.add_row().cells
                             row_cells[0].text = user
-                            row_cells[1].text = self.newPassword
+                            row_cells[1].text = 'Wrong Password entered!'
                             empty_cells = table.add_row().cells
                             empty_cells[0].text = ''
                             empty_cells[1].text = ''
+                            driver.quit()
+                            continue
 
+                        # if driver.find_element(By.XPATH, ):
+
+                        # if driver.find_element(By.XPATH, ):
+
+                        self.label4.emit('OK')
+                        self.label5.emit('OK')
+                        driver.quit()
+                        row_cells = table.add_row().cells
+                        row_cells[0].text = user
+                        row_cells[1].text = self.newPassword
+                        empty_cells = table.add_row().cells
+                        empty_cells[0].text = ''
+                        empty_cells[1].text = ''
                         self.progress.emit(count)
                         print(str(count) + '%')
         self.finished.emit(self.newPassword)
