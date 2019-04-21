@@ -218,7 +218,7 @@ class Worker(QThread):
                             empty_cells[1].text = ''
                             driver.quit()
                             continue
-
+#TODO
                         # if driver.find_element(By.XPATH, ):
 
                         # if driver.find_element(By.XPATH, ):
