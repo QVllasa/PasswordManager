@@ -88,9 +88,10 @@ class MainWindow(QMainWindow):
                         f.write(listname + ' ' + '=\n')
                     print(self.accounts)
             for i in range(0, self.uiAddDialog.accTable.rowCount()):
-                if not self.uiAddDialog.accTable.item(i, 0).text() == None:
+                if not self.uiAddDialog.accTable.item(i, 0) == None:
                     s = self.uiAddDialog.accTable.item(i, 0).text()
-                    print(s)
+                    with open('accountLists.txt', 'a') as f:
+                        f.write(s+'\n')
 
                 else:
                     print('leer')
