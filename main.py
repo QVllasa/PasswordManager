@@ -7,6 +7,7 @@ from ui.AccDialog import Ui_AccDialog
 from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
 from docx import Document
 import datetime
 
@@ -55,8 +56,8 @@ class MainWindow(QMainWindow):
         self.currentBrowser = self.ui.comboBox_2.currentText()
         self.currentPassword = self.ui.inputCurrent.text()
         self.newPassword = self.ui.inputNew.text()
-        self.accounts = self.ui.comboBox.currentText()
-        self.obj = Worker(self.accounts, self.currentBrowser, self.currentPassword, self.newPassword)
+        self.account = self.ui.comboBox.currentText()
+        self.obj = Worker(self.account, self.currentBrowser, self.currentPassword, self.newPassword, self.accounts)
         self.obj.message.connect(self.errorDialog)
         self.obj.finished.connect(self.done)
         self.obj.progress.connect(self.loadingBar)
@@ -125,7 +126,7 @@ class MainWindow(QMainWindow):
     def errorDialog(self, errorText):
         print(errorText)
         self.error_dialog.setIcon(QMessageBox.Critical)
-        self.error_dialog.setText('Wrong Password in Account:' + errorText)
+        self.error_dialog.setText('Problem with password in account:' + errorText)
         self.error_dialog.show()
 
     def done(self, str):
@@ -159,13 +160,14 @@ class Worker(QThread):
     label5 = pyqtSignal(str)
     docFinish = pyqtSignal(str)
 
-    def __init__(self, accounts, brwser, curPass, newPass):
+    def __init__(self, account, brwser, curPass, newPass, accountList):
         QThread.__init__(self)
 
         self.currentBrowser = brwser
         self.currentPassword = curPass
         self.newPassword = newPass
-        self.accounts = accounts
+        self.account = account
+        self.accountList = accountList
 
     def run(self):
         document = Document()
@@ -179,25 +181,27 @@ class Worker(QThread):
         count = float(0)
         self.progress.emit(count)
         while count < 100:
-            for acc, address in self.accounts.items():
-                if self.accounts == acc:
+            for acc, address in self.accountList.items():
+                if self.account == acc:
                     print(acc)
-                    for user in self.accounts[acc]:
+                    for user in self.accountList[acc]:
                         print(acc)
-                        b = len(self.accounts[acc])
+                        b = len(self.accountList[acc])
                         print(b)
                         count += 100 / b
                         page = "https://www2.industrysoftware.automation.siemens.com/webkey/"
-                        options = webdriver.ChromeOptions()
-                        driver = webdriver.Chrome(executable_path='webdriver/macOS/geckodriver',
-                                                  options=options)
+                        if self.currentBrowser == 'Chrome':
+                            options = webdriver.ChromeOptions()
+                            driver = webdriver.Chrome(executable_path='webdriver/macOS/chromedriver',
+                                                      options=options)
+
                         if self.currentBrowser == 'Firefox':
                             options = webdriver.FirefoxOptions()
                             driver = webdriver.Firefox(executable_path='webdriver/macOS/geckodriver',
                                                        options=options)
-                        options.add_argument('-headless')  # run in background
+                        # #options.add_argument('-headless')  # run in background
                         driver.implicitly_wait(30)
-                        # driver.minimize_window()
+                        # # driver.minimize_window()
                         driver.get(page)
                         driver.find_element(By.XPATH, "//tr[5]/td[2]/ul/font/li/a/font").click()
                         driver.find_element(By.XPATH, "//td[2]/input").click()
@@ -209,7 +213,10 @@ class Worker(QThread):
                         driver.find_element(By.NAME, "repass").send_keys(self.newPassword)
                         driver.find_element(By.XPATH, "//div[3]/div[2]/div/form/fieldset/input").click()
                         time.sleep(3)
-                        if driver.find_element(By.XPATH, "//h2[contains(.,'WebKey Error')]"):
+
+                        # if wrong password entered
+                        try:
+                            driver.find_element(By.XPATH, "//h2[contains(.,'WebKey Error')]")
                             self.message.emit(user)
                             self.progress.emit(count)
                             row_cells = table.add_row().cells
@@ -220,8 +227,26 @@ class Worker(QThread):
                             empty_cells[1].text = ''
                             driver.quit()
                             continue
-#TODO
-                        # if driver.find_element(By.XPATH, ):
+                        except NoSuchElementException:
+                            pass
+
+
+                        # if new password matches older one
+
+                        try:
+                            driver.find_element(By.XPATH,
+                                                "//h2[contains(.,'The following message was returned from the WebKey Server:')]")
+                            self.message.emit(user)
+                            self.progress.emit(count)
+                            row_cells = table.add_row().cells
+                            row_cells[0].text = user
+                            row_cells[1].text = 'New Password matches older one!'
+                            empty_cells = table.add_row().cells
+                            empty_cells[0].text = ''
+                            empty_cells[1].text = ''
+                            driver.quit()
+                        except NoSuchElementException:
+                            pass
 
                         # if driver.find_element(By.XPATH, ):
 
@@ -237,8 +262,8 @@ class Worker(QThread):
                         self.progress.emit(count)
                         print(str(count) + '%')
         self.finished.emit(self.newPassword)
-        for acc in self.accounts:
-            if acc == self.accounts:
+        for acc in self.accountList:
+            if acc == self.account:
                 document.save(acc + '.docx')
         self.docFinish.emit('Word file with all changed accounts created and saved in application folder! :)')
 
