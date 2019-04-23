@@ -194,15 +194,15 @@ class Worker(QThread):
                         page = "https://www2.industrysoftware.automation.siemens.com/webkey/"
                         if self.currentBrowser == 'Chrome':
                             options = webdriver.ChromeOptions()
-                            driver = webdriver.Chrome(executable_path='webdriver/macOS/chromedriver',
+                            driver = webdriver.Chrome(executable_path='webdriver/windows/chromedriver',
                                                       options=options)
 
                         if self.currentBrowser == 'Firefox':
                             options = webdriver.FirefoxOptions()
-                            driver = webdriver.Firefox(executable_path='webdriver/macOS/geckodriver',
+                            driver = webdriver.Firefox(executable_path='webdriver/windows/geckodriver',
                                                        options=options)
                         # #options.add_argument('-headless')  # run in background
-                        driver.implicitly_wait(30)
+                        driver.implicitly_wait(5)
                         # # driver.minimize_window()
                         driver.get(page)
                         driver.find_element(By.XPATH, "//tr[5]/td[2]/ul/font/li/a/font").click()
@@ -246,22 +246,26 @@ class Worker(QThread):
                             empty_cells[0].text = ''
                             empty_cells[1].text = ''
                             driver.quit()
+                            continue
                         except NoSuchElementException:
                             pass
 
-                        # if driver.find_element(By.XPATH, ):
-
-                        self.label4.emit('OK')
-                        self.label5.emit('OK')
-                        driver.quit()
-                        row_cells = table.add_row().cells
-                        row_cells[0].text = user
-                        row_cells[1].text = self.newPassword
-                        empty_cells = table.add_row().cells
-                        empty_cells[0].text = ''
-                        empty_cells[1].text = ''
-                        self.progress.emit(count)
-                        print(str(count) + '%')
+                        # if driver.find_element(By.XPATH, ): Your Password has been Changed
+                        try:
+                            driver.find_element(By.XPATH, "//h2[contains(.,'Your Password has been Changed')]")
+                            self.label4.emit('OK')
+                            self.label5.emit('OK')
+                            driver.quit()
+                            row_cells = table.add_row().cells
+                            row_cells[0].text = user
+                            row_cells[1].text = self.newPassword
+                            empty_cells = table.add_row().cells
+                            empty_cells[0].text = ''
+                            empty_cells[1].text = ''
+                            self.progress.emit(count)
+                            print(str(count) + '%')
+                        except NoSuchElementException:
+                            pass
         self.finished.emit(self.newPassword)
         for acc in self.accountList:
             if acc == self.account:
