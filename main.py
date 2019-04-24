@@ -58,11 +58,11 @@ class MainWindow(QMainWindow):
             self.ui.comboBox.addItem(key)
 
     def changePW(self):
+        self.currentBrowser = self.ui.comboBox_2.currentText()
+        self.currentPassword = self.ui.inputCurrent.text()
+        self.newPassword = self.ui.inputNew.text()
+        self.account = self.ui.comboBox.currentText()
         if not self.currentPassword == '' and not self.newPassword == '':
-            self.currentBrowser = self.ui.comboBox_2.currentText()
-            self.currentPassword = self.ui.inputCurrent.text()
-            self.newPassword = self.ui.inputNew.text()
-            self.account = self.ui.comboBox.currentText()
             self.obj = Worker(self.account, self.currentBrowser, self.currentPassword, self.newPassword, self.accounts)
             self.obj.message.connect(self.errorDialog)
             self.obj.finished.connect(self.done)
