@@ -38,6 +38,7 @@ class MainWindow(QMainWindow):
         self.currentBrowser = ''
         self.currentPassword = ''
         self.newPassword = ''
+        self.nopassword_dialog = QMessageBox()
         self.finish_dialog = QMessageBox()
         self.error_dialog = QMessageBox()
         self.docx_dialog = QMessageBox()
@@ -57,18 +58,21 @@ class MainWindow(QMainWindow):
             self.ui.comboBox.addItem(key)
 
     def changePW(self):
-        self.currentBrowser = self.ui.comboBox_2.currentText()
-        self.currentPassword = self.ui.inputCurrent.text()
-        self.newPassword = self.ui.inputNew.text()
-        self.account = self.ui.comboBox.currentText()
-        self.obj = Worker(self.account, self.currentBrowser, self.currentPassword, self.newPassword, self.accounts)
-        self.obj.message.connect(self.errorDialog)
-        self.obj.finished.connect(self.done)
-        self.obj.progress.connect(self.loadingBar)
-        self.obj.docFinish.connect(self.docxDialog)
-        self.obj.label4.connect(self.okay4)
-        self.obj.label5.connect(self.okay5)
-        self.obj.start()
+        if not self.currentPassword == '' and not self.newPassword == '':
+            self.currentBrowser = self.ui.comboBox_2.currentText()
+            self.currentPassword = self.ui.inputCurrent.text()
+            self.newPassword = self.ui.inputNew.text()
+            self.account = self.ui.comboBox.currentText()
+            self.obj = Worker(self.account, self.currentBrowser, self.currentPassword, self.newPassword, self.accounts)
+            self.obj.message.connect(self.errorDialog)
+            self.obj.finished.connect(self.done)
+            self.obj.progress.connect(self.loadingBar)
+            self.obj.docFinish.connect(self.docxDialog)
+            self.obj.label4.connect(self.okay4)
+            self.obj.label5.connect(self.okay5)
+            self.obj.start()
+        else:
+            self.nopassword()
 
     def addList(self):
         self.Adddialog = QDialog()
@@ -132,6 +136,11 @@ class MainWindow(QMainWindow):
         self.error_dialog.setIcon(QMessageBox.Critical)
         self.error_dialog.setText('Problem with password in account:  ' + errorText)
         self.error_dialog.show()
+
+    def nopassword(self):
+        self.nopassword_dialog.setIcon(QMessageBox.Information)
+        self.nopassword_dialog.setText('Please fill out emtpy spaces!')
+        self.nopassword_dialog.show()
 
     def done(self, str):
         self.finish_dialog.setIcon(QMessageBox.Information)
