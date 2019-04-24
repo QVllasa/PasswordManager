@@ -174,11 +174,9 @@ class Worker(QThread):
     def run(self):
         document = Document()
 
-        table = document.add_table(rows=1, cols=2)
-        document.add_paragraph(str(datetime.datetime.now()))
-        hdr_cells = table.rows[0].cells
-        hdr_cells[0].text = 'User Account'
-        hdr_cells[1].text = 'Password (also for IoT Ext. and Integration)'
+
+
+
 
         count = float(0)
         self.progress.emit(count)
@@ -187,6 +185,12 @@ class Worker(QThread):
                 if self.account == acc:
                     print(acc)
                     for user in self.accountList[acc]:
+                        table = document.add_table(rows=2, cols=6)
+                        hdr_cells = table.rows[0].cells
+                        hdr_cells[0].text = 'Username'
+                        hdr_cells[1].text = user
+                        psw_cells = table.rows[1].cells
+                        psw_cells[]
                         print(acc)
                         b = len(self.accountList[acc])
                         print(b)
@@ -267,10 +271,12 @@ class Worker(QThread):
                         except NoSuchElementException:
                             pass
         self.finished.emit(self.newPassword)
+        document.add_paragraph(str(datetime.datetime.now()))
         for acc in self.accountList:
             if acc == self.account:
                 document.save(acc + '.docx')
         self.docFinish.emit('Word file with all changed accounts created and saved in application folder! :)')
+
 
 
 window = MainWindow()
