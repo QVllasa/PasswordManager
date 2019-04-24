@@ -1592,3 +1592,334 @@ JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1556115429677	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Z003V7KJ\\AppData\\Local\\Temp\\rust_mozprofile.YB2pz5ywskM8"
+console.error: Enterprise Policies: 
+  Policy SearchEngines is only allowed on ESR
+1556115430853	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556115430854	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556115430854	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556115433079	Marionette	INFO	Listening on port 64389
+1556115433162	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+[Child 65004, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 65004, [Child 69916, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 69916, Chrome_ChildThread] WARNING: pipe error: 109: file z:/bu[Parent 70812, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 7324, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 73241556115466279	Marionette	INFO	Stopped listening on port 64389
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GP
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1556115499295	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Z003V7KJ\\AppData\\Local\\Temp\\rust_mozprofile.If2VlQTrVTrq"
+console.error: Enterprise Policies: 
+  Policy SearchEngines is only allowed on ESR
+1556115500080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556115500080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556115500080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556115502186	Marionette	INFO	Listening on port 64493
+1556115502617	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1556115514238	Marionette	INFO	Stopped listening on port 64493
+[Child 10196, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 101[Parent 72444, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 69968, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 69968, 
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 698
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1556115516050	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Z003V7KJ\\AppData\\Local\\Temp\\rust_mozprofile.wfydA2ZyJy02"
+console.error: Enterprise Policies: 
+  Policy SearchEngines is only allowed on ESR
+1556115516832	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556115516833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556115516833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556115518937	Marionette	INFO	Listening on port 64556
+1556115519362	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1556115530872	Marionette	INFO	Stopped listening on port 64556
+[Child 72252, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 72252, Chrome_C[Child 72376, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 72376, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Parent 71696, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 10152, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 10152, Chr[GPU 71228
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1556115532681	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Z003V7KJ\\AppData\\Local\\Temp\\rust_mozprofile.YeXnm9lV0PxN"
+console.error: Enterprise Policies: 
+  Policy SearchEngines is only allowed on ESR
+1556115533498	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556115533499	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556115533499	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556115535705	Marionette	INFO	Listening on port 64618
+1556115536012	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1556115546969	Marionette	INFO	Stopped listening on port 64618
+[Parent 10024, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 71716, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child[Parent 10024, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 1756, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 1756,[Parent 10024, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[GPU 705
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1556115650244	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Z003V7KJ\\AppData\\Local\\Temp\\rust_mozprofile.mXQwIVhNP4gN"
+console.error: Enterprise Policies: 
+  Policy SearchEngines is only allowed on ESR
+1556115651041	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556115651042	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556115651042	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556115653111	Marionette	INFO	Listening on port 64702
+1556115653552	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1556115659720	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:224:64
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1556115665767	Marionette	INFO	Stopped listening on port 64702
+[Parent 70476, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 10980, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_chan[nParent 70476, eGlecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332_
+win.cc, line 332[
+Child 2020, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 2020, Chrome_[Parent 70476, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1556115667560	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Z003V7KJ\\AppData\\Local\\Temp\\rust_mozprofile.hxrlh7zUYpZc"
+console.error: Enterprise Policies: 
+  Policy SearchEngines is only allowed on ESR
+1556115668337	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556115668337	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556115668337	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556115670527	Marionette	INFO	Listening on port 64762
+1556115670891	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 70896, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Parent 70896, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 72072, Chrome_ChildThread] WARNI[NCGh:ild 71204, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/co mpmiopne/ ipc_channel_win.cc, line 332e
+rror: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 72[Parent 70896, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 71236, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 71236,[Parent 70896, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 166
+1556115671257	Marionette	INFO	Stopped listening on port 64762
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 7
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1556115714378	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Z003V7KJ\\AppData\\Local\\Temp\\rust_mozprofile.NvI8wI9sEkGA"
+*** You are running in headless mode.
+console.error: Enterprise Policies: 
+  Policy SearchEngines is only allowed on ESR
+1556115715141	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556115715142	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556115715142	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556115716820	Marionette	INFO	Listening on port 64799
+1556115717196	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+only allowed on ESR
+1556115735521	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556115735522	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556115735522	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556115737628	Marionette	INFO	Listening on port 64857
+1556115737974	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+1556115755208	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Z003V7KJ\\AppData\\Local\\Temp\\rust_mozprofile.kD9JLnyy5qcI"
+*** You are running in headless mode.
+console.error: Enterprise Policies: 
+  Policy SearchEngines is only allowed on ESR
+1556115756135	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556115756135	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556115756135	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556115758298	Marionette	INFO	Listening on port 64915
+1556115758588	Marionette	WARN	TLS certificate errors will be ignored for this session
+1556115794407	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Z003V7KJ\\AppData\\Local\\Temp\\rust_mozprofile.AoZi6ZgCWu1g"
+*** You are running in headless mode.
+console.error: Enterprise Policies: 
+  Policy SearchEngines is only allowed on ESR
+1556115795295	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556115795295	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556115795296	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556115797451	Marionette	INFO	Listening on port 64958
+1556115797717	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1556115808939	Marionette	INFO	Stopped listening on port 64958
+[Child 70128, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 70128[Child 11692, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 11692[Parent 72220, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 24036, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 240[Parent 72220, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 166
+1556115810743	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Z003V7KJ\\AppData\\Local\\Temp\\rust_mozprofile.3j4P6dZ4MST1"
+*** You are running in headless mode.
+console.error: Enterprise Policies: 
+  Policy SearchEngines is only allowed on ESR
+1556115811679	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556115811680	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556115811680	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556115813815	Marionette	INFO	Listening on port 65022
+1556115814058	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1556115825530	Marionette	INFO	Stopped listening on port 65022
+[Parent 10568, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Parent 10568, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 71708, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332[
+Child 11960[Ch, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 11[Parent 10568, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Parent 10568, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 166
+1556115827224	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Z003V7KJ\\AppData\\Local\\Temp\\rust_mozprofile.velUEF1TLjZL"
+*** You are running in headless mode.
+console.error: Enterprise Policies: 
+  Policy SearchEngines is only allowed on ESR
+1556115828134	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556115828134	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556115828134	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556115830229	Marionette	INFO	Listening on port 65089
+1556115830628	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1556115842047	Marionette	INFO	Stopped listening on port 65089
+[Parent 4176, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 18924, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/sr[cC/chrhild 10340, Chroome/common/ipc_channel_win.cc, line 332m
+e_ChildThread][Ch WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 10340, Chro[Parent 4176, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 69928, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 6991556116200456	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Z003V7KJ\\AppData\\Local\\Temp\\rust_mozprofile.qV4am0pdstw4"
+*** You are running in headless mode.
+console.error: Enterprise Policies: 
+  Policy SearchEngines is only allowed on ESR
+1556116201398	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556116201398	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556116201398	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556116203515	Marionette	INFO	Listening on port 59931
+1556116203767	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1556116214988	Marionette	INFO	Stopped listening on port 59931
+[Parent 72028, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Parent 72028, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 69928, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/ch[rChild 10340, Chorome_ChildThread] WARNING: pipe error: 109: file z:/buildm/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332i
+um/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 699[Parent 72028, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 70060, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 700[Parent 72028, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 166
+1556116216683	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Z003V7KJ\\AppData\\Local\\Temp\\rust_mozprofile.crnFVGnaojP8"
+*** You are running in headless mode.
+console.error: Enterprise Policies: 
+  Policy SearchEngines is only allowed on ESR
+1556116217606	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556116217606	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556116217606	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556116219600	Marionette	INFO	Listening on port 59992
+1556116220017	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1556116230986	Marionette	INFO	Stopped listening on port 59992
+[Child 71132, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 7[Child 72480, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 7248[Parent 70136, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 71052, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 710521556116232872	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Z003V7KJ\\AppData\\Local\\Temp\\rust_mozprofile.4U3NqZTpZXHj"
+*** You are running in headless mode.
+console.error: Enterprise Policies: 
+  Policy SearchEngines is only allowed on ESR
+1556116233971	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556116233971	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556116233971	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556116236039	Marionette	INFO	Listening on port 60051
+1556116236409	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+JavaScript warning: https://www2.industrysoftware.automation.siemens.com/webkey/password.jsp, line 1: unreachable code after return statement
+JavaScript warning: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 229: unreachable code after return statement
+JavaScript error: https://www.plm.automation.siemens.com/_resources/js/lib/core.js, line 798: TypeError: layer is null
+1556116247915	Marionette	INFO	Stopped listening on port 60051
+[Parent 3760, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Parent 3760, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 7248, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/co[mChild 71448, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332m
+on/ip[Child 71c_cha448, Cnnel_win.cc, line 332
+[Child 7248, Ch[Parent 3760, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 70228, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 702[Parent 3760, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 166

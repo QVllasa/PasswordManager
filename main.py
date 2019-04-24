@@ -1,13 +1,15 @@
 import datetime
 import sys
 import time
-
-from PyQt5.QtCore import *
-from docx import Document
-from qtpy.QtWidgets import *
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
+
+from PyQt5.QtCore import *
+from docx import Document
+from docx.enum.table import *
+from docx.shared import *
+from qtpy.QtWidgets import *
 
 from ui.AccDialog import Ui_AccDialog
 from ui.Dialog import Ui_Dialog
@@ -128,7 +130,7 @@ class MainWindow(QMainWindow):
     def errorDialog(self, errorText):
         print(errorText)
         self.error_dialog.setIcon(QMessageBox.Critical)
-        self.error_dialog.setText('Problem with password in account:' + errorText)
+        self.error_dialog.setText('Problem with password in account:  ' + errorText)
         self.error_dialog.show()
 
     def done(self, str):
@@ -174,10 +176,6 @@ class Worker(QThread):
     def run(self):
         document = Document()
 
-
-
-
-
         count = float(0)
         self.progress.emit(count)
         while count < 100:
@@ -185,29 +183,58 @@ class Worker(QThread):
                 if self.account == acc:
                     print(acc)
                     for user in self.accountList[acc]:
-                        table = document.add_table(rows=2, cols=6)
+
+                        table = document.add_table(rows=2, cols=6, style='Table Grid')
+                        for row in table.rows:
+                            for cell in row.cells:
+                                cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.BOTTOM
+
+                        for row in table.rows:
+                            row.height = Pt(20)
+
                         hdr_cells = table.rows[0].cells
-                        hdr_cells[0].text = 'Username'
-                        hdr_cells[1].text = user
                         psw_cells = table.rows[1].cells
-                        psw_cells[]
+
+                        hdr_cells[0].paragraphs[0].text = 'Username'
+                        psw_cells[0].paragraphs[0].text = 'Password'
+
+                        if 'connectivity' in user:
+                            a = table.cell(0, 1)
+                            b = table.cell(0, 5)
+                            A = a.merge(b)
+                            psw_cells[2].paragraphs[0].text = 'IoT Extension'
+                            psw_cells[4].paragraphs[0].text = 'MC Integration'
+
+                        else:
+                            a = table.cell(0, 1)
+                            b = table.cell(0, 5)
+                            c = table.cell(1,1)
+                            d = table.cell(1,5)
+                            A = a.merge(b)
+                            B = c.merge(d)
+
+
                         print(acc)
                         b = len(self.accountList[acc])
                         print(b)
                         count += 100 / b
                         page = "https://www2.industrysoftware.automation.siemens.com/webkey/"
+
+
                         if self.currentBrowser == 'Chrome':
                             options = webdriver.ChromeOptions()
+                            options.add_argument('-headless')  # run in background
                             driver = webdriver.Chrome(executable_path='webdriver/windows/chromedriver',
                                                       options=options)
 
                         if self.currentBrowser == 'Firefox':
                             options = webdriver.FirefoxOptions()
+                            options.add_argument('-headless')  # run in background
                             driver = webdriver.Firefox(executable_path='webdriver/windows/geckodriver',
                                                        options=options)
-                        # #options.add_argument('-headless')  # run in background
-                        driver.implicitly_wait(5)
-                        # # driver.minimize_window()
+
+                        driver.implicitly_wait(3)
+                        #driver.minimize_window()
                         driver.get(page)
                         driver.find_element(By.XPATH, "//tr[5]/td[2]/ul/font/li/a/font").click()
                         driver.find_element(By.XPATH, "//td[2]/input").click()
@@ -218,19 +245,23 @@ class Worker(QThread):
                         driver.find_element(By.NAME, "repass").click()
                         driver.find_element(By.NAME, "repass").send_keys(self.newPassword)
                         driver.find_element(By.XPATH, "//div[3]/div[2]/div/form/fieldset/input").click()
-                        time.sleep(3)
+                        time.sleep(1)
 
                         # wrong password entered
                         try:
                             driver.find_element(By.XPATH, "//h2[contains(.,'WebKey Error')]")
                             self.message.emit(user)
                             self.progress.emit(count)
-                            row_cells = table.add_row().cells
-                            row_cells[0].text = user
-                            row_cells[1].text = 'Wrong Password entered!'
-                            empty_cells = table.add_row().cells
-                            empty_cells[0].text = ''
-                            empty_cells[1].text = ''
+                            hdr_cells[1].paragraphs[0].text = user
+                            psw_cells[1].paragraphs[0].text = 'Wrong Password entered!'
+                            for row in table.rows:
+                                for cell in row.cells:
+                                    for paragraph in cell.paragraphs:
+                                        for run in paragraph.runs:
+                                            run.font.name = 'Calibri'
+                                            run.font.size = Pt(12)
+                                            run.bold = True
+                            document.add_paragraph('')
                             driver.quit()
                             continue
                         except NoSuchElementException:
@@ -243,12 +274,16 @@ class Worker(QThread):
                                                 "//h2[contains(.,'The following message was returned from the WebKey Server:')]")
                             self.message.emit(user)
                             self.progress.emit(count)
-                            row_cells = table.add_row().cells
-                            row_cells[0].text = user
-                            row_cells[1].text = 'New Password matches older one!'
-                            empty_cells = table.add_row().cells
-                            empty_cells[0].text = ''
-                            empty_cells[1].text = ''
+                            hdr_cells[1].paragraphs[0].text = user
+                            psw_cells[1].paragraphs[0].text = 'New Password matches older one or to many attempts!!'
+                            for row in table.rows:
+                                for cell in row.cells:
+                                    for paragraph in cell.paragraphs:
+                                        for run in paragraph.runs:
+                                            run.font.name = 'Calibri'
+                                            run.font.size = Pt(12)
+                                            run.bold = True
+                            document.add_paragraph('')
                             driver.quit()
                             continue
                         except NoSuchElementException:
@@ -260,23 +295,34 @@ class Worker(QThread):
                             self.label4.emit('OK')
                             self.label5.emit('OK')
                             driver.quit()
-                            row_cells = table.add_row().cells
-                            row_cells[0].text = user
-                            row_cells[1].text = self.newPassword
-                            empty_cells = table.add_row().cells
-                            empty_cells[0].text = ''
-                            empty_cells[1].text = ''
+
+                            hdr_cells[1].paragraphs[0].text = user
+                            psw_cells[1].paragraphs[0].text = self.newPassword
+                            psw_cells[3].paragraphs[0].text = self.newPassword
+                            psw_cells[5].paragraphs[0].text = self.newPassword
+                            for row in table.rows:
+                                for cell in row.cells:
+                                    for paragraph in cell.paragraphs:
+                                        for run in paragraph.runs:
+                                            run.font.name = 'Calibri'
+                                            run.font.size = Pt(12)
+                                            run.bold = True
+
+                            document.add_paragraph('')
+
                             self.progress.emit(count)
                             print(str(count) + '%')
                         except NoSuchElementException:
                             pass
+
+
+
         self.finished.emit(self.newPassword)
         document.add_paragraph(str(datetime.datetime.now()))
         for acc in self.accountList:
             if acc == self.account:
                 document.save(acc + '.docx')
         self.docFinish.emit('Word file with all changed accounts created and saved in application folder! :)')
-
 
 
 window = MainWindow()
