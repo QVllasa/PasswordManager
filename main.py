@@ -220,7 +220,7 @@ class Worker(QThread):
                         driver.find_element(By.XPATH, "//div[3]/div[2]/div/form/fieldset/input").click()
                         time.sleep(3)
 
-                        # if wrong password entered
+                        # wrong password entered
                         try:
                             driver.find_element(By.XPATH, "//h2[contains(.,'WebKey Error')]")
                             self.message.emit(user)
@@ -236,7 +236,7 @@ class Worker(QThread):
                         except NoSuchElementException:
                             pass
 
-                        # if new password matches older one
+                        # new password matches older one
 
                         try:
                             driver.find_element(By.XPATH,
@@ -254,7 +254,7 @@ class Worker(QThread):
                         except NoSuchElementException:
                             pass
 
-                        # if driver.find_element(By.XPATH, ): Your Password has been Changed
+                        # Your Password has been Changed
                         try:
                             driver.find_element(By.XPATH, "//h2[contains(.,'Your Password has been Changed')]")
                             self.label4.emit('OK')
