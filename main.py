@@ -1,3 +1,4 @@
+
 import datetime
 import sys
 import time
@@ -23,6 +24,7 @@ class MainWindow(QMainWindow):
         super().__init__(parent)
 
         self.accounts = {}
+
         with open('accountLists.txt', 'r') as f:
             d = []
             for i in f:
@@ -163,6 +165,8 @@ class MainWindow(QMainWindow):
     def okay5(self, okay2):
         self.ui.label_5.setText(okay2)
         self.ui.label_5.show()
+
+
 
 
 class Worker(QThread):
