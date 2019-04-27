@@ -2,12 +2,11 @@
 
 # Form implementation generated from reading ui file 'ui/Dialog.ui'
 #
-# Created by: PyQt5 UI code generator 5.12.1
+# Created by: PyQt5 UI code generator 5.9.2
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
@@ -61,5 +60,4 @@ class Ui_Dialog(object):
         item = self.accTable.horizontalHeaderItem(0)
         item.setText(_translate("Dialog", "Neue Spalte"))
         self.addRow.setText(_translate("Dialog", "Add Row"))
-
 

@@ -2,12 +2,11 @@
 
 # Form implementation generated from reading ui file 'ui/AccDialog.ui'
 #
-# Created by: PyQt5 UI code generator 5.12.1
+# Created by: PyQt5 UI code generator 5.9.2
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
 
 class Ui_AccDialog(object):
     def setupUi(self, AccDialog):
@@ -48,5 +47,4 @@ class Ui_AccDialog(object):
         AccDialog.setWindowTitle(_translate("AccDialog", "Show Accounts"))
         item = self.tableWidget.horizontalHeaderItem(0)
         item.setText(_translate("AccDialog", "Neue Spalte"))
-
 
