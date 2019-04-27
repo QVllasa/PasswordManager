@@ -1,4 +1,4 @@
-
+import io
 import datetime
 import sys
 import time
@@ -25,17 +25,21 @@ class MainWindow(QMainWindow):
 
         self.accounts = {}
 
-        with open('accountLists.txt', 'r') as f:
-            d = []
-            for i in f:
-                if '=' in i:
-                    d = i.strip().split(' ')
-                    self.accounts[d[0]] = []
-                elif '=' not in i and not len(i.strip()) == 0:
-                    i = i.strip()
-                    self.accounts[d[0]].append(i.strip())
-                else:
-                    continue
+        try:
+            with open('data/accountLists.txt', 'r') as f:
+                d = []
+                for i in f:
+                    if '=' in i:
+                        d = i.strip().split(' ')
+                        self.accounts[d[0]] = []
+                    elif '=' not in i and not len(i.strip()) == 0:
+                        i = i.strip()
+                        self.accounts[d[0]].append(i.strip())
+                    else:
+                        continue
+        except IOError:
+            print('hello')
+
 
         self.currentBrowser = ''
         self.currentPassword = ''
