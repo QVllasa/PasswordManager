@@ -1,4 +1,5 @@
 import io
+import os
 import datetime
 import sys
 import time
@@ -19,14 +20,26 @@ from ui.mainwindow import Ui_MainWindow
 app = QApplication(sys.argv)
 
 
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.environ.get("_MEIPASS2",os.path.abspath("."))
+
+    return os.path.join(base_path, relative_path)
+
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
 
         self.accounts = {}
 
+        self.txt_data = resource_path("txt_files/some.txt")
+
         try:
-            with open('data/accountLists.txt', 'r') as f:
+            with open(self.txt_data, 'r') as f:
                 d = []
                 for i in f:
                     if '=' in i:
@@ -92,14 +105,14 @@ class MainWindow(QMainWindow):
             if listname:
                 if not listname in self.accounts:
                     self.accounts[listname] = []
-                    with open('accountLists.txt', 'a') as f:
+                    with open(self.txt_data, 'a') as f:
                         f.write('\n' + listname + ' ' + '=\n')
 
                     print(self.accounts)
             for i in range(0, self.uiAddDialog.accTable.rowCount()):
                 if not self.uiAddDialog.accTable.item(i, 0) == None:
                     s = self.uiAddDialog.accTable.item(i, 0).text()
-                    with open('accountLists.txt', 'a') as f:
+                    with open(self.txt_data, 'a') as f:
                         f.write(s + '\n')
 
 
