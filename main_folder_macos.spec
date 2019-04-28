@@ -5,9 +5,11 @@ block_cipher = None
 
 a = Analysis(['main.py'],
              pathex=['/Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager'],
-             binaries=[],
-             datas=[('data/accountLists.txt', 'data'),('/Users/qendrimvllasa/anaconda3/lib/python3.7/site-packages/docx/templates/default.docx', "docx/templates"),
-             ('webdriver/macOS/chromedriver', 'webdriver/macOS'), ('webdriver/macOS/geckodriver', 'webdriver/macOS')],
+             binaries=[('webdriver/macOS/chromedriver', 'webdriver/macOS'),
+             ('webdriver/macOS/geckodriver', 'webdriver/macOS')],
+             datas=[
+             ('/Users/qendrimvllasa/anaconda3/lib/python3.7/site-packages/docx/templates/default.docx', "docx/templates"),
+             ],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
@@ -36,7 +38,3 @@ coll = COLLECT(exe,
                upx=True,
                name='main')
 
-app = BUNDLE(exe,
-             name='main.app',
-             icon="mdsp_password_manager.icns",
-             bundle_identifier=None)

@@ -37,7 +37,7 @@ class MainWindow(QMainWindow):
 
         self.accounts = {}
 
-        self.txt_data = resource_path("data/accountLists.txt")
+        self.txt_data = resource_path("../accountLists.txt")
 
         try:
             with open(self.txt_data, 'r') as f:
@@ -52,11 +52,13 @@ class MainWindow(QMainWindow):
                     else:
                         continue
         except IOError:
-            print('hello')
+            self.noList()
+
 
         self.currentBrowser = ''
         self.currentPassword = ''
         self.newPassword = ''
+
         self.nopassword_dialog = QMessageBox()
         self.finish_dialog = QMessageBox()
         self.error_dialog = QMessageBox()
@@ -77,6 +79,15 @@ class MainWindow(QMainWindow):
     def addCombo(self):
         for key, value in self.accounts.items():
             self.ui.comboBox.addItem(key)
+
+    def noList(self):
+        self.noList_dialog = QMessageBox()
+        self.noList_dialog.setIcon(QMessageBox.Critical)
+        self.noList_dialog.setText('No accountList.txt found!')
+        self.noList_dialog.show()
+
+
+
 
     def changePW(self):
         self.currentBrowser = self.ui.comboBox_2.currentText()
@@ -255,7 +266,7 @@ class Worker(QThread):
 
                         if self.currentBrowser == 'Chrome':
                             optionsChrome = webdriver.ChromeOptions()
-                            driver = webdriver.Chrome(executable_path=r'webdriver/macOS/chromedriver',
+                            driver = webdriver.Chrome(executable_path=resource_path('webdriver/macOS/chromedriver'),
                                                       options=optionsChrome)
                             if self.state == '2':
                                 optionsChrome.add_argument("--window-size=1920,1080")
@@ -264,7 +275,7 @@ class Worker(QThread):
 
                         if self.currentBrowser == 'Firefox':
                             optionsFirefox = webdriver.FirefoxOptions()
-                            driver = webdriver.Firefox(executable_path=r'webdriver/macOS/geckodriver',
+                            driver = webdriver.Firefox(executable_path=resource_path('webdriver/macOS/geckodriver'),
                                                        options=optionsFirefox,
                                                        )
                             if self.state == '2':
@@ -356,7 +367,7 @@ class Worker(QThread):
         document.add_paragraph(str(datetime.datetime.now()))
         for acc in self.accountList:
             if acc == self.account:
-                document.save(acc + '.docx')
+                document.save(resource_path("../"+acc + '.docx'))
         self.docFinish.emit('Word file with all changed accounts created and saved in application folder! :)')
 
 
