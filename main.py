@@ -73,7 +73,6 @@ class MainWindow(QMainWindow):
         self.ui.showButton.clicked.connect(self.showAcc)
         self.ui.checkBox.checkStateSet()
         self.state = self.ui.checkBox.checkState()
-        print(type(self.state))
 
     def addCombo(self):
         for key, value in self.accounts.items():
@@ -256,21 +255,20 @@ class Worker(QThread):
 
                         if self.currentBrowser == 'Chrome':
                             optionsChrome = webdriver.ChromeOptions()
+                            driver = webdriver.Chrome(executable_path=r'webdriver/macOS/chromedriver',
+                                                      options=optionsChrome)
                             if self.state == '2':
                                 optionsChrome.add_argument("--window-size=1920,1080")
                                 optionsChrome.add_argument('--start-maximized')
                                 optionsChrome.headless = True
-                            driver = webdriver.Chrome(options=optionsChrome,
-                                                      executable_path='webdriver/macOS/chromedriver'
-                                                      )
 
                         if self.currentBrowser == 'Firefox':
                             optionsFirefox = webdriver.FirefoxOptions()
+                            driver = webdriver.Firefox(executable_path=r'webdriver/macOS/geckodriver',
+                                                       options=optionsFirefox,
+                                                       )
                             if self.state == '2':
                                 optionsFirefox.headless = True
-                            driver = webdriver.Firefox(options=optionsFirefox,
-                                                       executable_path='webdriver/macOS/geckodriver'
-                                                       )
 
                         driver.implicitly_wait(3)
                         driver.minimize_window()

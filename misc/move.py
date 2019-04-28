@@ -1,9 +1,9 @@
 from pathlib import Path
 import shutil
 
-firefox_webdriver = Path('macOS/webdriver/geckodriver')
+firefox_webdriver = Path('webdriver/macOS/geckodriver')
 
-chrome_webdriver = Path('macOS/webdriver/chromedriver')
+chrome_webdriver = Path('webdriver/macOS/chromedriver')
 
 #testing
 #destinationF = Path('/Users/qendrimvllasa/Desktop/geckodriver')

@@ -2081,3 +2081,10 @@ Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1556488457046	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/p7/gvrj4m1s6dngnq9nw7r03w800000gn/T/rust_mozprofile.blP4HjSceTiJ"
+1556488457481	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556488457482	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556488457482	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556488458455	Marionette	INFO	Listening on port 49380
+1556488458483	Marionette	WARN	TLS certificate errors will be ignored for this session
+1556488462268	Marionette	INFO	Stopped listening on port 49380
