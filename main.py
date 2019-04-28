@@ -73,8 +73,8 @@ class MainWindow(QMainWindow):
         self.ui.pushButton.clicked.connect(self.changePW)
         self.ui.addButton.clicked.connect(self.addList)
         self.ui.showButton.clicked.connect(self.showAcc)
-        self.ui.checkBox.checkStateSet()
-        self.state = self.ui.checkBox.checkState()
+
+
 
     def addCombo(self):
         for key, value in self.accounts.items():
@@ -95,6 +95,7 @@ class MainWindow(QMainWindow):
         self.newPassword = self.ui.inputNew.text()
         self.account = self.ui.comboBox.currentText()
         self.state = str(self.ui.checkBox.checkState())
+
 
         if not self.currentPassword == '' and not self.newPassword == '':
             self.obj = Worker(self.account, self.currentBrowser, self.currentPassword, self.newPassword, self.accounts,
@@ -266,23 +267,25 @@ class Worker(QThread):
 
                         if self.currentBrowser == 'Chrome':
                             optionsChrome = webdriver.ChromeOptions()
-                            driver = webdriver.Chrome(executable_path=resource_path('webdriver/macOS/chromedriver'),
-                                                      options=optionsChrome)
                             if self.state == '2':
                                 optionsChrome.add_argument("--window-size=1920,1080")
                                 optionsChrome.add_argument('--start-maximized')
                                 optionsChrome.headless = True
+                            driver = webdriver.Chrome(executable_path=resource_path('webdriver/windows/chromedriver.exe'),
+                                                      options=optionsChrome)
+
 
                         if self.currentBrowser == 'Firefox':
                             optionsFirefox = webdriver.FirefoxOptions()
-                            driver = webdriver.Firefox(executable_path=resource_path('webdriver/macOS/geckodriver'),
-                                                       options=optionsFirefox,
-                                                       )
                             if self.state == '2':
                                 optionsFirefox.headless = True
+                            driver = webdriver.Firefox(executable_path=resource_path('webdriver/windows/geckodriver.exe'),
+                                                       options=optionsFirefox,
+                                                       )
+
 
                         driver.implicitly_wait(3)
-                        driver.minimize_window()
+                        #driver.minimize_window()
                         driver.get(page)
                         driver.find_element(By.XPATH, "//tr[5]/td[2]/ul/font/li/a/font").click()
                         driver.find_element(By.XPATH, "//td[2]/input").click()
