@@ -1,0 +1,4 @@
+([('main',
+   '/Users/qendrimvllasa/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Projects/Password Manager/dist/main',
+   'EXECUTABLE')],)
