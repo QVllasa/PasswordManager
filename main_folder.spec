@@ -6,7 +6,7 @@ block_cipher = None
 a = Analysis(['main.py'],
              pathex=['/Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager'],
              binaries=[],
-             datas=[('data/accountLists.txt', 'data')],
+             datas=[('data/accountLists.txt', 'data'), ('mdsp_password_manager.ico','data')],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
@@ -26,7 +26,7 @@ exe = EXE(pyz,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
-          console=False )
+          console=False, icon='mdsp_password_manager.ico' )
 coll = COLLECT(exe,
                a.binaries,
                a.zipfiles,
@@ -36,5 +36,5 @@ coll = COLLECT(exe,
                name='main')
 app = BUNDLE(coll,
              name='main.app',
-             icon=None,
+             icon="mdsp_password_manager.ico",
              bundle_identifier=None)
