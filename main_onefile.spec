@@ -32,7 +32,7 @@ exe = EXE(pyz,
           console=False )
 app = BUNDLE(exe,
              name='main.app',
-             icon="mdsp_password_manager.ico",
+             icon="mdsp_password_manager.icns",
              bundle_identifier=None)
 
 
