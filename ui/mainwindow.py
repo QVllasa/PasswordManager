@@ -2,11 +2,12 @@
 
 # Form implementation generated from reading ui file 'ui/mainwindow.ui'
 #
-# Created by: PyQt5 UI code generator 5.9.2
+# Created by: PyQt5 UI code generator 5.12.1
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -18,8 +19,14 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
         MainWindow.setSizePolicy(sizePolicy)
         MainWindow.setMinimumSize(QtCore.QSize(441, 371))
+        MainWindow.setMaximumSize(QtCore.QSize(441, 371))
         MainWindow.setWindowTitle("MDSP Account Password Manager")
         self.centralWidget = QtWidgets.QWidget(MainWindow)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.centralWidget.sizePolicy().hasHeightForWidth())
+        self.centralWidget.setSizePolicy(sizePolicy)
         self.centralWidget.setObjectName("centralWidget")
         self.gridLayoutWidget = QtWidgets.QWidget(self.centralWidget)
         self.gridLayoutWidget.setGeometry(QtCore.QRect(20, 10, 401, 81))
@@ -103,6 +110,11 @@ class Ui_MainWindow(object):
         self.gridLayout_3.addWidget(self.addButton, 4, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralWidget)
         self.mainToolBar = QtWidgets.QToolBar(MainWindow)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.mainToolBar.sizePolicy().hasHeightForWidth())
+        self.mainToolBar.setSizePolicy(sizePolicy)
         self.mainToolBar.setObjectName("mainToolBar")
         MainWindow.addToolBar(QtCore.Qt.TopToolBarArea, self.mainToolBar)
 
@@ -121,4 +133,5 @@ class Ui_MainWindow(object):
         self.pushButton.setText(_translate("MainWindow", "Change Passwords"))
         self.showButton.setText(_translate("MainWindow", "Show"))
         self.addButton.setText(_translate("MainWindow", "Add"))
+
 

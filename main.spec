@@ -19,14 +19,22 @@ pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
 exe = EXE(pyz,
           a.scripts,
-          a.binaries,
-          a.zipfiles,
-          a.datas,
           [],
+          exclude_binaries=True,
           name='main',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
-          runtime_tmpdir=None,
-          console=True , icon='mdsp_password_manager.ico')
+          console=False , icon='mdsp_password_manager.ico')
+coll = COLLECT(exe,
+               a.binaries,
+               a.zipfiles,
+               a.datas,
+               strip=False,
+               upx=True,
+               name='main')
+app = BUNDLE(coll,
+             name='main.app',
+             icon='mdsp_password_manager.ico',
+             bundle_identifier=None)
