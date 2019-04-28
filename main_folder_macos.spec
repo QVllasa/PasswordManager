@@ -35,3 +35,7 @@ coll = COLLECT(exe,
                upx=True,
                name='main')
 
+app = BUNDLE(exe,
+             name='main.app',
+             icon="mdsp_password_manager.icns",
+             bundle_identifier=None)

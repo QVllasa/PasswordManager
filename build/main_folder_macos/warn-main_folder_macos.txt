@@ -14,7 +14,7 @@ Types if import:
 IMPORTANT: Do NOT post this list to the issue-tracker. Use it as a basis for
            yourself tracking down the missing module. Thanks!
 
-missing module named 'org.python' - imported by pickle (optional), xml.sax (delayed, conditional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
+missing module named org - imported by pickle (optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
 excluded module named _frozen_importlib - imported by importlib (optional), importlib.abc (optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
 missing module named _frozen_importlib_external - imported by importlib._bootstrap (delayed), importlib (optional), importlib.abc (optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
 missing module named _winreg - imported by platform (delayed, optional), selenium.webdriver.firefox.firefox_binary (delayed, optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
@@ -24,8 +24,8 @@ missing module named vms_lib - imported by platform (delayed, conditional, optio
 missing module named winreg - imported by platform (delayed, optional), mimetypes (optional), urllib.request (delayed, conditional, optional), selenium.webdriver.firefox.firefox_binary (delayed, optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
 missing module named nt - imported by os (conditional, optional), ntpath (conditional, optional), shutil (conditional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
 missing module named msvcrt - imported by subprocess (conditional), getpass (optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
-missing module named org - imported by copy (optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
 missing module named _winapi - imported by encodings (delayed, conditional, optional), subprocess (conditional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
+missing module named 'org.python' - imported by copy (optional), xml.sax (delayed, conditional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
 missing module named sip - imported by qtpy (conditional, optional), PyQt5 (top-level)
 missing module named 'PySide.QtGui' - imported by qtpy.QtGui (conditional), qtpy.QtCore (conditional), qtpy.QtWidgets (conditional)
 missing module named 'PyQt4.QtGui' - imported by qtpy.QtGui (conditional, optional), qtpy.QtCore (conditional), qtpy.QtWidgets (conditional)

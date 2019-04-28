@@ -1,0 +1,52 @@
+
+This file lists modules PyInstaller was not able to find. This does not
+necessarily mean this module is required for running you program. Python and
+Python 3rd-party packages include a lot of conditional or optional module. For
+example the module 'ntpath' only exists on Windows, whereas the module
+'posixpath' only exists on Posix systems.
+
+Types if import:
+* top-level: imported at the top-level - look at these first
+* conditional: imported within an if-statement
+* delayed: imported from within a function
+* optional: imported within a try-except-statement
+
+IMPORTANT: Do NOT post this list to the issue-tracker. Use it as a basis for
+           yourself tracking down the missing module. Thanks!
+
+missing module named org - imported by pickle (optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
+excluded module named _frozen_importlib - imported by importlib (optional), importlib.abc (optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
+missing module named _frozen_importlib_external - imported by importlib._bootstrap (delayed), importlib (optional), importlib.abc (optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
+missing module named _winreg - imported by platform (delayed, optional), selenium.webdriver.firefox.firefox_binary (delayed, optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
+missing module named java - imported by platform (delayed), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
+missing module named 'java.lang' - imported by platform (delayed, optional), xml.sax._exceptions (conditional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
+missing module named vms_lib - imported by platform (delayed, conditional, optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
+missing module named winreg - imported by platform (delayed, optional), mimetypes (optional), urllib.request (delayed, conditional, optional), selenium.webdriver.firefox.firefox_binary (delayed, optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
+missing module named nt - imported by shutil (conditional), os (conditional, optional), ntpath (conditional, optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
+missing module named msvcrt - imported by subprocess (conditional), getpass (optional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
+missing module named _winapi - imported by encodings (delayed, conditional, optional), subprocess (conditional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
+missing module named 'org.python' - imported by copy (optional), xml.sax (delayed, conditional), /Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager/main.py (top-level)
+missing module named sip - imported by qtpy (conditional, optional), PyQt5 (top-level)
+missing module named 'PySide.QtGui' - imported by qtpy.QtGui (conditional), qtpy.QtCore (conditional), qtpy.QtWidgets (conditional)
+missing module named 'PyQt4.QtGui' - imported by qtpy.QtGui (conditional, optional), qtpy.QtCore (conditional), qtpy.QtWidgets (conditional)
+missing module named 'PySide2.QtWidgets' - imported by qtpy.QtWidgets (conditional)
+missing module named 'PySide.QtCore' - imported by qtpy (conditional, optional), qtpy.QtCore (conditional)
+missing module named 'PyQt4.QtCore' - imported by qtpy.QtCore (conditional)
+missing module named 'PySide2.QtGui' - imported by qtpy.QtGui (conditional), qtpy.QtCore (conditional, optional)
+missing module named 'PySide2.QtCore' - imported by qtpy (conditional, optional), qtpy.QtCore (conditional)
+missing module named 'PyQt4.Qt' - imported by qtpy (conditional, optional), qtpy.QtGui (conditional)
+missing module named PySide - imported by qtpy (conditional, optional)
+missing module named PyQt4 - imported by qtpy (conditional, optional)
+missing module named PySide2 - imported by qtpy (conditional, optional)
+missing module named StringIO - imported by selenium.webdriver.remote.webelement (optional), urllib3.packages.six (conditional), docx.compat (conditional)
+missing module named urllib2 - imported by selenium.webdriver.common.utils (delayed, optional), selenium.webdriver.common.service (delayed, optional)
+missing module named netbios - imported by uuid (delayed)
+missing module named win32wnet - imported by uuid (delayed)
+missing module named urlparse - imported by selenium.webdriver.remote.remote_connection (optional)
+runtime module named urllib3.packages.six.moves - imported by http.client (top-level), urllib3.connectionpool (top-level), urllib3.util.response (top-level), 'urllib3.packages.six.moves.urllib' (top-level), urllib3.response (top-level), urllib3.util.queue (top-level)
+missing module named backports - imported by urllib3.packages.ssl_match_hostname (optional)
+missing module named "'urllib3.packages.six.moves.urllib'.parse" - imported by urllib3.request (top-level), urllib3.poolmanager (top-level)
+missing module named Queue - imported by urllib3.util.queue (conditional)
+missing module named httplib - imported by selenium.webdriver.safari.webdriver (optional), selenium.webdriver.blackberry.webdriver (optional), selenium.webdriver.webkitgtk.webdriver (optional)
+missing module named cStringIO - imported by selenium.webdriver.firefox.firefox_profile (optional)
+missing module named copy_reg - imported by cStringIO (top-level)

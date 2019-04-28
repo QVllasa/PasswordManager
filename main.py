@@ -26,9 +26,10 @@ def resource_path(relative_path):
         # PyInstaller creates a temp folder and stores path in _MEIPASS
         base_path = sys._MEIPASS
     except Exception:
-        base_path = os.environ.get("_MEIPASS2",os.path.abspath("."))
+        base_path = os.environ.get("_MEIPASS2", os.path.abspath("."))
 
     return os.path.join(base_path, relative_path)
+
 
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
@@ -53,7 +54,6 @@ class MainWindow(QMainWindow):
         except IOError:
             print('hello')
 
-
         self.currentBrowser = ''
         self.currentPassword = ''
         self.newPassword = ''
@@ -71,6 +71,9 @@ class MainWindow(QMainWindow):
         self.ui.pushButton.clicked.connect(self.changePW)
         self.ui.addButton.clicked.connect(self.addList)
         self.ui.showButton.clicked.connect(self.showAcc)
+        self.ui.checkBox.checkStateSet()
+        self.state = self.ui.checkBox.checkState()
+        print(type(self.state))
 
     def addCombo(self):
         for key, value in self.accounts.items():
@@ -81,8 +84,11 @@ class MainWindow(QMainWindow):
         self.currentPassword = self.ui.inputCurrent.text()
         self.newPassword = self.ui.inputNew.text()
         self.account = self.ui.comboBox.currentText()
+        self.state = str(self.ui.checkBox.checkState())
+
         if not self.currentPassword == '' and not self.newPassword == '':
-            self.obj = Worker(self.account, self.currentBrowser, self.currentPassword, self.newPassword, self.accounts)
+            self.obj = Worker(self.account, self.currentBrowser, self.currentPassword, self.newPassword, self.accounts,
+                              self.state)
             self.obj.message.connect(self.errorDialog)
             self.obj.finished.connect(self.done)
             self.obj.progress.connect(self.loadingBar)
@@ -184,8 +190,6 @@ class MainWindow(QMainWindow):
         self.ui.label_5.show()
 
 
-
-
 class Worker(QThread):
     message = pyqtSignal(str)
     finished = pyqtSignal(str)
@@ -194,7 +198,7 @@ class Worker(QThread):
     label5 = pyqtSignal(str)
     docFinish = pyqtSignal(str)
 
-    def __init__(self, account, brwser, curPass, newPass, accountList):
+    def __init__(self, account, brwser, curPass, newPass, accountList, state):
         QThread.__init__(self)
 
         self.currentBrowser = brwser
@@ -202,6 +206,7 @@ class Worker(QThread):
         self.newPassword = newPass
         self.account = account
         self.accountList = accountList
+        self.state = state
 
     def run(self):
         document = Document()
@@ -238,11 +243,10 @@ class Worker(QThread):
                         else:
                             a = table.cell(0, 1)
                             b = table.cell(0, 5)
-                            c = table.cell(1,1)
-                            d = table.cell(1,5)
+                            c = table.cell(1, 1)
+                            d = table.cell(1, 5)
                             A = a.merge(b)
                             B = c.merge(d)
-
 
                         print(acc)
                         b = len(self.accountList[acc])
@@ -250,21 +254,26 @@ class Worker(QThread):
                         count += 100 / b
                         page = "https://www2.industrysoftware.automation.siemens.com/webkey/"
 
-
                         if self.currentBrowser == 'Chrome':
-                            options = webdriver.ChromeOptions()
-                            options.add_argument('-headless')  # run in background
-                            driver = webdriver.Chrome(executable_path='webdriver/windows/chromedriver',
-                                                      options=options)
+                            optionsChrome = webdriver.ChromeOptions()
+                            if self.state == '2':
+                                optionsChrome.add_argument("--window-size=1920,1080")
+                                optionsChrome.add_argument('--start-maximized')
+                                optionsChrome.headless = True
+                            driver = webdriver.Chrome(options=optionsChrome,
+                                                      executable_path='webdriver/macOS/chromedriver'
+                                                      )
 
                         if self.currentBrowser == 'Firefox':
-                            options = webdriver.FirefoxOptions()
-                            options.add_argument('-headless')  # run in background
-                            driver = webdriver.Firefox(executable_path='webdriver/windows/geckodriver',
-                                                       options=options)
+                            optionsFirefox = webdriver.FirefoxOptions()
+                            if self.state == '2':
+                                optionsFirefox.headless = True
+                            driver = webdriver.Firefox(options=optionsFirefox,
+                                                       executable_path='webdriver/macOS/geckodriver'
+                                                       )
 
                         driver.implicitly_wait(3)
-                        #driver.minimize_window()
+                        driver.minimize_window()
                         driver.get(page)
                         driver.find_element(By.XPATH, "//tr[5]/td[2]/ul/font/li/a/font").click()
                         driver.find_element(By.XPATH, "//td[2]/input").click()
@@ -344,8 +353,6 @@ class Worker(QThread):
                             print(str(count) + '%')
                         except NoSuchElementException:
                             pass
-
-
 
         self.finished.emit(self.newPassword)
         document.add_paragraph(str(datetime.datetime.now()))
