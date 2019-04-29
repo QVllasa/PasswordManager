@@ -37,7 +37,7 @@ class MainWindow(QMainWindow):
 
         self.accounts = {}
 
-        self.txt_data = resource_path("data/accountLists.txt")
+        self.txt_data = resource_path("../accountLists.txt")
 
         try:
             with open(self.txt_data, 'r') as f:
@@ -53,7 +53,6 @@ class MainWindow(QMainWindow):
                         continue
         except IOError:
             self.noList()
-
 
         self.currentBrowser = ''
         self.currentPassword = ''
@@ -74,8 +73,6 @@ class MainWindow(QMainWindow):
         self.ui.addButton.clicked.connect(self.addList)
         self.ui.showButton.clicked.connect(self.showAcc)
 
-
-
     def addCombo(self):
         for key, value in self.accounts.items():
             self.ui.comboBox.addItem(key)
@@ -86,16 +83,12 @@ class MainWindow(QMainWindow):
         self.noList_dialog.setText('No accountList.txt found!')
         self.noList_dialog.show()
 
-
-
-
     def changePW(self):
         self.currentBrowser = self.ui.comboBox_2.currentText()
         self.currentPassword = self.ui.inputCurrent.text()
         self.newPassword = self.ui.inputNew.text()
         self.account = self.ui.comboBox.currentText()
         self.state = str(self.ui.checkBox.checkState())
-
 
         if not self.currentPassword == '' and not self.newPassword == '':
             self.obj = Worker(self.account, self.currentBrowser, self.currentPassword, self.newPassword, self.accounts,
@@ -221,6 +214,8 @@ class Worker(QThread):
 
     def run(self):
         document = Document()
+        document.sections[0].left_margin = Mm(10)
+        document.sections[0].right_margin = Mm(10)
 
         count = float(0)
         self.progress.emit(count)
@@ -244,7 +239,7 @@ class Worker(QThread):
                         hdr_cells[0].paragraphs[0].text = 'Username'
                         psw_cells[0].paragraphs[0].text = 'Password'
 
-                        if 'connectivity' in user or 'qendrim' in user:
+                        if 'connectivity' in user:
                             a = table.cell(0, 1)
                             b = table.cell(0, 5)
                             A = a.merge(b)
@@ -261,9 +256,10 @@ class Worker(QThread):
 
                         print(acc)
                         b = len(self.accountList[acc])
-                        #print(b)
+                        # print(b)
                         count += float(100) / float(b)
                         print(count)
+                        print(user)
                         page = "https://www2.industrysoftware.automation.siemens.com/webkey/"
 
                         if self.currentBrowser == 'Chrome':
@@ -272,21 +268,21 @@ class Worker(QThread):
                                 optionsChrome.add_argument("--window-size=1920,1080")
                                 optionsChrome.add_argument('--start-maximized')
                                 optionsChrome.headless = True
-                            driver = webdriver.Chrome(executable_path=resource_path('webdriver/windows/chromedriver.exe'),
-                                                      options=optionsChrome)
-
+                            driver = webdriver.Chrome(
+                                executable_path=resource_path('webdriver/windows/chromedriver.exe'),
+                                options=optionsChrome)
 
                         if self.currentBrowser == 'Firefox':
                             optionsFirefox = webdriver.FirefoxOptions()
                             if self.state == '2':
                                 optionsFirefox.headless = True
-                            driver = webdriver.Firefox(executable_path=resource_path('webdriver/windows/geckodriver.exe'),
-                                                       options=optionsFirefox,
-                                                       )
-
+                            driver = webdriver.Firefox(
+                                executable_path=resource_path('webdriver/windows/geckodriver.exe'),
+                                options=optionsFirefox,
+                                )
 
                         driver.implicitly_wait(3)
-                        #driver.minimize_window()
+                        # driver.minimize_window()
                         driver.get(page)
                         driver.find_element(By.XPATH, "//tr[5]/td[2]/ul/font/li/a/font").click()
                         driver.find_element(By.XPATH, "//td[2]/input").click()
@@ -305,10 +301,7 @@ class Worker(QThread):
                             self.message.emit(user)
                             self.progress.emit(count)
                             hdr_cells[1].paragraphs[0].text = user
-                            psw_cells[1].paragraphs[0].text = 'Wrong Password entered!'
-
-
-
+                            psw_cells[1].paragraphs[0].text = 'Wrong PW!'
 
                             for row in table.rows:
                                 for cell in row.cells:
@@ -324,7 +317,6 @@ class Worker(QThread):
                             pass
 
                         # new password matches older one
-
                         try:
                             driver.find_element(By.XPATH,
                                                 "//h2[contains(.,'The following message was returned from the WebKey Server:')]")
@@ -347,7 +339,9 @@ class Worker(QThread):
 
                         # Your Password has been Changed
                         try:
-                            driver.find_element(By.XPATH, "//h2[contains(.,'Your Password has been Changed.')]")
+                            driver.find_element(By.XPATH, "//h3[contains(.,'Your Password has been Changed.')]")
+
+                            print('found')
                             self.progress.emit(count)
                             self.label4.emit('OK')
                             self.label5.emit('OK')
@@ -367,13 +361,15 @@ class Worker(QThread):
                             driver.quit()
                             print(str(count) + '%')
                         except NoSuchElementException:
+                            print('not found')
                             pass
 
         self.finished.emit(self.newPassword)
         document.add_paragraph(str(datetime.datetime.now()))
         for acc in self.accountList:
             if acc == self.account:
-                document.save(resource_path("../"+acc + '.docx'))
+                document.save(
+                    resource_path("../" + acc + '_' + 'CW' + str(datetime.datetime.today().isocalendar()[1]) + '.docx'))
         self.docFinish.emit('Word file with all changed accounts created and saved in application folder! :)')
 
 
