@@ -7,7 +7,7 @@ a = Analysis(['main.py'],
              pathex=['/Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager'],
              binaries=[('webdriver/windows/chromedriver.exe', 'webdriver/windows'),
              ('webdriver/windows/geckodriver.exe', 'webdriver/windows')],
-             datas=[('C:/Users/qendrimvllasa/Anaconda3/Lib/site-packages/docx/templates/default.docx', "docx/templates"),
+             datas=[('C:/Users/qendrimvllasa/Anaconda3/Lib/site-packages/docx/templates/default.docx', "docx/templates"),('mdsp_password_manager.ico','.')
              ],
              hiddenimports=[],
              hookspath=[],

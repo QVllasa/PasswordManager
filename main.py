@@ -8,6 +8,8 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 
 from PyQt5.QtCore import *
+from PyQt5 import QtGui
+
 from docx import Document
 from docx.enum.table import *
 from docx.shared import *
@@ -18,6 +20,7 @@ from ui.Dialog import Ui_Dialog
 from ui.mainwindow import Ui_MainWindow
 
 app = QApplication(sys.argv)
+app.setWindowIcon(QtGui.QIcon('mdsp_password_manager.ico'))
 
 
 def resource_path(relative_path):
@@ -64,6 +67,7 @@ class MainWindow(QMainWindow):
         self.docx_dialog = QMessageBox()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+
         self.addCombo()
         browsers = ['Chrome', 'Firefox']
         self.ui.comboBox_2.addItems(browsers)
@@ -279,7 +283,7 @@ class Worker(QThread):
                             driver = webdriver.Firefox(
                                 executable_path=resource_path('webdriver/windows/geckodriver.exe'),
                                 options=optionsFirefox,
-                                )
+                            )
 
                         driver.implicitly_wait(3)
                         # driver.minimize_window()
@@ -375,5 +379,7 @@ class Worker(QThread):
 
 window = MainWindow()
 window.show()
+window.setWindowIcon(QtGui.QIcon('mdsp_password_manager.ico'))
+
 
 sys.exit(app.exec_())

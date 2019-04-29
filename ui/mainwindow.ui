@@ -31,6 +31,11 @@
   <property name="windowTitle">
    <string notr="true">MDSP Account Password Manager</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <selectedoff>../mdsp_password_manager.ico</selectedoff>
+   </iconset>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <property name="sizePolicy">
     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
