@@ -37,7 +37,7 @@ class MainWindow(QMainWindow):
 
         self.accounts = {}
 
-        self.txt_data = resource_path("../accountLists.txt")
+        self.txt_data = resource_path("data/accountLists.txt")
 
         try:
             with open(self.txt_data, 'r') as f:
@@ -224,7 +224,7 @@ class Worker(QThread):
 
         count = float(0)
         self.progress.emit(count)
-        while count < 100:
+        while round(count) < float(100):
             for acc, address in self.accountList.items():
                 if self.account == acc:
                     print(acc)
@@ -244,7 +244,7 @@ class Worker(QThread):
                         hdr_cells[0].paragraphs[0].text = 'Username'
                         psw_cells[0].paragraphs[0].text = 'Password'
 
-                        if 'connectivity' in user:
+                        if 'connectivity' in user or 'qendrim' in user:
                             a = table.cell(0, 1)
                             b = table.cell(0, 5)
                             A = a.merge(b)
@@ -261,8 +261,9 @@ class Worker(QThread):
 
                         print(acc)
                         b = len(self.accountList[acc])
-                        print(b)
-                        count += 100 / b
+                        #print(b)
+                        count += float(100) / float(b)
+                        print(count)
                         page = "https://www2.industrysoftware.automation.siemens.com/webkey/"
 
                         if self.currentBrowser == 'Chrome':
@@ -305,6 +306,10 @@ class Worker(QThread):
                             self.progress.emit(count)
                             hdr_cells[1].paragraphs[0].text = user
                             psw_cells[1].paragraphs[0].text = 'Wrong Password entered!'
+
+
+
+
                             for row in table.rows:
                                 for cell in row.cells:
                                     for paragraph in cell.paragraphs:
@@ -342,11 +347,10 @@ class Worker(QThread):
 
                         # Your Password has been Changed
                         try:
-                            driver.find_element(By.XPATH, "//h2[contains(.,'Your Password has been Changed')]")
+                            driver.find_element(By.XPATH, "//h2[contains(.,'Your Password has been Changed.')]")
+                            self.progress.emit(count)
                             self.label4.emit('OK')
                             self.label5.emit('OK')
-                            driver.quit()
-
                             hdr_cells[1].paragraphs[0].text = user
                             psw_cells[1].paragraphs[0].text = self.newPassword
                             psw_cells[3].paragraphs[0].text = self.newPassword
@@ -360,8 +364,7 @@ class Worker(QThread):
                                             run.bold = True
 
                             document.add_paragraph('')
-
-                            self.progress.emit(count)
+                            driver.quit()
                             print(str(count) + '%')
                         except NoSuchElementException:
                             pass

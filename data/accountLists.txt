@@ -118,7 +118,14 @@ dev-training-58@mindsphere.io
 dev-training-59@mindsphere.io
 dev-training-60@mindsphere.io
 
-myAccount =
-qendrim.vllasa@siemens.com
-qendrim.vllasa@siemens.com
-qendrim.vllasa@siemens.com
+introduction01_10 =
+intro-training-01@mindsphere.io
+intro-training-02@mindsphere.io
+intro-training-03@mindsphere.io
+intro-training-04@mindsphere.io
+intro-training-05@mindsphere.io
+intro-training-06@mindsphere.io
+intro-training-07@mindsphere.io
+intro-training-08@mindsphere.io
+intro-training-09@mindsphere.io
+intro-training-10@mindsphere.io
