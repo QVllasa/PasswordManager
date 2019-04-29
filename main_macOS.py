@@ -40,7 +40,7 @@ class MainWindow(QMainWindow):
 
         self.accounts = {}
 
-        self.txt_data = resource_path("../accountLists.txt")
+        self.txt_data = resource_path("accountLists.txt")
 
         try:
             with open(self.txt_data, 'r') as f:

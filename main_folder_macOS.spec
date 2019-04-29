@@ -3,11 +3,11 @@
 block_cipher = None
 
 
-a = Analysis(['main.py'],
+a = Analysis(['main_macOS.py'],
              pathex=['/Users/qendrimvllasa/Library/Mobile Documents/com~apple~CloudDocs/Projects/Password Manager'],
-             binaries=[('webdriver/macOS/chromedriver.exe', 'webdriver/macOS'),
-             ('webdriver/macOS/geckodriver.exe', 'webdriver/macOS')],
-             datas=[('C:/Users/qendrimvllasa/Anaconda3/Lib/site-packages/docx/templates/default.docx', "docx/templates"),('mdsp_password_manager.icns','.')
+             binaries=[('webdriver/macOS/chromedriver', 'webdriver/macOS'),
+             ('webdriver/macOS/geckodriver', 'webdriver/macOS')],
+             datas=[('/Users/qendrimvllasa/anaconda3/lib/python3.7/site-packages/docx/templates/default.docx', "docx/templates"),('mdsp_password_manager.icns','.')
              ],
              hiddenimports=[],
              hookspath=[],
@@ -21,6 +21,9 @@ pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
 exe = EXE(pyz,
           a.scripts,
+          a.binaries,
+          a.zipfiles,
+          a.datas,
           [],
           exclude_binaries=True,
           name='Password Manager',
@@ -28,11 +31,9 @@ exe = EXE(pyz,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
+          runtime_tmpdir=None,
           console=False, icon='mdsp_password_manager.icns' )
-coll = COLLECT(exe,
-               a.binaries,
-               a.zipfiles,
-               a.datas,
-               strip=False,
-               upx=True,
-               name='Password Manager')
+
+
+
+
