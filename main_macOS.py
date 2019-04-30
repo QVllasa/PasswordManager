@@ -219,6 +219,11 @@ class Worker(QThread):
         self.accountList = accountList
         self.state = state
 
+    def changeIOT(self,usr, psw):
+        #wir loggen uns mit dem neuen account über webkey ein, klicken auf IoT Extension,
+        #ändern das Passwort, warten auf die Antwort ab und schließen den driver wieder.
+        pass
+
     def run(self):
         document = Document()
         document.sections[0].left_margin = Mm(10)
@@ -379,6 +384,11 @@ class Worker(QThread):
                         except NoSuchElementException:
                             print('not found')
                             pass
+
+
+
+                        # def changeIOT(usr, psw)
+
 
         self.finished.emit(self.newPassword)
         document.add_paragraph(str(datetime.datetime.now()))
