@@ -78,8 +78,10 @@ class MainWindow(QMainWindow):
         self.ui.showButton.clicked.connect(self.showAcc)
 
     def addCombo(self):
+        items = [self.ui.comboBox.itemText(i) for i in range(self.ui.comboBox.count())]
         for key, value in self.accounts.items():
-            self.ui.comboBox.addItem(key)
+            if key not in items:
+                self.ui.comboBox.addItem(key)
 
     def noList(self):
         self.noList_dialog = QMessageBox()
@@ -136,6 +138,7 @@ class MainWindow(QMainWindow):
 
         else:
             print('Cancel')
+        self.addCombo()
 
     def addCell(self):
         row = self.uiAddDialog.accTable.rowCount()
@@ -243,12 +246,20 @@ class Worker(QThread):
                         hdr_cells[0].paragraphs[0].text = 'Username'
                         psw_cells[0].paragraphs[0].text = 'Password'
 
-                        if 'connectivity' in user:
+                        if 'connectivity' in user or 'dev' in user:
                             a = table.cell(0, 1)
                             b = table.cell(0, 5)
+                            c = table.cell(1, 1)
+                            d = table.cell(1, 2)
+                            e = table.cell(1, 4)
+                            f = table.cell(1, 5)
                             A = a.merge(b)
-                            psw_cells[2].paragraphs[0].text = 'IoT Extension'
-                            psw_cells[4].paragraphs[0].text = 'MC Integration'
+                            B = c.merge(d)
+                            C = e.merge(f)
+                            psw_cells[3].paragraphs[0].text = 'IoT Extension'
+
+                            #deprecated
+                            #psw_cells[4].paragraphs[0].text = 'MC Integration'
 
                         else:
                             a = table.cell(0, 1)
@@ -351,8 +362,8 @@ class Worker(QThread):
                             self.label5.emit('OK')
                             hdr_cells[1].paragraphs[0].text = user
                             psw_cells[1].paragraphs[0].text = self.newPassword
-                            psw_cells[3].paragraphs[0].text = self.newPassword
-                            psw_cells[5].paragraphs[0].text = self.newPassword
+                            psw_cells[2].paragraphs[0].text = self.newPassword
+                            psw_cells[4].paragraphs[0].text = self.newPassword
                             for row in table.rows:
                                 for cell in row.cells:
                                     for paragraph in cell.paragraphs:
