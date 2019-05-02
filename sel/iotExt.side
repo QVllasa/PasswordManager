@@ -2,7 +2,7 @@
   "id": "d761a9ab-9c62-47ff-acf9-f0bdb0dfcf9a",
   "version": "2.0",
   "name": "iotExt",
-  "url": "https://www2.industrysoftware.automation.siemens.com",
+  "url": "https://www2.industrysoftware.automation.siemens.com/WebkeyLogin/DigitalExchangeLoginCommon?url=https://www2.industrysoftware.automation.siemens.com:443/WebkeyLogin/SAMLAuth/alias/60f9b30e-bc17-4006-9444-747f1c020362?token=46bad365-984a-464d-8c6b-220bdf2de79d",
   "tests": [{
     "id": "d9b345e9-273b-4dbe-85d9-2a98369dbeae",
     "name": "changeIOT",
@@ -62,6 +62,13 @@
         ["xpath=//div[3]/div/input", "xpath:position"]
       ],
       "value": "Dominim123_="
+    }, {
+      "id": "1a37cab7-5d28-42f0-bfae-85c7d3829454",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
     }, {
       "id": "6028b2c7-79f0-470d-836f-216674aa497c",
       "comment": "",
@@ -346,6 +353,108 @@
       "command": "close",
       "target": "",
       "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9df932fd-003e-4388-90c9-89071873fe2a",
+    "name": "IoT login button",
+    "commands": [{
+      "id": "4905d28e-bc83-47af-a466-d3684a1fa59e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www2.industrysoftware.automation.siemens.com/WebkeyLogin/DigitalExchangeLoginCommon?url=https://www2.industrysoftware.automation.siemens.com:443/WebkeyLogin/SAMLAuth/alias/60f9b30e-bc17-4006-9444-747f1c020362?token=46bad365-984a-464d-8c6b-220bdf2de79d",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90cc2ea0-4de6-49cd-9d52-ccd94e621844",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1680x946",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e85e7e83-c593-46d0-88ad-010107367e5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=emailAddress",
+      "targets": [
+        ["id=emailAddress", "id"],
+        ["name=emailAddress", "name"],
+        ["css=#emailAddress", "css:finder"],
+        ["xpath=//input[@id='emailAddress']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='dr_signin']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de2ecdd3-5a66-431c-b5e8-9e219a0a487e",
+      "comment": "",
+      "command": "type",
+      "target": "id=emailAddress",
+      "targets": [
+        ["id=emailAddress", "id"],
+        ["name=emailAddress", "name"],
+        ["css=#emailAddress", "css:finder"],
+        ["xpath=//input[@id='emailAddress']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='dr_signin']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "qendrim.vllasa"
+    }, {
+      "id": "72be4e88-8c7c-4deb-9c80-2086f44d1fa9",
+      "comment": "",
+      "command": "click",
+      "target": "id=emailAddress",
+      "targets": [
+        ["id=emailAddress", "id"],
+        ["name=emailAddress", "name"],
+        ["css=#emailAddress", "css:finder"],
+        ["xpath=//input[@id='emailAddress']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='dr_signin']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6e748d6-05e5-4b4a-85fa-27a43b9083a6",
+      "comment": "",
+      "command": "type",
+      "target": "id=emailAddress",
+      "targets": [
+        ["id=emailAddress", "id"],
+        ["name=emailAddress", "name"],
+        ["css=#emailAddress", "css:finder"],
+        ["xpath=//input[@id='emailAddress']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='dr_signin']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "qendrim.vllasa@siemens.com"
+    }, {
+      "id": "f8e3728a-690c-4676-8898-539058be2835",
+      "comment": "",
+      "command": "type",
+      "target": "id=passLogin",
+      "targets": [
+        ["id=passLogin", "id"],
+        ["name=passLogin", "name"],
+        ["css=#passLogin", "css:finder"],
+        ["xpath=//input[@id='passLogin']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='dr_signin']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Dominim123_="
+    }, {
+      "id": "de5062e1-21cb-4582-a85a-be90d5b0db8c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@id='login-button']",
+      "targets": [
+        ["id=login-button", "id"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//button[@id='login-button']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='dr_signin']/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Anmelden')]", "xpath:innerText"]
+      ],
       "value": ""
     }]
   }],
