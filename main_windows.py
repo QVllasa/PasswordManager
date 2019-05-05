@@ -231,7 +231,7 @@ class Worker(QThread):
                 optionsChrome.add_argument('--start-maximized')
                 optionsChrome.headless = True
             driver = webdriver.Chrome(
-                executable_path=resource_path('webdriver/macOS/chromedriver'),
+                executable_path=resource_path('webdriver/windows/chromedriver'),
                 options=optionsChrome)
 
         if self.currentBrowser == 'Firefox':
@@ -239,7 +239,7 @@ class Worker(QThread):
             if self.state == '2':
                 optionsFirefox.headless = True
             driver = webdriver.Firefox(
-                executable_path=resource_path('webdriver/macOS/geckodriver'),
+                executable_path=resource_path('webdriver/windows/geckodriver'),
                 options=optionsFirefox,
             )
         driver.delete_all_cookies()
@@ -441,9 +441,9 @@ class Worker(QThread):
 
 
                             #------
-                            if 'connectivity' in user or 'dev' in user:
-                                if self.iot == '2':
-                                    self.changeIOT(user)
+                            #if 'connectivity' in user or 'dev' in user:
+                            if self.iot == '2':
+                                self.changeIOT(user)
                             #------
 
 
