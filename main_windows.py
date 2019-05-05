@@ -243,7 +243,7 @@ class Worker(QThread):
                 options=optionsFirefox,
             )
         driver.delete_all_cookies()
-        driver.implicitly_wait(3)
+        driver.implicitly_wait(10)
         # driver.minimize_window()
         driver.get(page)
 
@@ -360,7 +360,7 @@ class Worker(QThread):
                                 options=optionsFirefox,
                             )
 
-                        driver.implicitly_wait(3)
+                        driver.implicitly_wait(10)
                         # driver.minimize_window()
                         driver.get(page)
                         driver.find_element(By.XPATH, "//tr[5]/td[2]/ul/font/li/a/font").click()
@@ -427,7 +427,7 @@ class Worker(QThread):
                             hdr_cells[1].paragraphs[0].text = user
                             psw_cells[1].paragraphs[0].text = self.newPassword
                             psw_cells[2].paragraphs[0].text = self.newPassword
-                            psw_cells[4].paragraphs[0].text = self.newPassword
+                            psw_cells[4].paragraphs[0].text = self.newPasswordK
                             for row in table.rows:
                                 for cell in row.cells:
                                     for paragraph in cell.paragraphs:
