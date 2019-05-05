@@ -133,10 +133,4 @@ intro-training-10@mindsphere.io
 
 
 test =
-connectivity1
-connectivity2
-connectivity1
-developer1
-dev-training
-dev-training2
-dev-training3
+qendrim.vllasa@siemens.com
