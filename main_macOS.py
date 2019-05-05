@@ -95,10 +95,11 @@ class MainWindow(QMainWindow):
         self.newPassword = self.ui.inputNew.text()
         self.account = self.ui.comboBox.currentText()
         self.state = str(self.ui.checkBox.checkState())
+        self.iot = str(self.ui.iot.checkState())
 
         if not self.currentPassword == '' and not self.newPassword == '':
             self.obj = Worker(self.account, self.currentBrowser, self.currentPassword, self.newPassword, self.accounts,
-                              self.state)
+                              self.state, self.iot)
             self.obj.message.connect(self.errorDialog)
             self.obj.finished.connect(self.done)
             self.obj.progress.connect(self.loadingBar)
@@ -209,7 +210,7 @@ class Worker(QThread):
     label5 = pyqtSignal(str)
     docFinish = pyqtSignal(str)
 
-    def __init__(self, account, brwser, curPass, newPass, accountList, state):
+    def __init__(self, account, brwser, curPass, newPass, accountList, state, iot):
         QThread.__init__(self)
 
         self.currentBrowser = brwser
@@ -218,6 +219,7 @@ class Worker(QThread):
         self.account = account
         self.accountList = accountList
         self.state = state
+        self.iot = iot
 
     def changeIOT(self, usr):
 
@@ -434,8 +436,10 @@ class Worker(QThread):
                             document.add_paragraph('')
                             driver.quit()
 
+
                             # ------
-                            self.changeIOT(user)
+                            if self.iot == '2':
+                                self.changeIOT(user)
                             # ------
 
                             print(str(count) + '%')

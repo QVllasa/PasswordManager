@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ui\mainwindow.ui'
+# Form implementation generated from reading ui file 'ui/mainwindow.ui'
 #
 # Created by: PyQt5 UI code generator 5.12.1
 #
@@ -21,6 +21,9 @@ class Ui_MainWindow(object):
         MainWindow.setMinimumSize(QtCore.QSize(441, 371))
         MainWindow.setMaximumSize(QtCore.QSize(441, 371))
         MainWindow.setWindowTitle("MDSP Account Password Manager")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("../mdsp_password_manager.ico"), QtGui.QIcon.Selected, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         self.centralWidget = QtWidgets.QWidget(MainWindow)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -85,14 +88,12 @@ class Ui_MainWindow(object):
         self.label_4.setObjectName("label_4")
         self.gridLayout_2.addWidget(self.label_4, 0, 2, 1, 1)
         self.gridLayoutWidget_3 = QtWidgets.QWidget(self.centralWidget)
-        self.gridLayoutWidget_3.setGeometry(QtCore.QRect(20, 192, 401, 136))
+        self.gridLayoutWidget_3.setGeometry(QtCore.QRect(20, 192, 401, 159))
         self.gridLayoutWidget_3.setObjectName("gridLayoutWidget_3")
         self.gridLayout_3 = QtWidgets.QGridLayout(self.gridLayoutWidget_3)
         self.gridLayout_3.setContentsMargins(11, 11, 11, 11)
         self.gridLayout_3.setSpacing(6)
         self.gridLayout_3.setObjectName("gridLayout_3")
-        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_3.addItem(spacerItem, 0, 2, 1, 1)
         self.progressBar = QtWidgets.QProgressBar(self.gridLayoutWidget_3)
         self.progressBar.setAutoFillBackground(True)
         self.progressBar.setProperty("value", 0)
@@ -100,19 +101,18 @@ class Ui_MainWindow(object):
         self.progressBar.setInvertedAppearance(False)
         self.progressBar.setObjectName("progressBar")
         self.gridLayout_3.addWidget(self.progressBar, 2, 0, 1, 3)
+        self.showButton = QtWidgets.QPushButton(self.gridLayoutWidget_3)
+        self.showButton.setObjectName("showButton")
+        self.gridLayout_3.addWidget(self.showButton, 3, 2, 1, 1)
         self.pushButton = QtWidgets.QPushButton(self.gridLayoutWidget_3)
         self.pushButton.setObjectName("pushButton")
         self.gridLayout_3.addWidget(self.pushButton, 0, 1, 1, 1)
-        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_3.addItem(spacerItem1, 3, 0, 1, 3)
-        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_3.addItem(spacerItem2, 1, 1, 1, 1)
-        self.showButton = QtWidgets.QPushButton(self.gridLayoutWidget_3)
-        self.showButton.setObjectName("showButton")
-        self.gridLayout_3.addWidget(self.showButton, 4, 2, 1, 1)
         self.addButton = QtWidgets.QPushButton(self.gridLayoutWidget_3)
         self.addButton.setObjectName("addButton")
-        self.gridLayout_3.addWidget(self.addButton, 4, 0, 1, 1)
+        self.gridLayout_3.addWidget(self.addButton, 3, 0, 1, 1)
+        self.iot = QtWidgets.QCheckBox(self.gridLayoutWidget_3)
+        self.iot.setObjectName("iot")
+        self.gridLayout_3.addWidget(self.iot, 0, 2, 1, 1)
         MainWindow.setCentralWidget(self.centralWidget)
         self.mainToolBar = QtWidgets.QToolBar(MainWindow)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
@@ -136,8 +136,9 @@ class Ui_MainWindow(object):
         self.label_5.setText(_translate("MainWindow", "OK"))
         self.label_4.setText(_translate("MainWindow", "OK"))
         self.progressBar.setFormat(_translate("MainWindow", "%p%"))
-        self.pushButton.setText(_translate("MainWindow", "Change Passwords"))
         self.showButton.setText(_translate("MainWindow", "Show"))
+        self.pushButton.setText(_translate("MainWindow", "Change Passwords"))
         self.addButton.setText(_translate("MainWindow", "Add"))
+        self.iot.setText(_translate("MainWindow", "IoT Extension"))
 
 
