@@ -218,9 +218,10 @@ class Worker(QThread):
         self.account = account
         self.accountList = accountList
         self.state = state
-    def changeIOT(self,usr, webkey,newpsw, oldpsw, page):
 
+    def changeIOT(self, usr):
 
+        page = "https://academy2.eu1.mindsphere.io/index.html#/"
         if self.currentBrowser == 'Chrome':
             optionsChrome = webdriver.ChromeOptions()
             if self.state == '2':
@@ -228,7 +229,7 @@ class Worker(QThread):
                 optionsChrome.add_argument('--start-maximized')
                 optionsChrome.headless = True
             driver = webdriver.Chrome(
-                executable_path=resource_path('webdriver/windows/chromedriver'),
+                executable_path=resource_path('webdriver/macOS/chromedriver'),
                 options=optionsChrome)
 
         if self.currentBrowser == 'Firefox':
@@ -236,10 +237,9 @@ class Worker(QThread):
             if self.state == '2':
                 optionsFirefox.headless = True
             driver = webdriver.Firefox(
-                executable_path=resource_path('webdriver/windows/geckodriver'),
+                executable_path=resource_path('webdriver/macOS/geckodriver'),
                 options=optionsFirefox,
             )
-
 
         driver.implicitly_wait(3)
         # driver.minimize_window()
@@ -248,7 +248,7 @@ class Worker(QThread):
         driver.find_element(By.XPATH, "//fieldset[@id='dr_signin']/div[2]/div/input").send_keys(
             usr)
         time.sleep(1)
-        driver.find_element(By.XPATH, "//fieldset[@id='dr_signin']/div[3]/div/input").send_keys(webkey)
+        driver.find_element(By.XPATH, "//fieldset[@id='dr_signin']/div[3]/div/input").send_keys(self.newPassword)
         time.sleep(1)
         driver.find_element(By.XPATH, "//button[@id='login-button']").click()
         time.sleep(3)
@@ -257,7 +257,7 @@ class Worker(QThread):
 
         driver.find_element(By.XPATH, "(//input[@name='user'])[2]").send_keys(usr)
 
-        driver.find_element(By.XPATH, "(//input[@name='password'])[2]").send_keys(oldpsw)
+        driver.find_element(By.XPATH, "(//input[@name='password'])[2]").send_keys(self.currentPassword)
 
         driver.find_element(By.XPATH, "(//button[@type='submit'])[5]").click()
         time.sleep(3)
@@ -267,12 +267,12 @@ class Worker(QThread):
         time.sleep(3)
         driver.find_element(By.XPATH, "//div[9]/button/span").click()
         time.sleep(3)
-        driver.find_element(By.XPATH, "//input[@name='password']").send_keys(newpsw)
-        driver.find_element(By.XPATH, "//input[@name='confirmPassword']").send_keys(newpsw)
+        driver.find_element(By.XPATH, "//input[@name='password']").send_keys(self.newPassword)
+        driver.find_element(By.XPATH, "//input[@name='confirmPassword']").send_keys(self.newPassword)
         time.sleep(3)
         driver.find_element(By.XPATH, "//div[3]/button[2]").click()
         time.sleep(3)
-        driver.find_element(By.XPATH, "//input[@name='currentPassword']").send_keys(oldpsw)
+        driver.find_element(By.XPATH, "//input[@name='currentPassword']").send_keys(self.currentPassword)
         driver.find_element(By.XPATH, "//button").click()
         driver.delete_all_cookies()
         driver.quit()
@@ -435,7 +435,7 @@ class Worker(QThread):
 
 
                             #------
-                            self.changeIOT(user, self.newPassword, self.newPassword, self.currentPassword, page)
+                            self.changeIOT(user)
                             #------
 
 
