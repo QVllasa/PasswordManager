@@ -24,12 +24,12 @@ psw_cells = table.rows[1].cells
 newpassword = 'blablabla'
 
 hdr_cells[0].paragraphs[0].text = 'Username'
-hdr_cells[1].paragraphs[0].text ='qendrimvllasa@siemens.com'
+hdr_cells[1].paragraphs[0].text ='EMAILADDRESS'
 psw_cells[0].paragraphs[0].text = 'Password'
 psw_cells[1].paragraphs[0].text = newpassword
-psw_cells[2].paragraphs[0].text = 'IoT Extension'
+psw_cells[2].paragraphs[0].text = 'first'
 psw_cells[3].paragraphs[0].text = newpassword
-psw_cells[4].paragraphs[0].text = 'Integration'
+psw_cells[4].paragraphs[0].text = 'second'
 psw_cells[5].paragraphs[0].text = newpassword
 
 for row in table.rows:
