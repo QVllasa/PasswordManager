@@ -2,7 +2,7 @@
   "id": "d761a9ab-9c62-47ff-acf9-f0bdb0dfcf9a",
   "version": "2.0",
   "name": "iotExt",
-  "url": "https://www2.industrysoftware.automation.siemens.com/WebkeyLogin/DigitalExchangeLoginCommon?url=https://www2.industrysoftware.automation.siemens.com:443/WebkeyLogin/SAMLAuth/alias/60f9b30e-bc17-4006-9444-747f1c020362?token=46bad365-984a-464d-8c6b-220bdf2de79d",
+  "url": "",
   "tests": [{
     "id": "d9b345e9-273b-4dbe-85d9-2a98369dbeae",
     "name": "changeIOT",
@@ -10,7 +10,7 @@
       "id": "6e711757-439d-46ab-a8b2-d0b6163cd18e",
       "comment": "",
       "command": "open",
-      "target": "/WebkeyLogin/DigitalExchangeLoginCommon?url=https://www2.industrysoftware.automation.siemens.com:443/WebkeyLogin/SAMLAuth/alias/60f9b30e-bc17-4006-9444-747f1c020362?token=2b6bb96d-b1bf-4eee-a558-cc7f65abad1b",
+      "target": "",
       "targets": [],
       "value": ""
     }, {
@@ -47,7 +47,7 @@
         ["xpath=//fieldset[@id='dr_signin']/div[2]/div/input", "xpath:idRelative"],
         ["xpath=//div/input", "xpath:position"]
       ],
-      "value": "qendrim.vllasa@siemens.com"
+      "value": ""
     }, {
       "id": "8867a66f-f46d-4661-ba50-10a451b722fa",
       "comment": "",
@@ -61,7 +61,7 @@
         ["xpath=//fieldset[@id='dr_signin']/div[3]/div/input", "xpath:idRelative"],
         ["xpath=//div[3]/div/input", "xpath:position"]
       ],
-      "value": "Dominim123_="
+      "value": ""
     }, {
       "id": "1a37cab7-5d28-42f0-bfae-85c7d3829454",
       "comment": "",
@@ -117,7 +117,7 @@
         ["xpath=//div[@id='app']/c8y-login/div/div[2]/form/div/input", "xpath:idRelative"],
         ["xpath=//div[2]/form/div/input", "xpath:position"]
       ],
-      "value": "qendrim.vllasa@siemens.com"
+      "value": ""
     }, {
       "id": "3400c1e5-3839-4c7e-8c7d-183cbaaf3e61",
       "comment": "",
@@ -129,7 +129,7 @@
         ["xpath=//div[@id='app']/c8y-login/div/div[2]/form/div[2]/input", "xpath:idRelative"],
         ["xpath=//div[2]/form/div[2]/input", "xpath:position"]
       ],
-      "value": "Dominim123_="
+      "value": ""
     }, {
       "id": "5f4d36e5-c3b6-4e43-a22b-fb6224418428",
       "comment": "",
@@ -202,7 +202,7 @@
         ["xpath=//input[@name='password']", "xpath:attributes"],
         ["xpath=//div[10]/div/div/input", "xpath:position"]
       ],
-      "value": "Dominim123_321"
+      "value": ""
     }, {
       "id": "1fce8ea8-555a-436c-8865-61218383c2c7",
       "comment": "",
